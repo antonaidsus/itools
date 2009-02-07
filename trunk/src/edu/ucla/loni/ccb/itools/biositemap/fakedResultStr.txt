@@ -1,0 +1,22 @@
+<ResultSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:yahoo:srch" xsi:schemaLocation="urn:yahoo:srch http://search.yahooapis.com/WebSearchService/V1/WebSearchResponse.xsd" 
+totalResultsAvailable="2" totalResultsReturned="2" firstResultPosition="1">
+  <Result>
+    <Title>LONI PRIMARY1 title</Title>
+    <Summary>official siteof the LONI</Summary>
+    <Url>http://www.loni.ucla.edu/BioSiteMap.xml</Url>
+    <ClickUrl>http://www.loni.ucla.edu/BioSiteMap.xml</ClickUrl>
+  </Result>
+  <Result>
+    <Title>CCB PRIMARY1 title</Title>
+    <Summary>CCB HOME PAGE</Summary>
+    <Url>http://www.loni.ucla.edu/BioSiteMap.xml</Url>
+    <ClickUrl>http://www.loni.ucla.edu/BioSiteMap.xml</ClickUrl>
+  </Result>
+    <Result>
+    <Title>Ncbo RDF</Title>
+    <Summary>Ncbo test sampe rdf</Summary>
+    <Url>http://www.ncbcs.org/biositemaps/NCBO_biositemap_sample.rdf</Url>
+    <ClickUrl>http://www.ncbcs.org/biositemaps/NCBO_biositemap_sample.rdf</ClickUrl>
+  </Result>
+  
+</ResultSet>
