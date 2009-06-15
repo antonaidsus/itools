@@ -18,8 +18,6 @@ import org.apache.log4j.Logger;
 public class Main {
 	public static final Logger LOGGER = Logger.getLogger(Main.class);
 
-	// public static final ImageIcon ITOOLS_WATERMARK =
-	// GuiUtil.getIcon("/iTool_watermark.jpg");
 	private static boolean appletMode = true;
 	private static boolean serverMode = false;
 
