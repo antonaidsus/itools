@@ -1,0 +1,599 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:BRO="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns="http://www.bioontologies.org/biositemaps/NCBO.rdf#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:desc="http://bioontology.org/ontologies/biositemap.owl#"
+    xmlns:p1="http://bioontology.org/ontologies/BiomedicalResources.owl#"
+  xml:base="http://www.bioontologies.org/biositemaps/NCBO.rdf">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://bioontology.org/ontologies/BiomedicalResources.owl"/>
+  </owl:Ontology>
+  <desc:Resource_Description rdf:ID="VillinTrajectory">
+    <desc:organization rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Stanford University</desc:organization>
+    <desc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Repository containing hundreds of all-atom, explicit solvent molecular dynamics simulations on a variant of the villin headpiece subdomain.  Available in Gromacs and PDB formats.</desc:description>
+    <desc:center rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Simbios Center</desc:center>
+    <desc:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MIT License</desc:license>
+    <desc:URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >https://simtk.org/home/foldvillin</desc:URL>
+    <desc:resource_type>
+      <BRO:Molecular_Trajectories/>
+    </desc:resource_type>
+    <desc:resource_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Molecular Simulation Trajectories Archive of a Villin Variant</desc:resource_name>
+    <desc:contact_person rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Dan Ensign</desc:contact_person>
+    <desc:version_information>
+      <desc:Version_Information>
+        <desc:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >4/16/08</desc:release_date>
+      </desc:Version_Information>
+    </desc:version_information>
+    <desc:keywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >protein folding, villin</desc:keywords>
+  </desc:Resource_Description>
+  <desc:Resource_Description rdf:ID="Simbody">
+    <desc:resource_type>
+      <BRO:Multibody_Dynamics/>
+    </desc:resource_type>
+    <desc:keywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >SimTK Core component, multibody Dynamics, library</desc:keywords>
+    <desc:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MIT license</desc:license>
+    <desc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >SimTK core toolset providing general multibody dynamics capability</desc:description>
+    <desc:resource_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Simbody</desc:resource_name>
+    <desc:organization rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Simbios Center</desc:organization>
+    <desc:URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >https://simtk.org/home/simbody</desc:URL>
+    <desc:contact_person rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Michael Sherman</desc:contact_person>
+  </desc:Resource_Description>
+  <desc:Resource_Description rdf:ID="CPODES_numerical_integrator">
+    <desc:organization rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Simbios Center</desc:organization>
+    <desc:version_information>
+      <desc:Version_Information>
+        <desc:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >4/7/07</desc:release_date>
+        <desc:version rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >1</desc:version>
+      </desc:Version_Information>
+    </desc:version_information>
+    <desc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Numerical integrator for solving multibody dynamics problems</desc:description>
+    <desc:resource_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >CPODES numerical integrator</desc:resource_name>
+    <desc:URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >https://simtk.org/home/cpodes</desc:URL>
+    <desc:resource_type>
+      <BRO:Numerical_Integrators/>
+    </desc:resource_type>
+    <desc:contact_person rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Michael Sherman, Radu Serban</desc:contact_person>
+    <desc:keywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Numerical integrator</desc:keywords>
+    <desc:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MIT license</desc:license>
+  </desc:Resource_Description>
+  <desc:Resource_Description rdf:ID="BioSimulation_Course">
+    <desc:contact_person rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Paul Mitiguy</desc:contact_person>
+    <desc:organization rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Simbios Center</desc:organization>
+    <desc:URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >https://simtk.org/home/training</desc:URL>
+    <desc:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MIT license</desc:license>
+    <desc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Biosimulation course using the SimTK toolkit</desc:description>
+    <desc:resource_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >BioSimulation Course</desc:resource_name>
+    <desc:version_information>
+      <desc:Version_Information>
+        <desc:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >4/15/07</desc:release_date>
+      </desc:Version_Information>
+    </desc:version_information>
+    <desc:resource_type>
+      <BRO:Course_Material/>
+    </desc:resource_type>
+    <desc:keywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Biosimulation Course</desc:keywords>
+  </desc:Resource_Description>
+  <desc:Resource_Description rdf:ID="SAFA">
+    <desc:keywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Analysis of gels</desc:keywords>
+    <desc:resource_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >SAFA</desc:resource_name>
+    <desc:contact_person rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Das, R., Laederach, A</desc:contact_person>
+    <desc:URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >https://simtk.org/home/safa</desc:URL>
+    <desc:resource_type>
+      <BRO:Analysis_of_Gel-Electrophoresis/>
+    </desc:resource_type>
+    <desc:organization rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Simbios Center</desc:organization>
+    <desc:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MIT license</desc:license>
+    <desc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Quantitative analysis of gels from hydroxyl radical footprinting and other structure mapping techniques</desc:description>
+    <desc:area_of_application>
+      <desc:BasicResearch/>
+    </desc:area_of_application>
+    <desc:version_information>
+      <desc:Version_Information>
+        <desc:version rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >11</desc:version>
+        <desc:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >4/7/07</desc:release_date>
+      </desc:Version_Information>
+    </desc:version_information>
+  </desc:Resource_Description>
+  <desc:Resource_Description rdf:ID="OpenMM">
+    <desc:organization rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Stanford University</desc:organization>
+    <desc:keywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >RNA folding, protein folding, molecular dynamics, Gromacs, GPUs</desc:keywords>
+    <desc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Application programming interface that allows molecular modeling codes to easily be accelerated on GPUs</desc:description>
+    <desc:center rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Simbios Center</desc:center>
+    <desc:resource_type>
+      <BRO:Molecular_Dynamics/>
+    </desc:resource_type>
+    <desc:resource_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OpenMM</desc:resource_name>
+    <desc:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MIT License</desc:license>
+    <desc:URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >https://simtk.org/home/openmm</desc:URL>
+    <desc:contact_person rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Vijay Pande</desc:contact_person>
+  </desc:Resource_Description>
+  <desc:Resource_Description rdf:ID="Discrete_Center_Hierarchies">
+    <desc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Data structure for the maintenance  of proximity information of a set of moving points.</desc:description>
+    <desc:keywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Data structure for the maintenance  of proximity information</desc:keywords>
+    <desc:resource_type>
+      <BRO:Computational_Geometry/>
+    </desc:resource_type>
+    <desc:version_information>
+      <desc:Version_Information>
+        <desc:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >6/15/06</desc:release_date>
+      </desc:Version_Information>
+    </desc:version_information>
+    <desc:resource_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Discrete Center Hierarchies</desc:resource_name>
+    <desc:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MIT license</desc:license>
+    <desc:contact_person rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >J. Gao, L.J. Guibas, and A. Nguyen</desc:contact_person>
+    <desc:organization rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Simbios Center</desc:organization>
+    <desc:URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >https://simtk.org/home/dch</desc:URL>
+  </desc:Resource_Description>
+  <desc:Resource_Description rdf:ID="Feature">
+    <desc:organization rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Simbios Center</desc:organization>
+    <desc:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MIT license</desc:license>
+    <desc:URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >https://simtk.org/home/feature</desc:URL>
+    <desc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Tools that produce representations of  key biophysical and biochemical features that are critical for understanding function</desc:description>
+    <desc:contact_person rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Russ Altman</desc:contact_person>
+    <desc:resource_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Feature</desc:resource_name>
+    <desc:keywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Tools producing representations of  key biophysical and biochemical features from structure data that are critical for understanding function</desc:keywords>
+    <desc:resource_type>
+      <BRO:Structure-Based_Protein_Classification/>
+    </desc:resource_type>
+  </desc:Resource_Description>
+  <desc:Resource_Description rdf:ID="Cardiovascular_Model_Repository">
+    <desc:contact_person rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Peter Feenstra</desc:contact_person>
+    <desc:version_information>
+      <desc:Version_Information>
+        <desc:version rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        > 1 </desc:version>
+        <desc:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >4/4/06</desc:release_date>
+      </desc:Version_Information>
+    </desc:version_information>
+    <desc:resource_type>
+      <BRO:Computational_Model/>
+    </desc:resource_type>
+    <desc:keywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiovascular, Models</desc:keywords>
+    <desc:resource_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiovascular Model Repository</desc:resource_name>
+    <desc:URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >https://simtk.org/home/cv-gmodels</desc:URL>
+    <desc:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MIT license</desc:license>
+    <desc:organization rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Simbios Center</desc:organization>
+    <desc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Geometric models collected from research projects in the Cardiovascular Biomechanics Research Laboratory at Stanford</desc:description>
+  </desc:Resource_Description>
+  <desc:Resource_Description rdf:ID="Simbiome">
+    <desc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Curated, on-line electronic listing of relevant resources for physics-based simulation of biomedical structures and related entries in biology and life sciences</desc:description>
+    <desc:contact_person rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Joy Ku</desc:contact_person>
+    <desc:center rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Simbios Center</desc:center>
+    <desc:URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.simbiome.org</desc:URL>
+    <desc:resource_type>
+      <BRO:Dissemination_Vehicle/>
+    </desc:resource_type>
+    <desc:keywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >biomedical computing, repository</desc:keywords>
+    <desc:organization rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Stanford University</desc:organization>
+    <desc:resource_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Simbiome</desc:resource_name>
+  </desc:Resource_Description>
+  <desc:Resource_Description rdf:ID="ConTrack">
+    <desc:keywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >diffusion tensor imaging, magnetic resonance imaging, tissue analysis</desc:keywords>
+    <desc:organization rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Stanford University</desc:organization>
+    <desc:resource_type>
+      <BRO:Image_Processing/>
+    </desc:resource_type>
+    <desc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Tool that uses knowledge of the physics behind diffusion tensor imaging (DTI) and apriori information about tissue architecture to identify the location of connections between two regions within the DTI data</desc:description>
+    <desc:URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >https://simtk.org/home/contrack</desc:URL>
+    <desc:center rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Simbios Center</desc:center>
+    <desc:version_information>
+      <desc:Version_Information>
+        <desc:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >7/26/08</desc:release_date>
+        <desc:version rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >1.0</desc:version>
+      </desc:Version_Information>
+    </desc:version_information>
+    <desc:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MIT License</desc:license>
+    <desc:contact_person rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Anthony Sherbondy</desc:contact_person>
+    <desc:resource_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Connectivity Tracking (ConTrack)</desc:resource_name>
+    <desc:platform rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Linux</desc:platform>
+  </desc:Resource_Description>
+  <desc:Resource_Description rdf:ID="SimVascular">
+    <desc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Open source release of tools for three-dimensional cardiovascular simulation</desc:description>
+    <desc:resource_type>
+      <BRO:Continuum_Method_Simulation/>
+    </desc:resource_type>
+    <desc:contact_person rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Taylor Group</desc:contact_person>
+    <desc:resource_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >SimVascular</desc:resource_name>
+    <desc:keywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cardiovascular Toolkit</desc:keywords>
+    <desc:URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >https://simtk.org/home/simvascular</desc:URL>
+    <desc:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Multiple licenses</desc:license>
+    <desc:organization rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Simbios Center</desc:organization>
+  </desc:Resource_Description>
+  <desc:Resource_Description rdf:ID="SimTKCore">
+    <desc:resource_type>
+      <BRO:Toolkit/>
+    </desc:resource_type>
+    <desc:keywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >linear algebra, numerical integration, Monte Carlo sampling, multibody dynamics, molecular force field evaluation, nonlinear root finding, optimizing, CPodes, Simbody, IPopt, Molmodel</desc:keywords>
+    <desc:contact_person rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Jack Middleton</desc:contact_person>
+    <desc:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C++</desc:language>
+    <desc:version_information>
+      <desc:Version_Information>
+        <desc:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >7/31/08</desc:release_date>
+        <desc:version rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >1.5</desc:version>
+      </desc:Version_Information>
+    </desc:version_information>
+    <desc:organization rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Stanford University</desc:organization>
+    <desc:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MIT License</desc:license>
+    <desc:center rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Simbios Center</desc:center>
+    <desc:URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >https://simtk.org/home/simtkcore</desc:URL>
+    <desc:platform rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Linux, Mac OS X (Intel), Windows</desc:platform>
+    <desc:resource_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >SimTKCore</desc:resource_name>
+    <desc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Toolkit providing the best implementation of commonly used methods for biological simulations, such as linear algebra, numerical integration, Monte Carlo sampling, and multibody dynamics within an internal coordinates system</desc:description>
+  </desc:Resource_Description>
+  <desc:Resource_Description rdf:ID="aspf">
+    <desc:contact_person rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Bart Adams, Leonidas Guibas, Mark Pauly</desc:contact_person>
+    <desc:resource_type>
+      <BRO:Computational_Geometry/>
+    </desc:resource_type>
+    <desc:version_information>
+      <desc:Version_Information>
+        <desc:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >10/10/07</desc:release_date>
+        <desc:version rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >0.1.2</desc:version>
+      </desc:Version_Information>
+    </desc:version_information>
+    <desc:center rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Simbios Center</desc:center>
+    <desc:platform rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Linux</desc:platform>
+    <desc:keywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >fluid simulation</desc:keywords>
+    <desc:resource_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Adaptively Sampled Particle Fluids</desc:resource_name>
+    <desc:URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >https://simtk.org/home/aspf</desc:URL>
+    <desc:organization rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Stanford University</desc:organization>
+    <desc:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MIT License</desc:license>
+    <desc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Geometric feature-size based adaptive sampling algorithms for Lagrangian particle fluids. This adaptive sampling strategy allows the use of smaller (and thus more) particles in geometrically complex regions, while less particles are used for thick flat fluid volumes.</desc:description>
+    <desc:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >C++</desc:language>
+  </desc:Resource_Description>
+  <desc:Resource_Description rdf:ID="Mapper">
+    <desc:organization rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Stanford University</desc:organization>
+    <desc:URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >https://simtk.org/home/mapper</desc:URL>
+    <desc:resource_type>
+      <BRO:Computational_Geometry/>
+    </desc:resource_type>
+    <desc:center rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Simbios Center</desc:center>
+    <desc:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MIT License</desc:license>
+    <desc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Tool that uses topological methods for exploratory pathway analysis of complex biomolecular systems</desc:description>
+    <desc:keywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >RNA, protein, molecular structure, geometry</desc:keywords>
+    <desc:resource_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Mapper</desc:resource_name>
+    <desc:version_information>
+      <desc:Version_Information>
+        <desc:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >6/4/08</desc:release_date>
+      </desc:Version_Information>
+    </desc:version_information>
+    <desc:contact_person rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Xuhui Huang</desc:contact_person>
+  </desc:Resource_Description>
+  <desc:Resource_Description rdf:ID="Lapack">
+    <desc:organization rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Simbios Center</desc:organization>
+    <desc:keywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >LAPACK linear algebra library (with BLAS)</desc:keywords>
+    <desc:URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >https://simtk.org/home/lapack</desc:URL>
+    <desc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >High quality, high performance numerical methods for matrix arithmetic and for solving linear algebra problems</desc:description>
+    <desc:contact_person rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Jack Middleton</desc:contact_person>
+    <desc:resource_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Lapack</desc:resource_name>
+    <desc:resource_type>
+      <BRO:Linear_Algebra_Tools/>
+    </desc:resource_type>
+    <desc:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MIT license</desc:license>
+  </desc:Resource_Description>
+  <desc:Resource_Description rdf:ID="SimtkWebsite">
+    <desc:organization rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Stanford University</desc:organization>
+    <desc:resource_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Simtk.org</desc:resource_name>
+    <desc:resource_type>
+      <BRO:Dissemination_Vehicle/>
+    </desc:resource_type>
+    <desc:keywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >biomedical computing, website, repository, protein folding, cardiovascular, neuromuscular, myosin, RNA</desc:keywords>
+    <desc:URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >https://simtk.org</desc:URL>
+    <desc:center rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Simbios Center</desc:center>
+    <desc:contact_person rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Randy Radmer</desc:contact_person>
+    <desc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Web-based infrastructure for the development and dissemination of software and data for biomedical computing</desc:description>
+  </desc:Resource_Description>
+  <desc:Resource_Description rdf:ID="ToRNADO">
+    <desc:keywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >RNA visualization</desc:keywords>
+    <desc:URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >https://simtk.org/home/rna-viz-proto</desc:URL>
+    <desc:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MIT License</desc:license>
+    <desc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Dynamic visualization tool for coarse grain representations of RNA and/or protein structures</desc:description>
+    <desc:contact_person rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Christopher Bruns</desc:contact_person>
+    <desc:resource_type>
+      <BRO:Molecular_Visualization/>
+    </desc:resource_type>
+    <desc:organization rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Simbios Center</desc:organization>
+    <desc:version_information>
+      <desc:Version_Information>
+        <desc:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >10/17/07</desc:release_date>
+        <desc:version rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >1.0</desc:version>
+      </desc:Version_Information>
+    </desc:version_information>
+    <desc:resource_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ToRNADO</desc:resource_name>
+  </desc:Resource_Description>
+  <desc:Resource_Description rdf:ID="NeuromuscularModels">
+    <desc:center rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Simbios Center</desc:center>
+    <desc:organization rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Stanford University</desc:organization>
+    <desc:URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >https://simtk.org/home/nmblmodels</desc:URL>
+    <desc:resource_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Neuromuscular Models Library</desc:resource_name>
+    <desc:contact_person rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Scott Delp</desc:contact_person>
+    <desc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Neuromuscular models primarily for use with OpenSim and/or SIMM</desc:description>
+    <desc:resource_type>
+      <BRO:Neuromuscular_Model/>
+    </desc:resource_type>
+    <desc:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MIT License</desc:license>
+    <desc:keywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >RNA, protein, molecular structure, geometry</desc:keywords>
+  </desc:Resource_Description>
+  <desc:Resource_Description rdf:ID="OpenSim">
+    <desc:organization rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Simbios Center</desc:organization>
+    <desc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Extensible software for modeling, simulating, controlling, and analyzing the neuromusculoskeletal system.</desc:description>
+    <desc:contact_person rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Scott Delp, Clay Anderson, Ayman Habib</desc:contact_person>
+    <desc:resource_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OpenSim</desc:resource_name>
+    <desc:keywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Neuromuscular Simulation Package</desc:keywords>
+    <desc:resource_type>
+      <BRO:Mechanical_Simulation/>
+    </desc:resource_type>
+    <desc:URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >https://simtk.org/home/opensim</desc:URL>
+    <desc:version_information>
+      <desc:Version_Information>
+        <desc:version rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >0.8</desc:version>
+        <desc:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >4/7/07</desc:release_date>
+      </desc:Version_Information>
+    </desc:version_information>
+    <desc:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MIT license</desc:license>
+  </desc:Resource_Description>
+  <desc:Resource_Description rdf:ID="ISIM">
+    <desc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Graphical user interface for ISIM, is package that simulates the thermodynamic ensemble of ions around a macromolecule.</desc:description>
+    <desc:keywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ionic environment of proteins</desc:keywords>
+    <desc:organization rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Simbios Center</desc:organization>
+    <desc:resource_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ISIM</desc:resource_name>
+    <desc:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Multiple licenses</desc:license>
+    <desc:URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >https://simtk.org/home/isim_interface</desc:URL>
+    <desc:contact_person rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Christopher Bruns, Mark Engelhardt, Mark Friedrichs</desc:contact_person>
+    <desc:resource_type>
+      <BRO:Molecular_Modeling_and_Classification/>
+    </desc:resource_type>
+    <desc:version_information>
+      <desc:Version_Information>
+        <desc:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >5/8/07</desc:release_date>
+        <desc:version rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >1.3</desc:version>
+      </desc:Version_Information>
+    </desc:version_information>
+  </desc:Resource_Description>
+  <desc:Resource_Description rdf:ID="NAST">
+    <desc:organization rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Stanford University</desc:organization>
+    <desc:center rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Simbios Center</desc:center>
+    <desc:keywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >RNA, secondary structure, tertiary contacts</desc:keywords>
+    <desc:contact_person rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Magdalena Jonikas</desc:contact_person>
+    <desc:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MIT License</desc:license>
+    <desc:resource_type>
+      <BRO:Molecular_Modeling_and_Classification/>
+    </desc:resource_type>
+    <desc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A knowledge-based coarse-grained tool for modeling RNA structures.  NAST uses an RNA-specific knowledge-based potential in a coarse-grained molecular dynamics engine to generate large numbers of plausible 3D structures that satisfy the constraints given on the secondary and tertiary structure. It then filter these structures based on agreement to the experimental data (if available). This results in a model of the molecule which satisfies all the known residue-resolution data.</desc:description>
+    <desc:resource_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The Nucleic Acid Simulation Tool (NAST)</desc:resource_name>
+    <desc:URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >https://simtk.org/home/nast</desc:URL>
+    <desc:version_information>
+      <desc:Version_Information>
+        <desc:version rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >0.3</desc:version>
+        <desc:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >12/4/07</desc:release_date>
+      </desc:Version_Information>
+    </desc:version_information>
+  </desc:Resource_Description>
+  <desc:Resource_Description rdf:ID="Allopathfinder">
+    <desc:resource_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Allopathfinder</desc:resource_name>
+    <desc:version_information>
+      <desc:Version_Information>
+        <desc:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >4/15/07</desc:release_date>
+        <desc:version rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >1.1</desc:version>
+      </desc:Version_Information>
+    </desc:version_information>
+    <desc:contact_person rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Susan Tang, Jung-Chi Liao, Jeanette Schmidt</desc:contact_person>
+    <desc:organization rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Simbios Center</desc:organization>
+    <desc:resource_type>
+      <BRO:Protein_Model/>
+    </desc:resource_type>
+    <desc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An easy to use application to find allosteric communication pathway in proteins</desc:description>
+    <desc:URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >https://simtk.org/home/allopathfinder</desc:URL>
+    <desc:keywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Myosin Allosteric Communication</desc:keywords>
+    <desc:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MIT license</desc:license>
+  </desc:Resource_Description>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4, Build 504)  http://protege.stanford.edu -->

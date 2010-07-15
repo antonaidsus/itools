@@ -1,0 +1,11 @@
+##Example from NAMIC
+[edit]Slicer
+NCBC Ontology Classification: Visualization --> Imaging --> Manifold Viewers 2D, 3D, 4D, ND 
+Description: Slicer 3 is a software platform for image visualization & data analysis that is both easy to use for researchers and easy to extend for programmers, while maintaining the high level of functionality needed to support sophisticated science. 
+Data Input: Volumes, Models, Scenes 
+Data Output: Volumes, Models, Scenes 
+Implementation Language: C++/VTK/ITK 
+Platforms tested: Macintosh, PC, Sun, Linux 
+Version, Date, Stage: 3.0, July, 2006, pending 
+Authors: Various NAMIC People 
+URL: http://wiki.na-mic.org/Wiki/index.php/Slicer:Workshops:User_Training_101

@@ -1,0 +1,126 @@
+<resources name ="ncbo" xmlns="http://www.ncbcs.org">    
+    <resource>
+        <name>BioPortal</name>
+        <description>A Web portal to a virtual library of ontologies and ontology tools</description>
+        <authors>Lynn Murphy and Archana Vembakam</authors>
+        <keywords>Web portal, ontologies</keywords>
+        <ontologyLabel>Ontology Development and Management</ontologyLabel>
+        <url>http://www.bioontology.org/images/bioportal_ss.jpg</url>
+        <license>Mozilla</license>
+        <resourceType>Class Library / Toolkit</resourceType>
+        <organization>NCBO</organization>
+        <rlsVersion>
+            <version>1</version>
+            <releaseDate>2/1/2007</releaseDate>
+            <stage>http://informatics.mayo.edu/LexGrid/</stage>
+        </rlsVersion>
+    </resource>
+    <resource>
+        <name>Phenote</name>
+        <description>A tool to use ontologies for annotating biomedical knowledge</description>
+        <authors>Mark Gibson</authors>
+        <keywords>Annotation, Ontologies</keywords>
+        <ontologyLabel>Ontology Development and Management</ontologyLabel>
+        <url>http://www.bioontology.org/tools/phenote/phenote.html</url>
+        <license>Mozilla</license>
+        <resourceType>Class Library / Toolkit</resourceType>
+        <organization>NCBO</organization>
+        <rlsVersion>
+            <version>1.0.3</version>
+            <releaseDate>2/2/2007</releaseDate>
+            <stage>1.0.3</stage>
+        </rlsVersion>
+    </resource>
+    <resource>
+        <name>OBO Converter</name>
+        <description>Converts OBO-EDIT to OWL and vice versa</description>
+        <authors>Dilvan Monera</authors>
+        <keywords>Ontologies, OWL, OBO-EDIT</keywords>
+        <ontologyLabel>Ontology Development and Management</ontologyLabel>
+        <url>http://www.bioontology.org/tools/oboinowl/obo_converter.html</url>
+        <license>Mozilla</license>
+        <resourceType>Class Library / Toolkit</resourceType>
+        <organization>NCBO</organization>
+        <rlsVersion>
+            <version>1</version>
+            <releaseDate>2/3/2007</releaseDate>
+            <stage>Release V1</stage>
+        </rlsVersion>
+    </resource>
+    <resource>
+        <name>Jambalaya</name>
+        <description>A tool for visualizing ontologies</description>
+        <authors>Chris Callendar</authors>
+        <keywords>ontologies, visualization</keywords>
+        <ontologyLabel>Ontology Visualization</ontologyLabel>
+        <url>http://www.thechiselgroup.org/jambalaya</url>
+        <license>Open source</license>
+        <resourceType>Class Library / Toolkit</resourceType>
+        <organization>NCBO</organization>
+        <rlsVersion>
+            <version>2/4/2007</version>
+            <releaseDate>Release</releaseDate>
+        </rlsVersion>
+    </resource>
+    <resource>
+        <name>OBO Edit</name>
+        <description>An ontology authoring tool</description>
+        <authors>John Day Richter</authors>
+        <keywords>ontologies, OBO-EDIT</keywords>
+        <ontologyLabel>Ontology Development and Management</ontologyLabel>
+        <url>http://www.oboedit.org/</url>
+        <license>Mozilla</license>
+        <resourceType>Class Library / Toolkit</resourceType>
+        <organization>NCBO</organization>
+        <rlsVersion>
+            <version>2/5/2007</version>
+            <releaseDate>Release</releaseDate>
+        </rlsVersion>
+    </resource>
+    <resource>
+        <name>Protégé</name>
+        <description>An ontology authoring tool</description>
+        <authors>Ray Fergerson</authors>
+        <keywords>Ontologies, Protégé</keywords>
+        <ontologyLabel>Ontology Development and Management</ontologyLabel>
+        <url>http://protege.stanford.edu/</url>
+        <license>Mozilla</license>
+        <resourceType>Class Library / Toolkit</resourceType>
+        <organization>NCBO</organization>
+        <rlsVersion>
+            <version>3.2.2</version>
+            <releaseDate>2/6/2007</releaseDate>
+            <stage>3.2.2</stage>
+        </rlsVersion>
+    </resource>
+    <resource>
+        <name>PROMPT</name>
+        <description>A tool for aligning and mapping ontologies</description>
+        <authors>Natasha Noy</authors>
+        <keywords>Ontologies, alignment, mapping</keywords>
+        <ontologyLabel>Ontology Development and Management</ontologyLabel>
+        <url>http://protege.cim3.net/cgi-bin/wiki.pl?Prompt</url>
+        <license>Mozilla</license>
+        <resourceType>Class Library / Toolkit</resourceType>
+        <organization>NCBO</organization>
+        <rlsVersion>
+            <version>2/7/2007</version>
+            <releaseDate>Release</releaseDate>
+        </rlsVersion>
+    </resource>
+    <resource>
+        <name>LexGrid</name>
+        <description>A data store for terminologies and ontologies unifying disparate formats into a Common Terminological Model</description>
+        <authors>Harold Solbrig</authors>
+        <keywords>Ontologies, terminologies</keywords>
+        <ontologyLabel>Ontology Development and Management</ontologyLabel>
+        <url>http://informatics.mayo.edu/LexGrid/</url>
+        <license>Open source</license>
+        <resourceType>Class Library / Toolkit</resourceType>
+        <organization>NCBO</organization>
+        <rlsVersion>
+            <version>2/8/2007</version>
+            <releaseDate>Release</releaseDate>
+        </rlsVersion>
+    </resource>
+</resources>

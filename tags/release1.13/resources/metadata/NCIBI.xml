@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncbcresources>
+<ncbcresource>
+<property>
+<name>Name</name>
+<value>MiMI Plugin for Cytoscape</value>
+</property>
+<property>
+<name>Description</name>
+<value>A Cytoscape plugin to access the MiMI molecular interaction database from within Cytoscape </value>
+</property>
+<property>
+<name>Keywords</name>
+<value>data management,    protein interaction,    XQuery,    interactive database,    information refining,    molecular interactions,    bioinformatics tools,    proteomics,    open source,    molecular interaction networks</value>
+</property>
+<property>
+<name>Organization</name>
+<value>NCIBI</value>
+</property>
+<property>
+<name>URL</name>
+<value>http://www.bioinformatics.med.umich.edu/app/nlp/logo/pluginHelp/pluginHelp.html</value>
+</property>
+</ncbcresource>
+<ncbcresource>
+<property>
+<name>Name</name>
+<value>Marimba</value>
+</property>
+<property>
+<name>Description</name>
+<value>Marimba is a web based static Bayesian network analysis tool designed for analyzing and interpreting gene expression data.</value>
+</property>
+<property>
+<name>Keywords</name>
+<value>microarray,    information refining,    bioinformatics tools</value>
+</property>
+<property>
+<name>Organization</name>
+<value>NCIBI</value>
+</property>
+<property>
+<name>URL</name>
+<value>http://helab.bioinformatics.med.umich.edu/marimba/</value>
+</property>
+</ncbcresource>
+<ncbcresource>
+<property>
+<name>Name</name>
+<value>MEAD</value>
+</property>
+<property>
+<name>Description</name>
+<value>MEAD is a publicly available toolkit for multi-lingual summarization and evaluation. The toolkit implements multiple summarization algorithms (at arbitrary compression rates) such as position-based, Centroid[RJB00], TF*IDF, and query-based methods. Methods for evaluating the quality of the summaries include co-selection (precision/recall, kappa, and relative utility) and content-based measures (cosine, word overlap, bigram overlap).</value>
+</property>
+<property>
+<name>Keywords</name>
+<value>document summarization, natural language processing</value>
+</property>
+<property>
+<name>Platforms tested</name>
+<value>Linux, MacOS, UNIX, Windows</value>
+</property>
+<property>
+<name>License</name>
+<value>Public Domain</value>
+</property>
+<property>
+<name>Organization</name>
+<value>NCIBI</value>
+</property>
+<property>
+<name>URL</name>
+<value>http://www.summarization.com/mead/</value>
+</property>
+</ncbcresource>
+<ncbcresource>
+<property>
+<name>Name</name>
+<value>MarkerInfoFinder</value>
+</property>
+<property>
+<name>Description</name>
+<value>MarkerInfoFinder is a web-based Medline abstract search engine that supports the use of genetic marker IDs and flexible positional/linkage disequilibrium criteria.</value>
+</property>
+<property>
+<name>Keywords</name>
+<value>natural language processing, bioinformatics tools,  snp</value>
+</property>
+<property>
+<name>Platforms tested</name>
+<value>Linux, MacOS, Windows</value>
+</property>
+<property>
+<name>Organization</name>
+<value>NCIBI</value>
+</property>
+<property>
+<name>URL</name>
+<value>http://brainarray.mbni.med.umich.edu/brainarray/</value>
+</property>
+</ncbcresource>
+<ncbcresource>
+<property>
+<name>Name</name>
+<value>miniTUBA</value>
+</property>
+<property>
+<name>Description</name>
+<value>miniTUBA is a dynamic Bayesian network analysis tool designed for analyzing and interpreting molecular clinical data.</value>
+</property>
+<property>
+<name>Version, Date, Stage</name>
+<value>0.9</value>
+</property>
+<property>
+<name>Keywords</name>
+<value>information refining,    gene expression regulation,    bioinformatics tools</value>
+</property>
+<property>
+<name>Organization</name>
+<value>NCIBI</value>
+</property>
+<property>
+<name>URL</name>
+<value>http://www.minituba.org/</value>
+</property>
+</ncbcresource>
+<ncbcresource>
+<property>
+<name>Name</name>
+<value>Oncomine</value>
+</property>
+<property>
+<name>Description</name>
+<value>A resource for examining gene expression in cancer. The goal of the project is to collect, standardize, analyze, and deliver published cancer gene expression data to the research community. Probe the expression of a gene across thousands of cancer samples or explore genes, processes, and pathways deregulated in a particular type of cancer. Oncomine pre-computes cancer profiles, clusters, and gene set modules so you can focus on discovery.</value>
+</property>
+<property>
+<name>Version, Date, Stage</name>
+<value>3.0</value>
+</property>
+<property>
+<name>Keywords</name>
+<value>microarray,    cancer,    gene expression regulation,    function,    genome-wide scanning  &#13;
+</value>
+</property>
+<property>
+<name>Organization</name>
+<value>NCIBI</value>
+</property>
+<property>
+<name>URL</name>
+<value>http://www.oncomine.org/main/index.jsp</value>
+</property>
+</ncbcresource>
+<ncbcresource>
+<property>
+<name>Name</name>
+<value>BCDE</value>
+</property>
+<property>
+<name>Description</name>
+<value>Biological Concept Diagram Editor (BCDE) is a tool designed for efficient knowledge and data capture from electronic resources for sharing, mining and presentation purposes. Besides standard diagramming functions, it has powerful data capture and annotation capabilities. BCDE is compatible with BioPAX and it also exports to Powerpoint and Visio.</value>
+</property>
+<property>
+<name>Version, Date, Stage</name>
+<value>Alpha</value>
+</property>
+<property>
+<name>Keywords</name>
+<value>molecular interactions,    bioinformatics tools,    workflows,    Diagram Editor</value>
+</property>
+<property>
+<name>Platforms tested</name>
+<value>Linux, MacOS, SunOS, UNIX, Windows</value>
+</property>
+<property>
+<name>Organization</name>
+<value>NCIBI</value>
+</property>
+<property>
+<name>URL</name>
+<value>http://arrayanalysis.mbni.med.umich.edu/draw/</value>
+</property>
+</ncbcresource>
+<ncbcresource>
+<property>
+<name>Name</name>
+<value>miBLAST  </value>
+</property>
+<property>
+<name>Description</name>
+<value>A common task in many modern bioinformatics applications is to match a set of nucleotide query sequences against a large sequence dataset. Exis-ting tools, such as BLAST, are designed to evaluate a single query at a time and can be unacceptably slow when the number of sequences in the query set is large. In this paper, we present a new algorithm, called miBLAST, that evaluates such batch workloads efficiently. At the core, miBLAST employs a q-gram filtering and an index join for efficiently detecting similarity between the query sequences and database sequences. This set-oriented technique, which indexes both the query and the database sets, results in substantial performance improvements over existing methods. Our results show that miBLAST is significantly faster than BLAST in many cases. For example,! miBLAST aligned 247 965 oligonucleotide sequences in the Affymetrix probe set against the Human UniGene in 1.26 days, compared with 27.27 days with BLAST (an improvement by a factor of 22). The relative performance of miBLAST increases for larger word sizes; however, it decreases for longer queries. miBLAST employs the familiar BLAST statistical model and output format, guaranteeing the same accuracy as BLAST and facilitating a seamless transition for existing BLAST users.</value>
+</property>
+<property>
+<name>Version, Date, Stage</name>
+<value>1.0, 2005-08-01</value>
+</property>
+<property>
+<name>Keywords</name>
+<value>microarray, BLAST</value>
+</property>
+<property>
+<name>Platforms tested</name>
+<value>Linux</value>
+</property>
+<property>
+<name>License</name>
+<value>Educational Community License (free for all uses)</value>
+</property>
+<property>
+<name>Organization</name>
+<value>NCIBI</value>
+</property>
+<property>
+<name>URL</name>
+<value>http://www.eecs.umich.edu/miblast/</value>
+</property>
+</ncbcresource>
+<ncbcresource>
+<property>
+<name>Name</name>
+<value>SNP Function Portal</value>
+</property>
+<property>
+<name>Description</name>
+<value>A web database with the goal of integrating SNP function annotation all public sources as well as those derived from various sequence/structure analysis programs. A powerful SNP search function, utilizing genomic and HapMap II data, provides the capability of finding any structurally and genetically SNPs.</value>
+</property>
+<property>
+<name>Version, Date, Stage</name>
+<value>0.2</value>
+</property>
+<property>
+<name>Keywords</name>
+<value>data management,    interactive database,    document summarization,    genomic sequence analysis,    bioinformatics tools,    snp,    function,    genome-wide scanning,    hapmap</value>
+</property>
+<property>
+<name>Organization</name>
+<value>NCIBI</value>
+</property>
+<property>
+<name>URL</name>
+<value>http://brainarray.mbni.med.umich.edu/Brainarray/Database/SearchSNP/snpfunc.aspx</value>
+</property>
+</ncbcresource>
+<ncbcresource>
+<property>
+<name>Name</name>
+<value>Cytoscape</value>
+</property>
+<property>
+<name>Description</name>
+<value>Cytoscape is an open source bioinformatics software platform for visualizing molecular interaction networks and integrating these interactions with gene expression profiles and other state data.</value>
+</property>
+<property>
+<name>Keywords</name>
+<value>data management,    microarray,    information refining,    natural language processing,    molecular interactions,    gene expression regulation,    network visualization,    open source  &#13;
+</value>
+</property>
+<property>
+<name>Organization</name>
+<value>NCIBI</value>
+</property>
+<property>
+<name>URL</name>
+<value>http://www.cytoscape.org/</value>
+</property>
+</ncbcresource>
+<ncbcresource>
+<property>
+<name>Name</name>
+<value>Shannon NLP Tools</value>
+</property>
+<property>
+<name>Description</name>
+<value>Tools for automated named entity recognition and tagging, information retrieval and text summarization.&#13;
+</value>
+</property>
+<property>
+<name>Keywords</name>
+<value>data management,    interactive database,    information refining,    document summarization,    natural language processing,    keyword search,    bioinformatics tools</value>
+</property>
+<property>
+<name>Organization</name>
+<value>NCIBI</value>
+</property>
+</ncbcresource>
+<ncbcresource>
+<property>
+<name>Name</name>
+<value>PSLID</value>
+</property>
+<property>
+<name>Description</name>
+<value>PSLID provides a structured, well-annotated database of fluorescence microscope images depicting subcellular location proteins. Two interfaces are currently provided: a text and image content search interface, and a graphical interface for exploring location patterns grouped into Subcellular Location Trees.</value>
+</property>
+<property>
+<name>Organization</name>
+<value>NCIBI</value>
+</property>
+<property>
+<name>URL</name>
+<value>http://murphylab.web.cmu.edu/services/PSLID/</value>
+</property>
+</ncbcresource>
+<ncbcresource>
+<property>
+<name>Name</name>
+<value>Genetic Interactions Workflow</value>
+</property>
+<property>
+<name>Description</name>
+<value>Workflow (family of JAVA and Python scripts) designed to investigate genetic influences on disease susceptibility. </value>
+</property>
+<property>
+<name>Organization</name>
+<value>NCIBI</value>
+</property>
+</ncbcresource>
+<ncbcresource>
+<property>
+<name>Name</name>
+<value>MiSearch</value>
+</property>
+<property>
+<name>Description</name>
+<value>An interface to the NCBI Entrez systems that ranks query output based on the likelihood that you will click on an entry. Ranking is performed by building up a profile based on past user behavior. Multiple profiles per user can be defined.</value>
+</property>
+<property>
+<name>Keywords</name>
+<value>interactive database,    information refining,    natural language processing,    keyword search,    bioinformatics tools,    journal articles,    open source</value>
+</property>
+<property>
+<name>Organization</name>
+<value>NCIBI</value>
+</property>
+<property>
+<name>URL</name>
+<value>http://misearch.ncibi.org/</value>
+</property>
+</ncbcresource>
+<ncbcresource>
+<property>
+<name>Name</name>
+<value>PMCOA Database</value>
+</property>
+<property>
+<name>Description</name>
+<value>SQL database with all open access articles (count: 13520) from PubMed Central as of 1-Oct-2005, sentence-segmented and with citation network extracted&#13;
+</value>
+</property>
+<property>
+<name>Keywords</name>
+<value>interactive database,    document summarization,    natural language processing,    journal articles</value>
+</property>
+<property>
+<name>Organization</name>
+<value>NCIBI</value>
+</property>
+<property>
+<name>URL</name>
+<value>http://lada.si.umich.edu:8668/space/protected/BICC+Microsoft+SQL+Server</value>
+</property>
+</ncbcresource>
+<ncbcresource>
+<property>
+<name>Name</name>
+<value>Bubble</value>
+</property>
+<property>
+<name>Description</name>
+<value>Bubble is a Bayesian network working environment that integrates public data, user data, and solicits relevant user feedback. Currently this is an early beta form.</value>
+</property>
+<property>
+<name>Keywords</name>
+<value>microarray, bioinformatics tools</value>
+</property>
+<property>
+<name>Organization</name>
+<value>NCIBI</value>
+</property>
+<property>
+<name>URL</name>
+<value>http://brotherhood.engin.umich.edu:8080/</value>
+</property>
+</ncbcresource>
+<ncbcresource>
+<property>
+<name>Name</name>
+<value>Custom CDF</value>
+</property>
+<property>
+<name>Description</name>
+<value>Genome-wide expression profiling is a powerful tool for implicating novel gene ensembles in cellular mechanisms of health and disease. The most popular platform for genome-wide expression profiling is the Affymetrix GeneChip. However, its selection of probes relied on earlier genome and transcriptome annotation which is significantly different from current knowledge. The resultant informatics problems have a profound impact on analysis and interpretation the data. Here, we address these critical issues and offer a solution. We identified several classes of problems at the individual probe level in the existing annotation, under the assumption that current genome and transcriptome databases are more accurate than those used for GeneChip design. We then reorganized probes on more than a dozen popular GeneChips into gene-, transcript- and exon-specific probe sets in light of up-to-date genome, cDNA/EST clustering and single nucleotide polymorphism information. Comparing analysis results between the original and the redefined probe sets reveals ~30â50% discrepancy in the genes previously identified as differentially expressed, regardless of analysis method. Our results demonstrate that the original Affymetrix probe set definitions are inaccurate, and many conclusions derived from past GeneChip analyses may be significantly flawed. It will be beneficial to re-analyze existing GeneChip data with updated probe set definitions.</value>
+</property>
+<property>
+<name>Version, Date, Stage</name>
+<value>7.0, 2006-05-01</value>
+</property>
+<property>
+<name>Organization</name>
+<value>NCIBI</value>
+</property>
+<property>
+<name>URL</name>
+<value>http://brainarray.mbni.med.umich.edu/Brainarray/Database/CustomCDF/genomic_curated_CDF.asp</value>
+</property>
+</ncbcresource>
+<ncbcresource>
+<property>
+<name>Name</name>
+<value>MBI</value>
+</property>
+<property>
+<name>Description</name>
+<value>MBI is a backend repository of molecular sequences and sequence based annotation from a variety of public repositories.</value>
+</property>
+<property>
+<name>Keywords</name>
+<value>data management,  interactive database  &#13;
+</value>
+</property>
+<property>
+<name>Organization</name>
+<value>NCIBI</value>
+</property>
+</ncbcresource>
+<ncbcresource>
+<property>
+<name>Name</name>
+<value>SLIF</value>
+</property>
+<property>
+<name>Description</name>
+<value>SLIF finds fluorescence microscope images in on-line journal articles, and indexes them according to cell line, proteins visualized, and resolution.</value>
+</property>
+<property>
+<name>Organization</name>
+<value>NCIBI</value>
+</property>
+<property>
+<name>URL</name>
+<value>http://murphylab.web.cmu.edu/services/SLIF/</value>
+</property>
+</ncbcresource>
+<ncbcresource>
+<property>
+<name>Name</name>
+<value>geWorkbench</value>
+</property>
+<property>
+<name>Description</name>
+<value>    geWorkbench is an open-source bioinformatics platform that offers a comprehensive and extensible collection of tools for the management, analysis, visualization and annotation of biomedical data. Many kinds of analysis are supported - for microarrays, there are filtering and normalization, basic statistical analyses, clustering, network reverse engineering, as well as many common visualization tools. For sequence data there are routines such as BLAST, pattern detection, transcription factor mapping, and syntenic region analysis. Furthermore, genomic sequences around markers of interest found in microarray experiments can be easily retrieved and, for example, used for promoter/transcription factor analysis.&#13;
+</value>
+</property>
+<property>
+<name>Version, Date, Stage</name>
+<value>1.0.3, 2005-05-15</value>
+</property>
+<property>
+<name>Keywords</name>
+<value>bioinformatics tools,    workflows  &#13;
+</value>
+</property>
+<property>
+<name>Platforms tested</name>
+<value>Linux, MacOS, Windows&#13;
+</value>
+</property>
+<property>
+<name>Organization</name>
+<value>NCIBI</value>
+</property>
+<property>
+<name>URL</name>
+<value>http://wiki.c2b2.columbia.edu/workbench/index.php/Main_Page</value>
+</property>
+</ncbcresource>
+<ncbcresource>
+<property>
+<name>Name</name>
+<value>ClairLib</value>
+</property>
+<property>
+<name>Description</name>
+<value>clairlib perl modules</value>
+</property>
+<property>
+<name>Organization</name>
+<value>NCIBI</value>
+</property>
+<property>
+<name>URL</name>
+<value>http://sourceforge.net/projects/pdoc</value>
+</property>
+</ncbcresource>
+<ncbcresource>
+<property>
+<name>Name</name>
+<value>X!Tandem</value>
+</property>
+<property>
+<name>Description</name>
+<value>X! Tandem open source is software that can match tandem mass spectra with peptide sequences, in a process that has come to be known as protein identification. This software has a very simple, sophisticated application programming interface (API): it simply takes an XML file of instructions on its command line, and outputs the results into an XML file, which has been specified in the input XML file.</value>
+</property>
+<property>
+<name>Keywords</name>
+<value>mass spectroscopy,    proteomics</value>
+</property>
+<property>
+<name>Platforms tested</name>
+<value>MacOS, UNIX, Windows</value>
+</property>
+<property>
+<name>Organization</name>
+<value>NCIBI</value>
+</property>
+<property>
+<name>URL</name>
+<value>http://www.thegpm.org/TANDEM/</value>
+</property>
+</ncbcresource>
+<ncbcresource>
+<property>
+<name>Name</name>
+<value>tfblast</value>
+</property>
+<property>
+<name>Description</name>
+<value>A tool written by David States to identify transcription factor recognition sites in large collections of genomic sequence. Also implements a statistical clustering analysis to identify regions of high binding site density. Also includes a CpG island search.</value>
+</property>
+<property>
+<name>Keywords</name>
+<value>gene expression regulation,    transcription factor,    genomic sequence analysis,    bioinformatics tools</value>
+</property>
+<property>
+<name>Organization</name>
+<value>NCIBI</value>
+</property>
+</ncbcresource>
+<ncbcresource>
+<property>
+<name>Name</name>
+<value>MiMI</value>
+</property>
+<property>
+<name>Description</name>
+<value>MiMI is an XML based molecular interactions database and front end. MiMI supports XQuery, Keyword, Forms based and CLI access.</value>
+</property>
+<property>
+<name>Version, Date, Stage</name>
+<value>2.0</value>
+</property>
+<property>
+<name>Keywords</name>
+<value>protein interaction, XQuery, molecular interactions</value>
+</property>
+<property>
+<name>License</name>
+<value>Free for Non-commercial Use</value>
+</property>
+<property>
+<name>Organization</name>
+<value>NCIBI</value>
+</property>
+<property>
+<name>URL</name>
+<value>http://mimi.ncibi.org/</value>
+</property>
+</ncbcresource>
+<ncbcresource>
+<property>
+<name>Name</name>
+<value>Protoge</value>
+</property>
+<property>
+<name>Description</name>
+<value>Open-source ontology editor and knowledge-based framework developed at Stanford </value>
+</property>
+<property>
+<name>Version, Date, Stage</name>
+<value>3.1.1</value>
+</property>
+<property>
+<name>Keywords</name>
+<value>bioinformatics tools, ontology  </value>
+</property>
+<property>
+<name>Platforms tested</name>
+<value>HPUX, Java, Linux, MacOS, SunOS, UNIX, Windows</value>
+</property>
+<property>
+<name>Organization</name>
+<value>NCIBI</value>
+</property>
+<property>
+<name>URL</name>
+<value>http://protege.stanford.edu/</value>
+</property>
+</ncbcresource>
+<ncbcresource>
+<property>
+<name>Name</name>
+<value>WGAS</value>
+</property>
+<property>
+<name>Description</name>
+<value>The Web-based GeneChip Analysis System (WGAS) incorporates popular probe-, gene- and function category-level analysis methods through straightforward web interface. It natively supports custom GeneChip probe set definition files for more accurate data interpretation. Users can also access to any Cel files deposited in NCBI GEO database for re-analysis and comparison.</value>
+</property>
+<property>
+<name>Keywords</name>
+<value>data management,    microarray,    gene expression regulation,    snp,    collaboration,    file sharing</value>
+</property>
+<property>
+<name>Organization</name>
+<value>NCIBI</value>
+</property>
+<property>
+<name>URL</name>
+<value>http://arrayanalysis.mbni.med.umich.edu/arrayanalysis.html</value>
+</property>
+</ncbcresource>
+<ncbcresource>
+<property>
+<name>Name</name>
+<value>SAGA</value>
+</property>
+<property>
+<name>Description</name>
+<value>SAGA stands for Subgraph Index for Approximate Graph Alignment. It is an efficient tool for approximate subgraph matching. SAGA allows users to match a query graph against a large database of graphs. At the core of SAGA is a flexible graph distance model that incorporates node approximate matching as well as approximate structure matching. A powerful indexing method is implemented to speed up the matching process. Some applications of SAGA include querying/comparing pathways and querying parsed biomedical literature databases to find similar documents.</value>
+</property>
+<property>
+<name>Organization</name>
+<value>NCIBI</value>
+</property>
+<property>
+<name>URL</name>
+<value>http://enigma.eecs.umich.edu/saga.html</value>
+</property>
+</ncbcresource>
+<ncbcresource>
+<property>
+<name>Name</name>
+<value>MarkIt</value>
+</property>
+<property>
+<name>Description</name>
+<value>Addresses the question "Which genes are differentially expressed across two treatments?" </value>
+</property>
+<property>
+<name>Version, Date, Stage</name>
+<value>1.31, 2006-10-24</value>
+</property>
+<property>
+<name>Organization</name>
+<value>NCIBI</value>
+</property>
+<property>
+<name>URL</name>
+<value>http://www-personal.umich.edu/~welchr/biomarker/</value>
+</property>
+</ncbcresource>
+<ncbcresource>
+<property>
+<name>Name</name>
+<value>LexRank Demo</value>
+</property>
+<property>
+<name>Description</name>
+<value>    We introduce a stochastic graph-based method for computing relative importance of textual units for Natural Language Processing. We test the technique on the problem of Text Summarization (TS). Extractive TS relies on the concept of sentence salience to identify the most important sentences in a document or set of documents. Salience is typically defined in terms of the presence of particular important words or in terms of similarity to a centroid pseudo-sentence. We consider a new approach, LexRank, for computing sentence importance based on the concept of eigenvector centrality in a graph representation of sentences. In this model, a connectivity matrix based on intra-sentence cosine similarity is used as the adjacency matrix of the graph representation of sentences. Our system, based on LexRank ranked in first place in more than one task in the recent DUC 2004 evaluation. In this paper we present a detailed analysis of ou! r approach and apply it to a larger data set including data from earlier DUC evaluations. We discuss several methods to compute centrality using the similarity graph. The results show that degree-based methods (including LexRank) outperform both centroid-based methods and other systems participating in DUC in most of the cases. Furthermore, the LexRank with threshold method outperforms the other degree-based techniques including continuous LexRank. We also show that our approach is quite insensitive to the noise in the data that may result from an imperfect topical clustering of documents.&#13;
+</value>
+</property>
+<property>
+<name>Keywords</name>
+<value>document summarization,  natural language processing</value>
+</property>
+<property>
+<name>Organization</name>
+<value>NCIBI</value>
+</property>
+<property>
+<name>URL</name>
+<value>http://tangra.si.umich.edu/~radev/lexrank/</value>
+</property>
+</ncbcresource>
+<ncbcresource>
+<property>
+<name>Name</name>
+<value>GenePattern</value>
+</property>
+<property>
+<name>Description</name>
+<value>GenePattern is a powerful analysis workflow tool developed to support multidisciplinary genomic research programs and designed to encourage rapid integration of new techniques.</value>
+</property>
+<property>
+<name>Version, Date, Stage</name>
+<value>2.0.2, 2006-03-01</value>
+</property>
+<property>
+<name>Platforms tested</name>
+<value>Linux, MacOS, Windows</value>
+</property>
+<property>
+<name>Organization</name>
+<value>NCIBI</value>
+</property>
+<property>
+<name>URL</name>
+<value>http://www.broad.mit.edu/cancer/software/genepattern/index.html</value>
+</property>
+</ncbcresource>
+<ncbcresource>
+<property>
+<name>Name</name>
+<value>bioXplor</value>
+</property>
+<property>
+<name>Description</name>
+<value>A web based visual corpus summarization system for biomedical literature.</value>
+</property>
+<property>
+<name>Keywords</name>
+<value>data management, interactive database, information refining, document summarization, natural language processing, keyword search, bioinformatics tools</value>
+</property>
+<property>
+<name>Platforms tested</name>
+<value>Microsoft SQL Server, PHP, Apache, Javascript</value>
+</property>
+<property>
+<name>Organization</name>
+<value>NCIBI</value>
+</property>
+</ncbcresource>
+</ncbcresources>
+
+
+
+
+

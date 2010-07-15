@@ -1,0 +1,2539 @@
+<?xml version="1.0" ?>
+
+<knowledge_base
+	xmlns="http://protege.stanford.edu/xml"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://protege.stanford.edu/xml http://protege.stanford.edu/xml/schema/protege.xsd">
+
+	<class>
+		<name>:THING</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+	</class>
+
+	<class>
+		<name>:STANDARD-CLASS</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>:CLASS</superclass>
+		<template_slot>:ROLE</template_slot>
+		<template_slot>:DOCUMENTATION</template_slot>
+		<template_slot>:SLOT-CONSTRAINTS</template_slot>
+	</class>
+
+	<class>
+		<name>:STANDARD-SLOT</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>:SLOT</superclass>
+		<template_slot>:DOCUMENTATION</template_slot>
+		<template_slot>:SLOT-CONSTRAINTS</template_slot>
+		<template_slot>:SLOT-MAXIMUM-CARDINALITY</template_slot>
+		<template_slot>:SLOT-MINIMUM-CARDINALITY</template_slot>
+		<template_slot>:SLOT-NUMERIC-MAXIMUM</template_slot>
+		<template_slot>:SLOT-NUMERIC-MINIMUM</template_slot>
+		<template_slot>:SLOT-INVERSE</template_slot>
+		<template_slot>:SLOT-DEFAULTS</template_slot>
+		<template_slot>:SLOT-VALUES</template_slot>
+		<template_slot>:ASSOCIATED-FACET</template_slot>
+		<template_slot>:DIRECT-SUBSLOTS</template_slot>
+		<template_slot>:DIRECT-SUPERSLOTS</template_slot>
+	</class>
+
+	<class>
+		<name>Biotool</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Refers to any type of analytical or data management software used in the realm of life sciences</value>
+		</own_slot_value>
+		<superclass>:THING</superclass>
+		<template_slot>License</template_slot>
+		<template_slot>OutputForm</template_slot>
+		<template_slot>Target_User_Type</template_slot>
+		<template_slot>InputForm</template_slot>
+		<template_slot>Authors</template_slot>
+		<template_slot>Source</template_slot>
+		<template_slot>Other_Information</template_slot>
+		<template_slot>URL</template_slot>
+		<template_slot>Platform_Support</template_slot>
+		<template_slot>Name</template_slot>
+		<template_slot>Description</template_slot>
+		<template_slot>Keywords</template_slot>
+		<template_slot>Implementation_Language</template_slot>
+		<template_slot>Version</template_slot>
+		<template_facet_value>
+			<slot_reference>URL</slot_reference>
+			<facet_reference>:VALUES</facet_reference>
+			<value value_type="class">AssociatedURL</value>
+		</template_facet_value>
+	</class>
+
+	<class>
+		<name>Data Management</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Biotool</superclass>
+	</class>
+
+	<class>
+		<name>Information retrieval, traversal and querying</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Data Management</superclass>
+	</class>
+
+	<class>
+		<name>Data Storage</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">thing stores data</value>
+		</own_slot_value>
+		<superclass>Data Management</superclass>
+		<template_slot>ApplicationRealm</template_slot>
+		<template_slot>AccessMode</template_slot>
+		<template_slot>DataType</template_slot>
+		<template_facet_value>
+			<slot_reference>ApplicationRealm</slot_reference>
+			<facet_reference>:VALUES</facet_reference>
+			<value value_type="class">Purpose</value>
+			<value value_type="class">BasicResearch</value>
+			<value value_type="class">ClinicalResearch</value>
+			<value value_type="class">AreaOfApplication</value>
+		</template_facet_value>
+		<template_facet_value>
+			<slot_reference>DataType</slot_reference>
+			<facet_reference>:VALUES</facet_reference>
+			<value value_type="class">InstrumentMeasurement</value>
+		</template_facet_value>
+	</class>
+
+	<class>
+		<name>Data Transfer</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Data Management</superclass>
+	</class>
+
+	<class>
+		<name>Cross-Language Wrapping</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Data Management</superclass>
+	</class>
+
+	<class>
+		<name>Data</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<superclass>:THING</superclass>
+		<template_slot>CurationLevel</template_slot>
+	</class>
+
+	<class>
+		<name>Clinical data</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">any type of data obtained in the course of caring for humans outside of measurements obtained in clinical trials</value>
+		</own_slot_value>
+		<superclass>Data</superclass>
+		<template_slot>ApplicationRealm</template_slot>
+		<template_facet_value>
+			<slot_reference>ApplicationRealm</slot_reference>
+			<facet_reference>:VALUES</facet_reference>
+			<value value_type="class">Purpose</value>
+			<value value_type="class">BasicResearch</value>
+			<value value_type="class">ClinicalResearch</value>
+			<value value_type="class">AreaOfApplication</value>
+		</template_facet_value>
+	</class>
+
+	<class>
+		<name>Aggregate Human Data</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Clinical data</superclass>
+	</class>
+
+	<class>
+		<name>Individual Human Data</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Clinical data</superclass>
+	</class>
+
+	<class>
+		<name>Nonhuman Data</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Clinical data</superclass>
+	</class>
+
+	<class>
+		<name>Measurement</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Describes any kind of measurement, whether in pre-clinical experiments or obtained in a clinical trial</value>
+		</own_slot_value>
+		<superclass>Data</superclass>
+		<template_slot>MeasurementType</template_slot>
+	</class>
+
+	<class>
+		<name>Molecular Interaction</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Applies to any kind of experimental measurement of interaction between molecules of any type</value>
+		</own_slot_value>
+		<superclass>Measurement</superclass>
+	</class>
+
+	<class>
+		<name>Image</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Applies to any kind of image data obtained from an instrument or generated through computational extrapolation</value>
+		</own_slot_value>
+		<superclass>Measurement</superclass>
+	</class>
+
+	<class>
+		<name>Phenotypic measurement</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Describes any kind of measurement designed to describe a phenotype</value>
+		</own_slot_value>
+		<superclass>Measurement</superclass>
+	</class>
+
+	<class>
+		<name>Dissemination Vehicle</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">at NCIBI: called &quot;Community and User Interaction Systems&quot;</value>
+		</own_slot_value>
+		<superclass>:THING</superclass>
+		<template_slot>ApplicationRealm</template_slot>
+		<template_facet_value>
+			<slot_reference>ApplicationRealm</slot_reference>
+			<facet_reference>:VALUES</facet_reference>
+			<value value_type="class">Purpose</value>
+			<value value_type="class">BasicResearch</value>
+			<value value_type="class">ClinicalResearch</value>
+			<value value_type="class">AreaOfApplication</value>
+		</template_facet_value>
+	</class>
+
+	<class>
+		<name>Web Posting</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<superclass>Dissemination Vehicle</superclass>
+	</class>
+
+	<class>
+		<name>News</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Web Posting</superclass>
+	</class>
+
+	<class>
+		<name>OnlineCourse</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Web Posting</superclass>
+	</class>
+
+	<class>
+		<name>Interactive Web-Based Tool</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<superclass>Dissemination Vehicle</superclass>
+	</class>
+
+	<class>
+		<name>BugReporting</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Interactive Web-Based Tool</superclass>
+	</class>
+
+	<class>
+		<name>FeatureRequest</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Interactive Web-Based Tool</superclass>
+	</class>
+
+	<class>
+		<name>MailingList</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Interactive Web-Based Tool</superclass>
+	</class>
+
+	<class>
+		<name>Support</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Interactive Web-Based Tool</superclass>
+	</class>
+
+	<class>
+		<name>Education</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<superclass>Dissemination Vehicle</superclass>
+	</class>
+
+	<class>
+		<name>Tutorials</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Education</superclass>
+	</class>
+
+	<class>
+		<name>Course Material</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Education</superclass>
+	</class>
+
+	<class>
+		<name>Atomic</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<superclass>:THING</superclass>
+	</class>
+
+	<class>
+		<name>Purpose</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Purpose of a class</value>
+		</own_slot_value>
+		<superclass>Atomic</superclass>
+		<template_slot>Name</template_slot>
+		<template_slot>Description</template_slot>
+		<template_slot>Keywords</template_slot>
+		<template_slot>URLString</template_slot>
+		<template_slot>PurposeType</template_slot>
+	</class>
+
+	<class>
+		<name>DataTypology</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Classification of type of data, e.g., direct measurement, extrapolation.</value>
+		</own_slot_value>
+		<superclass>Atomic</superclass>
+		<template_slot>CurationLevel</template_slot>
+	</class>
+
+	<class>
+		<name>InstrumentMeasurement</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">thing is a type of measurement directly obtained from an experimental process using any kind of instrument; includes data heavily transformed from its raw form by the instrument&apos;s software</value>
+		</own_slot_value>
+		<superclass>DataTypology</superclass>
+	</class>
+
+	<class>
+		<name>Alignment</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Refers to an alignment of strings against each other</value>
+		</own_slot_value>
+		<superclass>DataTypology</superclass>
+	</class>
+
+	<class>
+		<name>BiologicalSequence</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Refers to the result of any process of sequencing of a biopolymer, whether applied to DNA, RNA or protein</value>
+		</own_slot_value>
+		<superclass>DataTypology</superclass>
+	</class>
+
+	<class>
+		<name>Structure</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Structure associated with any kind of biological object, whether naturally occurring or artificial, whether physically existing or not</value>
+		</own_slot_value>
+		<superclass>DataTypology</superclass>
+	</class>
+
+	<class>
+		<name>AnthologyClass</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Data is made up of multiple actual observations merged into one</value>
+		</own_slot_value>
+		<superclass>DataTypology</superclass>
+	</class>
+
+	<class>
+		<name>Input</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">atomic description of an input class</value>
+		</own_slot_value>
+		<superclass>Atomic</superclass>
+		<template_slot>Input Type</template_slot>
+		<template_slot>InputForm</template_slot>
+	</class>
+
+	<class>
+		<name>Output</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">atomic description of an output class</value>
+		</own_slot_value>
+		<superclass>Atomic</superclass>
+	</class>
+
+	<class>
+		<name>AssociatedURL</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Complete description of URL associated with a thing</value>
+		</own_slot_value>
+		<superclass>Atomic</superclass>
+		<template_slot>URLType</template_slot>
+		<template_slot>URLString</template_slot>
+	</class>
+
+	<class>
+		<name>BiologicalConcept</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Any kind of biological concept or notion</value>
+		</own_slot_value>
+		<superclass>Atomic</superclass>
+		<template_slot>Name</template_slot>
+		<template_slot>Description</template_slot>
+		<template_slot>Keywords</template_slot>
+		<template_slot>Identifier</template_slot>
+	</class>
+
+	<class>
+		<name>Genome</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Refers to any kind of genome, natural or modified</value>
+		</own_slot_value>
+		<superclass>BiologicalConcept</superclass>
+	</class>
+
+	<class>
+		<name>Protein</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Refers to any kind of longish string of amino acid residues, naturally occurring or artificial</value>
+		</own_slot_value>
+		<superclass>BiologicalConcept</superclass>
+		<template_slot>ProteinType</template_slot>
+	</class>
+
+	<class>
+		<name>Gene</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Refers to any notion of a gene, whether based on classical genetics or molecular biology</value>
+		</own_slot_value>
+		<superclass>BiologicalConcept</superclass>
+	</class>
+
+	<class>
+		<name>DNA</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Refers to any form of DNA</value>
+		</own_slot_value>
+		<superclass>BiologicalConcept</superclass>
+	</class>
+
+	<class>
+		<name>Phenotype</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Refers to any kind of manifestation of a  gene or collection of genes</value>
+		</own_slot_value>
+		<superclass>BiologicalConcept</superclass>
+	</class>
+
+	<class>
+		<name>Interaction</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Any kind of interaction involving one or more biological objects, whether naturally occurrring or modified</value>
+		</own_slot_value>
+		<superclass>BiologicalConcept</superclass>
+		<template_slot>InteractionType</template_slot>
+	</class>
+
+	<class>
+		<name>Transcript</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Any type of immediate gene product, whether translated or not.</value>
+		</own_slot_value>
+		<superclass>BiologicalConcept</superclass>
+		<template_slot>TranscriptType</template_slot>
+	</class>
+
+	<class>
+		<name>AreaOfApplication</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">In what area of research is this object used?</value>
+		</own_slot_value>
+		<superclass>Atomic</superclass>
+	</class>
+
+	<class>
+		<name>TranslationalResearch</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Research intended to progress from laboratory knowledge to knowledge that impacts health (human, animal or plant)</value>
+		</own_slot_value>
+		<superclass>AreaOfApplication</superclass>
+	</class>
+
+	<class>
+		<name>ClinicalResearch</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">purpose of thing is clinical research defined as ...</value>
+		</own_slot_value>
+		<superclass>AreaOfApplication</superclass>
+	</class>
+
+	<class>
+		<name>BasicResearch</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">purpose of thing is basic research defined as...</value>
+		</own_slot_value>
+		<superclass>AreaOfApplication</superclass>
+	</class>
+
+	<class>
+		<name>Algorithm</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<superclass>Atomic</superclass>
+		<template_slot>OutputForm</template_slot>
+		<template_slot>Originator</template_slot>
+		<template_slot>InputForm</template_slot>
+		<template_slot>Authors</template_slot>
+		<template_slot>Other_Information</template_slot>
+		<template_slot>URL</template_slot>
+		<template_slot>ApplicationRealm</template_slot>
+		<template_slot>Name</template_slot>
+		<template_slot>Description</template_slot>
+		<template_slot>AlgorithmPurpose</template_slot>
+		<template_slot>Keywords</template_slot>
+		<template_slot>Version</template_slot>
+		<template_slot>Identifier</template_slot>
+		<template_slot>DataType</template_slot>
+		<template_facet_value>
+			<slot_reference>Originator</slot_reference>
+			<facet_reference>:VALUES</facet_reference>
+			<value value_type="string">Yannick Pouliot</value>
+		</template_facet_value>
+		<template_facet_value>
+			<slot_reference>URL</slot_reference>
+			<facet_reference>:VALUES</facet_reference>
+			<value value_type="class">AssociatedURL</value>
+		</template_facet_value>
+		<template_facet_value>
+			<slot_reference>ApplicationRealm</slot_reference>
+			<facet_reference>:VALUES</facet_reference>
+			<value value_type="class">AreaOfApplication</value>
+		</template_facet_value>
+		<template_facet_value>
+			<slot_reference>AlgorithmPurpose</slot_reference>
+			<facet_reference>:VALUES</facet_reference>
+			<value value_type="class">Purpose</value>
+		</template_facet_value>
+		<template_facet_value>
+			<slot_reference>DataType</slot_reference>
+			<facet_reference>:VALUES</facet_reference>
+			<value value_type="class">InstrumentMeasurement</value>
+		</template_facet_value>
+	</class>
+
+	<class>
+		<name>Document</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Root concept for any kind of document</value>
+		</own_slot_value>
+		<superclass>Atomic</superclass>
+		<template_slot>Name</template_slot>
+		<template_slot>Description</template_slot>
+		<template_slot>AccessMode</template_slot>
+		<template_slot>DocumentGoal</template_slot>
+		<template_slot>Authors</template_slot>
+		<template_slot>Identifier</template_slot>
+		<template_facet_value>
+			<slot_reference>DocumentGoal</slot_reference>
+			<facet_reference>:VALUES</facet_reference>
+			<value value_type="class">Purpose</value>
+		</template_facet_value>
+	</class>
+
+	<class>
+		<name>Software documentation</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">refers to any documentation describing software</value>
+		</own_slot_value>
+		<superclass>Document</superclass>
+		<template_slot>Target_User_Type</template_slot>
+	</class>
+
+	<class>
+		<name>Publication</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<superclass>Document</superclass>
+		<template_slot>PeerReviewStatus</template_slot>
+	</class>
+
+	<class>
+		<name>Software/Technology Protocol</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Publication</superclass>
+	</class>
+
+	<class>
+		<name>White Paper</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Publication</superclass>
+	</class>
+
+	<class>
+		<name>Paper</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Publication</superclass>
+	</class>
+
+	<class>
+		<name>Ontology</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<superclass>Document</superclass>
+	</class>
+
+	<class>
+		<name>SoftwareFunction</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Describes the  fuction(s) of a software program</value>
+		</own_slot_value>
+		<superclass>Atomic</superclass>
+		<template_slot>ApplicationRealm</template_slot>
+		<template_slot>AppliesToObject</template_slot>
+		<template_slot>PurposeType</template_slot>
+		<template_slot>Functionality</template_slot>
+		<template_slot>AlgorithmsUsed</template_slot>
+		<template_facet_value>
+			<slot_reference>ApplicationRealm</slot_reference>
+			<facet_reference>:VALUES</facet_reference>
+			<value value_type="class">Purpose</value>
+			<value value_type="class">BasicResearch</value>
+			<value value_type="class">ClinicalResearch</value>
+			<value value_type="class">AreaOfApplication</value>
+		</template_facet_value>
+		<template_facet_value>
+			<slot_reference>AppliesToObject</slot_reference>
+			<facet_reference>:VALUES</facet_reference>
+			<value value_type="class">BiologicalConcept</value>
+		</template_facet_value>
+		<template_facet_value>
+			<slot_reference>AlgorithmsUsed</slot_reference>
+			<facet_reference>:VALUES</facet_reference>
+			<value value_type="class">Algorithm</value>
+		</template_facet_value>
+	</class>
+
+	<class>
+		<name>Software Engineering and Development Tool</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<superclass>SoftwareFunction</superclass>
+	</class>
+
+	<class>
+		<name>Integration</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Software Engineering and Development Tool</superclass>
+	</class>
+
+	<class>
+		<name>Graphical e.g., HIVE Pipeline</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Integration</superclass>
+	</class>
+
+	<class>
+		<name>Portals</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Integration</superclass>
+	</class>
+
+	<class>
+		<name>Grid Computing Resources</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Integration</superclass>
+	</class>
+
+	<class>
+		<name>Mappers e.g., BrainGraph BrainMapper</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Integration</superclass>
+	</class>
+
+	<class>
+		<name>Resource Integration Components</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Integration</superclass>
+	</class>
+
+	<class>
+		<name>Testing Tools</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Software Engineering and Development Tool</superclass>
+	</class>
+
+	<class>
+		<name>Cross-Platform Tools</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Software Engineering and Development Tool</superclass>
+	</class>
+
+	<class>
+		<name>Cross-LanguageWrapping</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Software Engineering and Development Tool</superclass>
+	</class>
+
+	<class>
+		<name>Source Control</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Software Engineering and Development Tool</superclass>
+	</class>
+
+	<class>
+		<name>Document Generation</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Software Engineering and Development Tool</superclass>
+	</class>
+
+	<class>
+		<name>Ontology Development and Management</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Software Engineering and Development Tool</superclass>
+	</class>
+
+	<class>
+		<name>Ontology Development</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Ontology Development and Management</superclass>
+	</class>
+
+	<class>
+		<name>Ontology Diff and Alignment</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Ontology Development and Management</superclass>
+	</class>
+
+	<class>
+		<name>Ontology Visualization</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Ontology Development and Management</superclass>
+	</class>
+
+	<class>
+		<name>Data Annotation</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Ontology Development and Management</superclass>
+	</class>
+
+	<class>
+		<name>Programmatic Access</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Ontology Development and Management</superclass>
+	</class>
+
+	<class>
+		<name>Web Access</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Ontology Development and Management</superclass>
+	</class>
+
+	<class>
+		<name>Numerical Methods</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>SoftwareFunction</superclass>
+	</class>
+
+	<class>
+		<name>LinearAlgebraTools</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Numerical Methods</superclass>
+	</class>
+
+	<class>
+		<name>NumericalIntegrators</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Numerical Methods</superclass>
+	</class>
+
+	<class>
+		<name>MonteCarloSimulation</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Numerical Methods</superclass>
+	</class>
+
+	<class>
+		<name>PDESolvers</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Numerical Methods</superclass>
+	</class>
+
+	<class>
+		<name>Optimizers</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Numerical Methods</superclass>
+	</class>
+
+	<class>
+		<name>RootFinders</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Numerical Methods</superclass>
+	</class>
+
+	<class>
+		<name>ComputationalGeometry</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Numerical Methods</superclass>
+	</class>
+
+	<class>
+		<name>Image Processing</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>SoftwareFunction</superclass>
+	</class>
+
+	<class>
+		<name>Registration</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Image Processing</superclass>
+	</class>
+
+	<class>
+		<name>Segmentation</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Image Processing</superclass>
+	</class>
+
+	<class>
+		<name>Cortical Modeling</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Image Processing</superclass>
+	</class>
+
+	<class>
+		<name>Atlas Generation</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Image Processing</superclass>
+	</class>
+
+	<class>
+		<name>EDA</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Image Processing</superclass>
+	</class>
+
+	<class>
+		<name>Pre-Processing</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Image Processing</superclass>
+	</class>
+
+	<class>
+		<name>Filtering</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Pre-Processing</superclass>
+	</class>
+
+	<class>
+		<name>Skull Stripping</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Filtering</superclass>
+	</class>
+
+	<class>
+		<name>Inhomogeneity Correction</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Skull Stripping</superclass>
+	</class>
+
+	<class>
+		<name>Data Transforms</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Pre-Processing</superclass>
+	</class>
+
+	<class>
+		<name>Spectral Transforms</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Data Transforms</superclass>
+	</class>
+
+	<class>
+		<name>Fourier Transform</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Spectral Transforms</superclass>
+	</class>
+
+	<class>
+		<name>Wavelet Transform</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Spectral Transforms</superclass>
+	</class>
+
+	<class>
+		<name>Computational Geometry</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>SoftwareFunction</superclass>
+	</class>
+
+	<class>
+		<name>Pattern Recognition</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Computational Geometry</superclass>
+	</class>
+
+	<class>
+		<name>Shape Analysis</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Computational Geometry</superclass>
+	</class>
+
+	<class>
+		<name>Feature Analysis</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Computational Geometry</superclass>
+	</class>
+
+	<class>
+		<name>Genomic &amp; Phenotypic Analysis</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<superclass>SoftwareFunction</superclass>
+	</class>
+
+	<class>
+		<name>Regulatory/Signaling network reconstruction</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Genomic &amp; Phenotypic Analysis</superclass>
+	</class>
+
+	<class>
+		<name>Network characterization</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Genomic &amp; Phenotypic Analysis</superclass>
+	</class>
+
+	<class>
+		<name>Sequence Annotation</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Genomic &amp; Phenotypic Analysis</superclass>
+	</class>
+
+	<class>
+		<name>Sequence Similarity Searching</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Any kind of similarity searching involving biological sequences</value>
+		</own_slot_value>
+		<superclass>Genomic &amp; Phenotypic Analysis</superclass>
+	</class>
+
+	<class>
+		<name>Statistical Analysis</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>SoftwareFunction</superclass>
+	</class>
+
+	<class>
+		<name>Statistical Package</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">e.g., R</value>
+		</own_slot_value>
+		<superclass>Statistical Analysis</superclass>
+	</class>
+
+	<class>
+		<name>Visualization</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>SoftwareFunction</superclass>
+	</class>
+
+	<class>
+		<name>Imaging</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Visualization</superclass>
+	</class>
+
+	<class>
+		<name>Cross-Sectional Viewers</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Imaging</superclass>
+	</class>
+
+	<class>
+		<name>Manifold Viewers 2D, 3D, 4D, ND</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Cross-Sectional Viewers</superclass>
+	</class>
+
+	<class>
+		<name>Molecular Structure Viewers</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Imaging</superclass>
+	</class>
+
+	<class>
+		<name>Clinical Charts e.g., Demographics</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Visualization</superclass>
+	</class>
+
+	<class>
+		<name>Sequences</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Visualization</superclass>
+	</class>
+
+	<class>
+		<name>Graph Viewers</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Visualization</superclass>
+	</class>
+
+	<class>
+		<name>Hyperbolic Graphs</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Graph Viewers</superclass>
+	</class>
+
+	<class>
+		<name>Hierarchical Trees</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Hyperbolic Graphs</superclass>
+	</class>
+
+	<class>
+		<name>Protein Modeling and Classification</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>SoftwareFunction</superclass>
+	</class>
+
+	<class>
+		<name>Structure-based protein classification</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Protein Modeling and Classification</superclass>
+	</class>
+
+	<class>
+		<name>Natural Language Processing</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>SoftwareFunction</superclass>
+	</class>
+
+	<class>
+		<name>Interaction Modeling</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Any kind of interaction modeling</value>
+		</own_slot_value>
+		<superclass>SoftwareFunction</superclass>
+	</class>
+
+	<class>
+		<name>Protein interaction modeling</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Interaction Modeling</superclass>
+	</class>
+
+	<class>
+		<name>Simulation</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Any kind of software used in simulations</value>
+		</own_slot_value>
+		<superclass>SoftwareFunction</superclass>
+	</class>
+
+	<class>
+		<name>Mechanical Simulation</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Simulation</superclass>
+	</class>
+
+	<class>
+		<name>MultibodyDynamics</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Mechanical Simulation</superclass>
+	</class>
+
+	<class>
+		<name>Meshing</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Mechanical Simulation</superclass>
+	</class>
+
+	<class>
+		<name>ContactModeling</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Mechanical Simulation</superclass>
+	</class>
+
+	<class>
+		<name>Controllers</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Mechanical Simulation</superclass>
+	</class>
+
+	<class>
+		<name>MolecularForceFieldCalculator</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Mechanical Simulation</superclass>
+	</class>
+
+	<class>
+		<name>SoftwareType</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Broad classification of a software system</value>
+		</own_slot_value>
+		<superclass>Atomic</superclass>
+	</class>
+
+	<class>
+		<name>Analytical</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Q: what exactly is this???</value>
+		</own_slot_value>
+		<superclass>SoftwareType</superclass>
+	</class>
+
+	<class>
+		<name>Toolkit</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Refers to any software delivered in toolkit fashion, whereby the kit components can be used independently of each other, or included as part of another program</value>
+		</own_slot_value>
+		<superclass>SoftwareType</superclass>
+	</class>
+
+	<class>
+		<name>Database</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Any kind of database where the database constitutes a very significant component of the system</value>
+		</own_slot_value>
+		<superclass>SoftwareType</superclass>
+	</class>
+
+	<slot>
+		<name>AccessMode</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">How is this thing accessed?</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-MINIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Class</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>AlgorithmPurpose</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Scientific purpose of algorithm</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUES</slot_reference>
+			<value value_type="class">Purpose</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Class</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>AlgorithmsUsed</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">What algorithms are used by this object?</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUES</slot_reference>
+			<value value_type="class">Algorithm</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Class</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>ApplicationRealm</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">in what social realm is this object used?</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUES</slot_reference>
+			<value value_type="class">AreaOfApplication</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Class</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>AppliesToObject</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">To what kind of object is this object (e.g., tool) applied to?</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUES</slot_reference>
+			<value value_type="class">BiologicalConcept</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Class</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>Authors</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">String</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>CurationLevel</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Describes what type of curation, if any, are applied to data</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Symbol</value>
+			<value value_type="string">RawData</value>
+			<value value_type="string">AutomatedCuration</value>
+			<value value_type="string">ManualCuration</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>DataType</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Type of data stored or manipulated by the tool</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-MINIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUES</slot_reference>
+			<value value_type="class">InstrumentMeasurement</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Class</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>Description</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-MINIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">String</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>DocumentGoal</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">What are the goals of the document</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUES</slot_reference>
+			<value value_type="class">Purpose</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Class</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>Functionality</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">describes the functions of a software program</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Class</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>Identifier</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Any kind of identifier</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">String</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>Implementation_Language</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MINIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Symbol</value>
+			<value value_type="string">tcl</value>
+			<value value_type="string">Java</value>
+			<value value_type="string">C++</value>
+			<value value_type="string">perl</value>
+			<value value_type="string">python</value>
+			<value value_type="string">VTK</value>
+			<value value_type="string">ITK</value>
+			<value value_type="string">Lisp</value>
+			<value value_type="string">OpenGL</value>
+			<value value_type="string">TCL/TK</value>
+			<value value_type="string">Unknown</value>
+			<value value_type="string">Unclear</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>Input Type</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Biological type of input</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Class</value>
+			<value value_type="class">BiologicalConcept</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>InputForm</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">what form of input is required by this thing?</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-MINIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Class</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>InteractionType</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">What type of interaction is this?</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Symbol</value>
+			<value value_type="string">SelfInteraction</value>
+			<value value_type="string">Homophilic</value>
+			<value value_type="string">Heterophilic</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>Keywords</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">String</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>License</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">String</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>MeasurementType</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">what kind of information is being capture in this measurement?</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-MINIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Instance</value>
+			<value value_type="class">DataTypology</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>Name</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Name of a thing, even an abstract thing</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-MINIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">String</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>Originator</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Originator of a class</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-MINIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUES</slot_reference>
+			<value value_type="string">Yannick Pouliot</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">String</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>Other_Information</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">String</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>OutputForm</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">What form of output is produced by this thing</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-MINIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Class</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>PeerReviewStatus</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">is this a peer-reviewed scientific publication?</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Symbol</value>
+			<value value_type="string">Yes</value>
+			<value value_type="string">No</value>
+			<value value_type="string">Unclear</value>
+			<value value_type="string">Unknown</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>Platform_Support</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MINIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Symbol</value>
+			<value value_type="string">Mac</value>
+			<value value_type="string">PC/Windows</value>
+			<value value_type="string">Sun</value>
+			<value value_type="string">Linux</value>
+			<value value_type="string">SGI_IRIX</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>ProteinType</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">broad classification of protein type based on structure or function</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-MINIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Symbol</value>
+			<value value_type="string">Antibody</value>
+			<value value_type="string">Enzyme</value>
+			<value value_type="string">Structural</value>
+			<value value_type="string">Unclear</value>
+			<value value_type="string">Unknown</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>PurposeType</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Class of scientific purpose associated with a thing</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Symbol</value>
+			<value value_type="string">Inference</value>
+			<value value_type="string">Clustering</value>
+			<value value_type="string">Summarization</value>
+			<value value_type="string">Classification</value>
+			<value value_type="string">Visualization</value>
+			<value value_type="string">Mapping</value>
+			<value value_type="string">Modeling</value>
+			<value value_type="string">Comparing</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>SoftwareOntologyZ_Slot_30</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">String</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>Source</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Source of the thing</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-MINIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Symbol</value>
+			<value value_type="string">NA-MIC</value>
+			<value value_type="string">Simbios</value>
+			<value value_type="string">CCB</value>
+			<value value_type="string">I2B2</value>
+			<value value_type="string">NCIBI</value>
+			<value value_type="string">Magnet</value>
+			<value value_type="string">NCBO</value>
+			<value value_type="string">Non-NCBC</value>
+			<value value_type="string">Other</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>Target_User_Type</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MINIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Symbol</value>
+			<value value_type="string">Clinician</value>
+			<value value_type="string">Researcher</value>
+			<value value_type="string">ApplicationDeveloper</value>
+			<value value_type="string">Modeler</value>
+			<value value_type="string">AlgorithmDeveloper</value>
+			<value value_type="string">SimTKSoftwareDeveloper</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>TranscriptType</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Type of biological transcript</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Symbol</value>
+			<value value_type="string">mRNA</value>
+			<value value_type="string">rRNA</value>
+			<value value_type="string">miRNA</value>
+			<value value_type="string">snRNA</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>URL</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">URL associated with object</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUES</slot_reference>
+			<value value_type="class">AssociatedURL</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Class</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>URLDescript</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">String</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>URLString</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">URL associated with this thing</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">String</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>URLType</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Type of URL: direct resource access, resource description, login</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-MINIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Symbol</value>
+			<value value_type="string">DirectResourceAccess</value>
+			<value value_type="string">ResourceDescription</value>
+			<value value_type="string">Login</value>
+			<value value_type="string">Unknown</value>
+			<value value_type="string">Unclear</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>Version</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">Version of the thing</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">String</value>
+		</own_slot_value>
+	</slot>
+
+	<simple_instance>
+		<name>HumanProteome_HUPO</name>
+		<type>Data Management</type>
+		<own_slot_value>
+			<slot_reference>Target_User_Type</slot_reference>
+			<value value_type="string">ApplicationDeveloper</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>Implementation_Language</slot_reference>
+			<value value_type="string">C++</value>
+		</own_slot_value>
+	</simple_instance>
+
+	<simple_instance>
+		<name>MichiganMolecularInteractions</name>
+		<type>Data Management</type>
+		<own_slot_value>
+			<slot_reference>Target_User_Type</slot_reference>
+			<value value_type="string">ApplicationDeveloper</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>Implementation_Language</slot_reference>
+			<value value_type="string">C++</value>
+		</own_slot_value>
+	</simple_instance>
+
+	<simple_instance>
+		<name>MicroarrayResource</name>
+		<type>Data Management</type>
+		<own_slot_value>
+			<slot_reference>Target_User_Type</slot_reference>
+			<value value_type="string">ApplicationDeveloper</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>Implementation_Language</slot_reference>
+			<value value_type="string">C++</value>
+		</own_slot_value>
+	</simple_instance>
+
+	<simple_instance>
+		<name>MolecularBiologyIntegration</name>
+		<type>Data Management</type>
+		<own_slot_value>
+			<slot_reference>Target_User_Type</slot_reference>
+			<value value_type="string">ApplicationDeveloper</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>Implementation_Language</slot_reference>
+			<value value_type="string">C++</value>
+		</own_slot_value>
+	</simple_instance>
+
+	<simple_instance>
+		<name>Oncomine</name>
+		<type>Data Management</type>
+		<own_slot_value>
+			<slot_reference>Target_User_Type</slot_reference>
+			<value value_type="string">ApplicationDeveloper</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>Implementation_Language</slot_reference>
+			<value value_type="string">C++</value>
+		</own_slot_value>
+	</simple_instance>
+
+	<simple_instance>
+		<name>SoftwareOntologyZ_Instance_6</name>
+		<type>Data Management</type>
+		<own_slot_value>
+			<slot_reference>Target_User_Type</slot_reference>
+			<value value_type="string">Researcher</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>Source</slot_reference>
+			<value value_type="string">Other</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>Platform_Support</slot_reference>
+			<value value_type="string">PC/Windows</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>Name</slot_reference>
+			<value value_type="string">AbMiner</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>Description</slot_reference>
+			<value value_type="string">stores characterized antibodies</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>Implementation_Language</slot_reference>
+			<value value_type="string">Unknown</value>
+		</own_slot_value>
+	</simple_instance>
+
+	<simple_instance>
+		<name>TIMBERS</name>
+		<type>Data Management</type>
+		<own_slot_value>
+			<slot_reference>Target_User_Type</slot_reference>
+			<value value_type="string">ApplicationDeveloper</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>Implementation_Language</slot_reference>
+			<value value_type="string">C++</value>
+		</own_slot_value>
+	</simple_instance>
+
+	<simple_instance>
+		<name>SoftwareOntologyZ_Instance_10001</name>
+		<type>Graphical e.g., HIVE Pipeline</type>
+	</simple_instance>
+
+	<simple_instance>
+		<name>SoftwareOntologyZ_Instance_10002</name>
+		<type>Resource Integration Components</type>
+	</simple_instance>
+
+	<simple_instance>
+		<name>CTest</name>
+		<type>Testing Tools</type>
+	</simple_instance>
+
+	<simple_instance>
+		<name>Dart2</name>
+		<type>Testing Tools</type>
+	</simple_instance>
+
+	<simple_instance>
+		<name>CMake</name>
+		<type>Cross-Platform Tools</type>
+	</simple_instance>
+
+	<simple_instance>
+		<name>CPack</name>
+		<type>Cross-Platform Tools</type>
+	</simple_instance>
+
+	<simple_instance>
+		<name>CableSWIG</name>
+		<type>Cross-LanguageWrapping</type>
+	</simple_instance>
+
+	<simple_instance>
+		<name>SoftwareOntologyZ_Instance_10007</name>
+		<type>Ontology Diff and Alignment</type>
+	</simple_instance>
+
+	<simple_instance>
+		<name>LONI_Pipeline</name>
+		<type>Image Processing</type>
+	</simple_instance>
+
+	<simple_instance>
+		<name>Slicer2</name>
+		<type>Image Processing</type>
+	</simple_instance>
+
+	<simple_instance>
+		<name>SoftwareOntologyZ_Instance_10003</name>
+		<type>Registration</type>
+	</simple_instance>
+
+	<simple_instance>
+		<name>SoftwareOntologyZ_Instance_10005</name>
+		<type>Registration</type>
+	</simple_instance>
+
+	<simple_instance>
+		<name>SoftwareOntologyZ_Instance_0</name>
+		<type>Segmentation</type>
+	</simple_instance>
+
+	<simple_instance>
+		<name>SoftwareOntologyZ_Instance_10006</name>
+		<type>Regulatory/Signaling network reconstruction</type>
+	</simple_instance>
+
+	<simple_instance>
+		<name>SoftwareOntologyZ_Instance_2</name>
+		<type>Manifold Viewers 2D, 3D, 4D, ND</type>
+	</simple_instance>
+
+	<simple_instance>
+		<name>SoftwareOntologyZ_Instance_8</name>
+		<type>Manifold Viewers 2D, 3D, 4D, ND</type>
+	</simple_instance>
+
+	<simple_instance>
+		<name>SoftwareOntologyZ_Instance_1</name>
+		<type>Molecular Structure Viewers</type>
+	</simple_instance>
+
+	<simple_instance>
+		<name>SoftwareOntologyZ_Instance_10004</name>
+		<type>Molecular Structure Viewers</type>
+	</simple_instance>
+</knowledge_base>

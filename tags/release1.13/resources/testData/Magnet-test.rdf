@@ -1,0 +1,352 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:BRO="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns="http://www.bioontologies.org/biositemaps/MAGnet.rdf#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:desc="http://bioontology.org/ontologies/biositemap.owl#"
+   xml:base="http://www.bioontologies.org/biositemaps/MAGnet.rdf">
+  <owl:Ontology rdf:about="">
+       <owl:imports rdf:resource="http://bioontology.org/ontologies/BiomedicalResources.owl"/>
+  </owl:Ontology>
+				<desc:Resource_Description rdf:ID="GRASP">
+								<desc:resource_name>GRASP</desc:resource_name>
+								<desc:keywords>molecular visualization</desc:keywords>
+								<desc:license>Freely available to academia.</desc:license>
+								<desc:description>A molecular visualization and analysis program. It is particularly useful for the display and manipulation of the surfaces of molecules and their electrostatic properties.</desc:description>
+								<desc:URL>http://trantor.bioc.columbia.edu/grasp</desc:URL>
+								<desc:version_information>
+												<desc:Version_Information>
+																<desc:version>v1.3.6 .Stable public release.</desc:version>
+												</desc:Version_Information>
+								</desc:version_information>
+								<desc:organization>MAGNet</desc:organization>
+								<desc:resource_type>
+												<BRO:Molecular_Visualization/>
+								</desc:resource_type>
+								<desc:contact_person>Anthony Nicholls and Barry Honig.</desc:contact_person>
+				</desc:Resource_Description>
+				<desc:Resource_Description rdf:ID="Nest">
+								<desc:URL>http://honiglab.cpmc.columbia.edu/cgi-bin/jackal/nest.cgi</desc:URL>
+								<desc:version_information>
+												<desc:Version_Information>
+																<desc:version>Stable public release.</desc:version>
+												</desc:Version_Information>
+								</desc:version_information>
+								<desc:description>Modeling protein structure based on a sequence-template alignment. The current server works only for modeling with a single template. Part of jackal, which can be downloaded.</desc:description>
+								<desc:organization>MAGNet</desc:organization>
+								<desc:contact_person>Xiang, Z. and Honig, B.</desc:contact_person>
+								<desc:license>Freely available to academia.</desc:license>
+								<desc:resource_name>Nest</desc:resource_name>
+								<desc:resource_type>
+												<BRO:Homology_Modeling/>
+								</desc:resource_type>
+								<desc:keywords>modeling, protein structure, sequence-template alignment.</desc:keywords>
+				</desc:Resource_Description>
+				<desc:Resource_Description rdf:ID="JACKAL">
+								<desc:version_information>
+												<desc:Version_Information>
+																<desc:development_stage>2002, Stable public release.</desc:development_stage>
+																<desc:version>Version: 1.5 as of Oct</desc:version>
+																<desc:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">20</desc:release_date>
+												</desc:Version_Information>
+								</desc:version_information>
+								<desc:resource_name>JACKAL</desc:resource_name>
+								<desc:description>Jackal is a collection of programs designed for the modeling and analysis of protein structures. Its core program is a versatile homology modeling package nest. JACKAL has the following capabilities: 1) comparative modeling based on single, composite or multiple templates; 2) side-chain prediction; 3) modeling residue mutation, insertion or deletion; 4) loop prediction; 5) structure refinement; 6) reconstruction of protein missing atoms;7) reconstruction of protein missing residues; 8) prediction of hydrogen atoms; 9) fast calculation of solvent accessible surface area; 10) structure superimposition.</desc:description>
+								<desc:resource_type>
+												<BRO:Prediction_of_Side-Chain_Conformations/>
+								</desc:resource_type>
+								<desc:URL>http://trantor.bioc.columbia.edu/programs/jackal</desc:URL>
+								<desc:license>Freely available to academia.</desc:license>
+								<desc:organization>MAGNet</desc:organization>
+								<desc:keywords>Protein Structure Modeling</desc:keywords>
+								<desc:contact_person>Z. Xiang and B. Honig</desc:contact_person>
+				</desc:Resource_Description>
+				<desc:Resource_Description rdf:ID="DelPhi">
+								<desc:resource_type>
+												<BRO:Numerical_Calculation_of_Electrostatic_Potential/>
+								</desc:resource_type>
+								<desc:URL>http://trantor.bioc.columbia.edu/delphi</desc:URL>
+								<desc:keywords>Finite Difference Poisson-Boltzman Solver</desc:keywords>
+								<desc:version_information>
+												<desc:Version_Information>
+																<desc:version>Stable public release</desc:version>
+												</desc:Version_Information>
+								</desc:version_information>
+								<desc:description>DelPhi provides numerical solutions to the Poisson-Boltzmann equation (both linear and nonlinear form) for molecules of arbitrary shape and charge distribution. The current version is fast (the best relaxation parameter is estimated at run time), accurate (calculation of the electrostatic free energy is less dependent on the resolution of the lattice) and can handle extremely high lattice dimensions. It also includes flexible features for assigning different dielectric constants to different regions of space and treating systems containing mixed salt solutions.</desc:description>
+								<desc:license>Freely available to academia; pay model for commercial users.</desc:license>
+								<desc:contact_person>E.Alexov, R.Fine, M.K.Gilson, A.Nicholls, W.Rocchia, K.Sharp, and B. Honig.</desc:contact_person>
+								<desc:resource_name>DelPhi</desc:resource_name>
+								<desc:organization>MAGNet</desc:organization>
+				</desc:Resource_Description>
+				<desc:Resource_Description rdf:ID="B_Cell_Interactome">
+								<desc:version_information>
+												<desc:Version_Information>
+																<desc:version>Version 2</desc:version>
+																<desc:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">March 2007</desc:release_date>
+												</desc:Version_Information>
+								</desc:version_information>
+								<desc:resource_name>B Cell Interactome</desc:resource_name>
+								<desc:resource_type>
+												<BRO:Interaction_Modeling/>
+								</desc:resource_type>
+								<desc:organization>MAGNet</desc:organization>
+								<desc:keywords>Naive Bayes, Mixed-Interaction Network, human B cells.</desc:keywords>
+								<desc:URL>http://amdec-bioinfo.cu-genome.org/html/BCellInteractome.html</desc:URL>
+								<desc:description>The B cell interactome (BCI) is a network of protein-protein, protein-DNA and modulatory interactions in human B cells. The network contains known interactions (reported in public databases) and predicted interactions by a Bayesian evidence integration framework which integrates a variety of generic and context specific experimental clues about protein-protein and protein-DNA interactions - such as a large collection of B cell expression profiles - with inferences from different reverse engineering algorithms, such as GeneWays and ARACNE. Modulatory interactions are predicted by MINDY, an algorithm for the prediction of modulators of transcriptional interactions.</desc:description>
+								<desc:contact_person>Lefebvre C, Lim WK, Basso K, Dalla Favera R, and Califano A.</desc:contact_person>
+				</desc:Resource_Description>
+				<desc:Resource_Description rdf:ID="TranscriptionDetector">
+								<desc:description>A tool for finding probes measuring significantly expressed loci in a genomic array experiment. Given expression data from some tiling array experiment, TranscriptionDetector decides the likelihood that a probe is detecting transcription from the locus in which it resides. Probabilities are assigned by making use of a background signal intensity distribution from a set of negative control probes. This tool is useful for the functional annotation of genomes as it allows for the discovery of novel transcriptional units independently of any genomic annotation.</desc:description>
+								<desc:resource_name>TranscriptionDetector</desc:resource_name>
+								<desc:organization>MAGNet</desc:organization>
+								<desc:URL>http://www.bussemakerlab.org/software/TranscriptionDetector/</desc:URL>
+								<desc:contact_person>Xiang-Jun Lu, Gabor Halasz, Marinus F. van Batenburg</desc:contact_person>
+								<desc:keywords>tiling arrays, expression, transcriptome</desc:keywords>
+				</desc:Resource_Description>
+				<desc:Resource_Description rdf:ID="ARACNE">
+								<desc:license>Open source</desc:license>
+								<desc:resource_type>
+												<BRO:Signaling_Network_Reconstruction/>
+								</desc:resource_type>
+								<desc:contact_person>Margolin AA, Nemenman I, Basso K, Wiggins C, Stolovitzky G, Dalla Favera R, Califano A.</desc:contact_person>
+								<desc:organization>MAGNet</desc:organization>
+								<desc:keywords>Reverse engineering, mutual information, genetic networks, microarray</desc:keywords>
+								<desc:resource_name>ARACNE</desc:resource_name>
+								<desc:version_information>
+												<desc:Version_Information>
+																<desc:development_stage>2006</desc:development_stage>
+																<desc:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">June</desc:release_date>
+																<desc:version>Version 1</desc:version>
+												</desc:Version_Information>
+								</desc:version_information>
+								<desc:URL>http://amdec-bioinfo.cu-genome.org/html/ARACNE.htm</desc:URL>
+								<desc:description>ARACNE is an algorithm for inferring gene regulatory networks from a set of microarray experiments. The method uses mutual information to identify genes that are co-expressed and then applies the data processing inequality to filter out interactions that are likely to be indirect.</desc:description>
+				</desc:Resource_Description>
+				<desc:Resource_Description rdf:ID="T-profiler">
+								<desc:contact_person>Andre Boorsma, Barrett C. Foat, Daniel Vis, Frans Klis, Harmen J. Bussemaker</desc:contact_person>
+								<desc:resource_type>
+												<BRO:Network_Characterization/>
+								</desc:resource_type>
+								<desc:resource_name>T-profiler</desc:resource_name>
+								<desc:organization>MAGNet</desc:organization>
+								<desc:description>T-profiler is a web-based tool that uses the t-test to score changes in the average activity of pre-defined groups of genes. The gene groups are defined based on Gene Ontology categorization, ChIP-chip experiments, upstream matches to a consensus transcription factor binding motif, and location on the same chromosome, respectively. If desired, an iterative procedure can be used to select a single, optimal representative from sets of overlapping gene groups. A jack-knife procedure is used to make calculations more robust against outliers. T-profiler makes it possible to interpret microarray data in a way that is both intuitive and statistically rigorous, without the need to combine experiments or choose parameters.</desc:description>
+								<desc:keywords>gene expression, transcriptome, ChIP-chip, Gene Ontology</desc:keywords>
+								<desc:URL>http://www.t-profiler.org</desc:URL>
+				</desc:Resource_Description>
+				<desc:Resource_Description rdf:ID="String_kernel_package">
+								<desc:resource_type>
+												<BRO:Protein_Interaction_Modeling/>
+								</desc:resource_type>
+								<desc:organization>MAGNet</desc:organization>
+								<desc:description>The string kernel package contains implementations for the mismatch and 
+    profile string kernels for use with support vector machine (SVM) 
+    classifiers for protein sequence classification. Both kernels compute 
+    similarity between protein sequences based on common occurrences of 
+    k-length subsequences (k-mers) counted with substitutions. Kernel 
+    functions for protein sequence data enable the training of SVMs for a 
+    range of prediction problems, in particular protein structural class 
+    prediction and remote homology detection. A version of the Spider MATLAB 
+    machine learning package is also bundled with the code, which allows users 
+    to train SVMs and evaluate performance on test sets with the packaged 
+    software.</desc:description>
+								<desc:license>Open source</desc:license>
+								<desc:version_information>
+												<desc:Version_Information>
+																<desc:development_stage>stable public release</desc:development_stage>
+																<desc:version>Version 1.2</desc:version>
+																<desc:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">September 2004</desc:release_date>
+												</desc:Version_Information>
+								</desc:version_information>
+								<desc:resource_name>String kernel package</desc:resource_name>
+								<desc:URL>http://www.cs.columbia.edu/compbio/string-kernels</desc:URL>
+								<desc:contact_person>Eleazar Eskin, Rui Kuang, Eugene Ie, Ke Wang, Jason Weston, Bill Noble, Christina Leslie</desc:contact_person>
+				</desc:Resource_Description>
+				<desc:Resource_Description rdf:ID="SURFace">
+								<desc:contact_person>Nicholls, A., Sharp, K., Sridharan, S. and Honig, B.</desc:contact_person>
+								<desc:resource_name>SURFace</desc:resource_name>
+								<desc:organization>MAGNet</desc:organization>
+								<desc:URL>http://trantor.bioc.columbia.edu/surf/</desc:URL>
+								<desc:description>SURFace algorithms are programs that calculate solvent accessible surface area and curvature corrected solvent accessible surface area</desc:description>
+								<desc:license>Freely available to academia.</desc:license>
+								<desc:version_information>
+												<desc:Version_Information>
+																<desc:version>Stable public release.</desc:version>
+												</desc:Version_Information>
+								</desc:version_information>
+								<desc:resource_type>
+												<BRO:Calculation_of_Solvent_Accessible_Area/>
+								</desc:resource_type>
+								<desc:keywords>solvent accessible surface area</desc:keywords>
+				</desc:Resource_Description>
+				<desc:Resource_Description rdf:ID="MatrixREDUCE">
+								<desc:resource_name>MatrixREDUCE</desc:resource_name>
+								<desc:description>Regulation of gene expression by a transcription factor requires physical interaction between the factor and the DNA, which can be described by astatistical mechanical model. Based on this model, the MatrixREDUCE algorithm uses genome-wide occupancy data for a transcription factor (e.g.ChIP-chip or mRNA expression data) and associated nucleotide sequences to discover the sequence-specific binding affinity of the transcription factor. The sequence specificity of the transcription factor's DNA-binding domain is modeled using a position-specific affinity matrix (PSAM), representing the change in the binding affinity (Kd) whenever a specific position within a reference binding sequence is mutated. The PSAM can be transformed into affinity logo for visualization using the utility program AffinityLogo, and a MatrixREDUCE run can be summarized in an easy-to-navigate webpage using HTMLSummary.</desc:description>
+								<desc:version_information>
+												<desc:Version_Information>
+																<desc:version>Version 1.0</desc:version>
+																<desc:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">July 10</desc:release_date>
+																<desc:development_stage>2006, extensively tested in lab.</desc:development_stage>
+												</desc:Version_Information>
+								</desc:version_information>
+								<desc:resource_type>
+												<BRO:Signaling_Network_Reconstruction/>
+								</desc:resource_type>
+								<desc:contact_person>Barrett Foat, Xiang-Jun Lu, Harmen J. Bussemaker</desc:contact_person>
+								<desc:keywords>position-specific affinity matrix, binding affinity, cis-regulatory element, expression data, ChIP-chip, transcription factor</desc:keywords>
+								<desc:organization>MAGNet</desc:organization>
+								<desc:URL>http://www.bussemakerlab.org/software/MatrixREDUCE</desc:URL>
+				</desc:Resource_Description>
+				<desc:Resource_Description rdf:ID="MINDY">
+								<desc:contact_person>Kai Wang, Ilya Nemenman, Adam Margolin, Riccardo Dalla-Favera, Andrea Califano</desc:contact_person>
+								<desc:resource_type>
+												<BRO:Signaling_Network_Reconstruction/>
+								</desc:resource_type>
+								<desc:description>Given a transcription factor of interest, MINDY uses a large set of gene expression profile data to identify potential post-transcriptional modulators of the transcription factor's activity. MINDY is based on a three-way statistical interaction model that captures the post-transcriptional regulatory event where the ability of a transcription factor to activate/repress its target genes is monotonically controlled by a potential modulator gene.</desc:description>
+								<desc:organization>MAGNet</desc:organization>
+								<desc:version_information>
+												<desc:Version_Information>
+																<desc:version>Stable release</desc:version>
+																<desc:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">April 2007</desc:release_date>
+												</desc:Version_Information>
+								</desc:version_information>
+								<desc:keywords>gene expression, transcriptional interaction, modulator</desc:keywords>
+								<desc:license>n/a</desc:license>
+								<desc:URL>n/a</desc:URL>
+								<desc:resource_name>MINDY</desc:resource_name>
+				</desc:Resource_Description>
+				<desc:Resource_Description rdf:ID="Protein-DNA_interface_alignment">
+								<desc:resource_name>Protein-DNA interface alignment</desc:resource_name>
+								<desc:resource_type>
+												<BRO:Prediction_of_Side-Chain_Conformations/>
+								</desc:resource_type>
+								<desc:contact_person>Siggers, T.W., Silkov, A &amp; Honig, B.</desc:contact_person>
+								<desc:license>Freely available to academia</desc:license>
+								<desc:version_information>
+												<desc:Version_Information>
+																<desc:version>Stable public release.</desc:version>
+												</desc:Version_Information>
+								</desc:version_information>
+								<desc:description>The protein-DNA alignment software allows one to align the interfacial amino acids from two protein-DNA complexes based on the geometric relationship of each amino acid to its local DNA.</desc:description>
+								<desc:organization>MAGNet</desc:organization>
+								<desc:keywords>protein-DNA interface</desc:keywords>
+								<desc:URL>http://trantor.bioc.columbia.edu/programs/intfc_aln</desc:URL>
+				</desc:Resource_Description>
+				<desc:Resource_Description rdf:ID="MEDUSA_and_Gorgon">
+								<desc:URL>http://www.cs.columbia.edu/compbio/medusa (MATLAB),http://compbio.sytes.net:8090/medusa (Java beta version)</desc:URL>
+								<desc:description>MEDUSA is an algorithm for learning predictive models of transcriptional gene regulation from gene expression and promoter sequence data. By using a statistical learning approach based on boosting, MEDUSA learns cis regulatory motifs, condition-specific regulators, and regulatory programs that predict the differential expression of target genes. The regulatory program is specified as an alternating decision tree (ADT). The Java implementation of MEDUSA allows a number of visualizations of the regulatory program and other inferred regulatory information, implemented in the accompanying Gorgon tool, including hits of significant and condition-specific motifs along the promoter sequences of target genes and regulatory network figures viewable in Cytoscape.</desc:description>
+								<desc:contact_person>David Quigley, Manuel Middendorf, Steve Lianoglou, Anshul Kundaje, Yoav Freund, Chris Wiggins, Christina Leslie</desc:contact_person>
+								<desc:license>Open source</desc:license>
+								<desc:organization>MAGNet</desc:organization>
+								<desc:version_information>
+												<desc:Version_Information>
+																<desc:development_stage>pre-release beta version; Version 1.0 (MATLAB), April 2005, stable public release</desc:development_stage>
+																<desc:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">July 2006</desc:release_date>
+																<desc:version>Version 2.0</desc:version>
+												</desc:Version_Information>
+								</desc:version_information>
+								<desc:resource_type>
+												<BRO:Signaling_Network_Reconstruction/>
+								</desc:resource_type>
+								<desc:resource_name>MEDUSA and Gorgon</desc:resource_name>
+				</desc:Resource_Description>
+				<desc:Resource_Description rdf:ID="Target_Explorer">
+								<desc:resource_type>
+												<BRO:Sequence_Annotation/>
+								</desc:resource_type>
+								<desc:organization>MAGNet</desc:organization>
+								<desc:version_information>
+												<desc:Version_Information>
+																<desc:version>Stable public release.</desc:version>
+												</desc:Version_Information>
+								</desc:version_information>
+								<desc:URL>http://trantor.bioc.columbia.edu/Target_Explorer/</desc:URL>
+								<desc:license>Freely available to academia.</desc:license>
+								<desc:contact_person>Sosinsky A, Bonin CP, Mann RS, Honig B.</desc:contact_person>
+								<desc:resource_name>Target Explorer</desc:resource_name>
+								<desc:keywords>prediction of binding sites for transcription factors</desc:keywords>
+								<desc:description>Automated process of prediction of complex regulatory elements for specified set of transcription factors in Drosophila melanogaster genome. Target Explorer is a complex tool with user-friendly self-explanatory Web-interface that allows to user: 1. create customized library of TF binding site matrices based on user defined sets of training sequences; 2. search for new clusters of binding sites for specified set of TFs; 3.extract annotation for potential target genes.</desc:description>
+				</desc:Resource_Description>
+				<desc:Resource_Description rdf:ID="PrISM">
+								<desc:resource_name>PrISM</desc:resource_name>
+								<desc:license>Freely available to academia.</desc:license>
+								<desc:contact_person>Wang, L, Yang, A. S. &amp; Honig, B.</desc:contact_person>
+								<desc:resource_type>
+												<BRO:Homology_Modeling/>
+								</desc:resource_type>
+								<desc:description>PrISM is an integrated computational system where computational tools are implemented for protein sequence and structure analysis and modeling.</desc:description>
+								<desc:URL>http://trantor.bioc.columbia.edu/programs/PrISM/</desc:URL>
+								<desc:version_information>
+												<desc:Version_Information>
+																<desc:version>Stable public release</desc:version>
+												</desc:Version_Information>
+								</desc:version_information>
+								<desc:organization>MAGNet</desc:organization>
+								<desc:keywords>protein analysis/modeling</desc:keywords>
+				</desc:Resource_Description>
+				<desc:Resource_Description rdf:ID="geWorkbench">
+								<desc:license>Free.</desc:license>
+								<desc:organization>MAGNet</desc:organization>
+								<desc:keywords>Analysis suite, gene expression analysis, sequence analysis, network reconstruction, structure predcition, visualization.</desc:keywords>
+								<desc:version_information>
+												<desc:Version_Information>
+																<desc:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">3/23/07</desc:release_date>
+																<desc:version>1.0.5</desc:version>
+																<desc:development_stage>stable production release</desc:development_stage>
+												</desc:Version_Information>
+								</desc:version_information>
+								<desc:resource_name>geWorkbench</desc:resource_name>
+								<desc:description>geWorkbench is a Java application that provides users with an integrated suite of genomics tools. It is built on an open-source, extensible architecture that promotes interoperability and simplifies the development of new as well as the incorporation of pre-existing components. The resulting system provides seamless access to a multitude of both local and remote data and computational services through an integrated environment that offers a unified user experience. Over 50 data analysis and visualization components have been developed for the framework, covering a wide range of genomics domains including gene expression, sequence, structure and network data.</desc:description>
+								<desc:resource_type>
+												<BRO:Visualization/>
+								</desc:resource_type>
+								<desc:URL>http://www.geworkbench.org</desc:URL>
+								<desc:contact_person>A. Califano, A. Floratos. M. Kustagi, K. Smith, J. Watkinson, M. Hall, K. Keshav, X. Zhang, K. Kushal, B. Jagla, E. Daly, M. VanGinhoven, P. Morozov.</desc:contact_person>
+				</desc:Resource_Description>
+				<desc:Resource_Description rdf:ID="GRASP2">
+								<desc:resource_name>GRASP2</desc:resource_name>
+								<desc:contact_person>Donald Petrey and Barry Honig.</desc:contact_person>
+								<desc:organization>MAGNet</desc:organization>
+								<desc:URL>http://trantor.bioc.columbia.edu/grasp2</desc:URL>
+								<desc:version_information>
+												<desc:Version_Information>
+																<desc:version>Stable public release</desc:version>
+												</desc:Version_Information>
+								</desc:version_information>
+								<desc:resource_type>
+												<BRO:Molecular_Visualization/>
+								</desc:resource_type>
+								<desc:keywords>molecular visualization</desc:keywords>
+								<desc:description>GRASP2 is an updated version of the GRASP program used for macromolecular 
+    structure and surface visualization, contains a large number of new 
+    features and scientific tools: Enhanced GUI; Structure alignment and 
+    domain database scanning; A gaussian surface generator and new surface 
+    coloring schemes; Sequence visualization and alignment; Completed work can 
+    be stored in project files; Among the many objects that can be stored in a 
+    project file are views of the structure; defined subsets, surfaces; Direct 
+    printing to printers at full printer resolution.</desc:description>
+								<desc:license>Freely available to academia.</desc:license>
+				</desc:Resource_Description>
+				<desc:Resource_Description rdf:ID="PhenoGO">
+								<desc:description>PhenoGO adds phenotypic contextual information to existing associations between gene products and Gene Ontology (GO) terms as specified in GO Annotations (GOA). PhenoGO utilizes an existing Natural Language Processing (NLP) system, called BioMedLEE, an existing knowledge-based phenotype organizer system (PhenOS) in conjunction with MeSH indexing and established biomedical ontologies. The system also encodes the context to identifiers that are associated in different biomedical ontologies, including the UMLS, Cell Ontology, Mouse Anatomy, NCBI taxonomy, GO, and Mammalian Phenotype Ontology. In addition, PhenoGO was evaluated for coding of anatomical and cellular information and assigning the coded phenotypes to the correct GOA; results obtained show that PhenoGO has a precision of 91% and recall of 92%, demonstrating that the PhenoGO NLP system can accurately encode a large number of anatomical and cellular ontologies to GO annotations. The PhenoGO Database may be accessed at www.phenogo.org.</desc:description>
+								<desc:resource_type>
+												<BRO:Natural_Language_Processing/>
+								</desc:resource_type>
+								<desc:license>n/a</desc:license>
+								<desc:organization>MAGNet</desc:organization>
+								<desc:keywords>Phenotypic integration, computational phenotypes</desc:keywords>
+								<desc:URL>http://www.phenogo.org</desc:URL>
+								<desc:resource_name>PhenoGO</desc:resource_name>
+								<desc:contact_person>Yves Lussier and Carol Friedman are the principal investigators. The programmers are Jianrong Li, Lee Sam, and Tara Borlawsky</desc:contact_person>
+								<desc:version_information>
+												<desc:Version_Information>
+																<desc:version>Version 2</desc:version>
+																<desc:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">Feb 2006</desc:release_date>
+												</desc:Version_Information>
+								</desc:version_information>
+				</desc:Resource_Description>
+</rdf:RDF><!-- Created with Protege (with OWL Plugin 3.4, Build 500)  http://protege.stanford.edu -->

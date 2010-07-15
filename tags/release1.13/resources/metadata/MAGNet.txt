@@ -1,0 +1,128 @@
+##Example from Magnet
+[edit]ARACNE
+NCBC Ontology Classification: Analysis --> Genomic & Phenotypic Data Analysis 
+Description: ARACNE (Algorithm for the Reconstruction of Accurate Cellular Networks), a novel algorithm, using microarray expression profiles, specifically designed to scale up to the complexity of regulatory networks in mammalian cells, yet general enough to address a wider range of network deconvolution problems. This method uses an information theoretic approach to eliminate the vast majority of indirect interactions typically inferred by pairwise analysis. 
+Data Input: .exp, http://amdec-bioinfo.cu-genome.org/html/aracne-2005-04-26/Readme.txt 
+Data Output: .adj, http://amdec-bioinfo.cu-genome.org/html/aracne-2005-04-26/Readme.txt 
+Implementation Language: TBD 
+Platforms tested: Linux and Windows 
+Version, Date, Stage: TBD 
+Authors: Andrea Califano, et al. 
+URL: Use caWorkbench2.0 framework to run ARACNE online, or you download the standalone ARACNE applications at http://amdec-bioinfo.cu-genome.org/html/ARACNE.htm. 
+[edit]MatrixREDUCE
+Description: Regulation of gene expression by a transcription factor requires physical interaction between the factor and the DNA, which can be described by a statistical mechanical model. Based on this model, the MatrixREDUCE algorithm uses genome-wide occupancy data for a transcription factor (e.g. ChIP-chip or mRNA expression data) and associated nucleotide sequences to discover the sequence-specific binding affinity of the transcription factor. The sequence specificity of the transcription factor's DNA-binding domain is modeled using a position-specific affinity matrix (PSAM), representing the change in the binding affinity (Kd) whenever a specific position within a reference binding sequence is mutated. The PSAM can be transformed into affinity logo for visualization sing the utility program AffinityLogo, and a MatrixREDUCE run can be summarized in an easy-to-navigate webpage using HTMLSummary. 
+Input (parameters & Data Types): sequence file in FASTA format; and expression data file in tab-delimited text format. 
+Output Data (parameters & Data Types): PSAMs in numeric and graphical format, parameters of the fitted model, and an HTML summary page. 
+Implementation Language: ANSI C, making use of Numerical Recipes routines. 
+Version, Date, Stage: Version 1.0, July 10, 2006, extensively tested in lab. 
+Authors: Barrett Foat, Xiang-Jun Lu, Harmen J. Bussemaker 
+Platforms Tested: Linux, Cygwin (Windows), Mac OS X 
+Keywords: position-specific affinity matrix, binding affinity, cis-regulatory element, expression data, ChIP-chip, transcription factor 
+URL: http://www.bussemakerlab.org/software/MatrixREDUCE 
+[edit]T-Profiler
+Description: T-profiler is a web-based tool that uses the t-test to score changes in the average activity of pre-defined groups of genes. The gene groups are defined based on Gene Ontology categorization, ChIP-chip experiments, upstream matches to a consensus transcription factor binding motif, and location on the same chromosome, respectively. If desired, an iterative procedure can be used to select a single, optimal representative from sets of overlapping gene groups. A jack-knife procedure is used to make calculations more robust against outliers. T-profiler makes it possible to interpret microarray data in a way that is both intuitive and statistically rigorous, without the need to combine experiments or choose parameters. 
+Input (parameters & Data Types): Currently, gene expression data from Saccharomyces cerevisiae and Candida albicans are supported. 
+Output Data (parameters & Data Types): 
+Implementation Language: T-profiler is written in PHP, data is managed by a MYSQL database server 
+Version, Date, Stage: 
+Authors: André Boorsma, Barrett C. Foat, Daniel Vis, Frans Klis, Harmen J. Bussemaker 
+Platforms Tested: Web-based application 
+Keywords: gene expression, transcriptome, ChIP-chip, Gene Ontology 
+URL: http://www.t-profiler.org 
+[edit]TranscriptionDetector
+Description: A tool for finding probes measuring significantly expressed loci in a genomic array experiment. Given expression data from some tiling array experiment, TranscriptionDetector decides the likelihood that a probe is detecting transcription from the locus in which it resides. Probabilities are assigned by making use of a background signal intensity distribution from a set of negative control probes. This tool is useful for the functional annotation of genomes as it allows for the discovery of novel transcriptional units independently of any genomic annotation. 
+Input (parameters & Data Types): Expression data (GEO or other platforms) and designation of which probes represent negative controls and which are "data" probes. 
+Output Data (parameters & Data Types): A text file with a list of probes corresponding to significantly expressed loci. 
+Implementation Language: ANSI C, making use of GSL. 
+Version, Date, Stage: 
+Authors: Xiang-Jun Lu, Gabor Halasz, Marinus F. van Batenburg 
+Platforms Tested: Linux, Cygwin (Windows), Mac OS X 
+Keywords: tiling arrays, expression, transcriptome 
+URL: http://www.bussemakerlab.org/software/TranscriptionDetector/ 
+[edit]PhenoGO
+Description: PhenoGO adds phenotypic contextual information to existing associations between gene products and Gene Ontology (GO) terms as specified in GO Annotations (GOA). PhenoGO utilizes an existing Natural Language Processing (NLP) system, called BioMedLEE, an existing knowledge-based phenotype organizer system (PhenOS) in conjunction with MeSH indexing and established biomedical ontologies. The system also encodes the context to identifiers that are associated in different biomedical ontologies, including the UMLS, Cell Ontology, Mouse Anatomy, NCBI taxonomy, GO, and Mammalian Phenotype Ontology. In addition, PhenoGO was evaluated for coding of anatomical and cellular information and assigning the coded phenotypes to the correct GOA; results obtained show that PhenoGO has a precision of 91% and recall of 92%, demonstrating that the PhenoGO NLP system can accurately encode a large number of anatomical and cellular ontologies to GO annotations. The PhenoGO Database may be accessed at www.phenogo.org 
+Input (parameters & Data Types): Gene Ontology Annotations Files and Medline Abstracts 
+Output Data (parameters & Data Types): XML file and www.phenogo.org Web Portal 
+Implementation Language: A variety of modules, the web portal is in Java and MySQL, the computational terminology component (phenOS) is written in Perl scripts that queries tables in IBM DB2, the natural language processing component is written in PROLOG. 
+Version, Date, Stage: Version 2, Feb 2006 
+Authors: Yves Lussier and Carol Friedman are the principal investigators. The programmers are Jianrong Li, Lee Sam, and Tara Borlawsky 
+Platforms Tested: 
+Keywords: Phenotypic integration, computational phenotypes 
+URL: http://www.phenogo.org 
+[edit]MEDUSA/Gorgon
+Description: MEDUSA is an algorithm for learning predictive models of transcriptional gene regulation from gene expression and promoter sequence data. By using a statistical learning approach based on boosing, MEDUSA learns cis regulatory motifs, condition-specific regulators, and regulatory programs that predict the differential expression of target genes. The regulatory program is specified as an alternating decision tree (ADT). The Java implementation of MEDUSA will allow a number of visualizations of the regulatory program and other inferred regulatory information, implemented in the accompanying Gorgon tool, including hits of significant and condition-specific motifs along the promoter sequences of target genes and regulatory network figures viewable in Cytoscape. 
+Input (parameters & Data Types): Discretized (up/down/baseline) gene expression data in plain text format, promoter sequences in FASTA format, list of candidate transcriptional regulators and signal transducers in plain text format. 
+Output Data (parameters & Data Types): Regulatory program represented as a Java serialized object file readable by Gorgon and as a human readable XML file. Gorgon currently generates views of learned PSSMs, positional hits along promoter sequences, and views of the ADT as HTML files, and generates network figures as Cytoscape format files. 
+Implementation Language: Java (prototyped in MATLAB) 
+Version, Date, Stage: Version 2.0, July 2006, pre-release beta version; Version 1.0 (MATLAB), April 2005, stable public release 
+Authors: David Quigley, Manuel Middendorf, Steve Lianoglou, Anshul Kundaje, Yoav Freund, Chris Wiggins, Christina Leslie 
+Platforms Tested: Windows, Linux, Mac OS X 
+License: Open source 
+NCBC: MAGNet 
+URL: http://www.cs.columbia.edu/compbio/medusa (MATLAB), http://compbio.sytes.net:8090/medusa (Java beta version) 
+[edit]String Kernels
+Description: The string kernel package contains implementations for the mismatch and profile string kernels for use with support vector machine (SVM) classifiers for protein sequence classification. Both kernels compute similarity between protein sequences based on common occurrences of k-length subsequences ("k-mers") counted with substitutions. Kernel functions for protein sequence data enable the training of SVMs for a range of prediction problems, in particular protein structural class prediction and remote homology detection. A version of the Spider MATLAB machine learning package is also bundled with the code, which allows users to train SVMs and evaluate performance on test sets with the packaged software. 
+Input (parameters & Data Types): The mismatch kernel requires sequence data in FASTA format. The profile string kernel uses probabilistic profiles, such as those produced by PSI-BLAST, in place of the original sequences. The Spider SVM implementation requires both the kernel matrix and a label file of binary or multi-class labels for the training data; this data must be loaded into MATLAB variables before using Spider routing. 
+Output Data (parameters & Data Types): The kernel code produces a kernel matrix for the input data in tab-delimited text format. The Spider package trains SVMs and stores the learns classifier and results from applying the classifier on test data as MATLAB objects. 
+Implementation Language: String kernel code is implemented in C. Spider is a set of object-oriented MATLAB routines. 
+Version, Date, Stage: Version 1.2, September 2004, stable public release 
+Authors: Eleazar Eskin, Rui Kuang, Eugene Ie, Ke Wang, Jason Weston, Bill Noble, Christina Leslie 
+Platforms Tested: Windows, Linux 
+License: Open source 
+URL: http://www.cs.columbia.edu/compbio/string-kernels 
+[edit]DelPhi
+Description: DelPhi provides numerical solutions to the Poisson-Boltzmann equation (both linear and nonlinear form) for molecules of arbitrary shape and charge distribution. The current version is fast (the best relaxation parameter is estimated at run time), accurate (calculation of the electrostatic free energy is less dependent on the resolution of the lattice) and can handle extremely high lattice dimensions. It also includes flexible features for assigning different dielectric constants to different regions of space and treating systems containing mixed salt solutions. 
+Input (parameters & Data Types): DelPhi takes as input a coordinate file format of a molecule or equivalent data for geometrical objects and/or charge distributions 
+Output Data (parameters & Data Types): electrostatic potential in and around the system 
+Implementation Language: Fortran and C 
+Version, Date, Stage: Stable public release 
+Authors: E.Alexov, R.Fine, M.K.Gilson, A.Nicholls, W.Rocchia, K.Sharp, and B. Honig. 
+Platforms Tested: Unix-SGI IRIX, linux, PC (requires Fortran and C compilers), AIX IBM version and Mac. 
+License: Freely available to academia; pay model for commercial users. 
+Keywords: Finite Difference Poisson-Boltzman Solver 
+URL: http://trantor.bioc.columbia.edu/delphi 
+[edit]GRASP
+Description: A molecular visualization and analysis program. It is particularly useful for the display and manipulation of the surfaces of molecules and their electrostatic properties. 
+Input (parameters & Data Types): PDB files, potential maps from DelPhi 
+Output Data (parameters & Data Types): molecular graphics. 
+Implementation Language: Fortran 
+Version, Date, Stage: v1.3.6 .Stable public release. 
+Authors: Anthony Nicholls and Barry Honig. 
+Platforms Tested: SGI machines: irix 5.x and 6.x (INDYs, INDIGOs including Impact, Octane and O2) systems. 
+License: Freely available to academia. 
+Keywords: molecular visualization 
+URL: http://trantor.bioc.columbia.edu/grasp 
+[edit]GRASS
+Description: GRASS aims at providing sophisticated molecular graphics capabilities to scientists without requiring extensive training in complicated molecular graphics software or access to expensive graphics equipment. This tool is designed to facilitate the study of macromolecular function by mapping a number of structural, chemical, and biological properties onto various representations of molecular structure. These properties and graphics are calculated on our server (primarly using the GRASP molecular modeling program) and are then sent to be viewed on the user's machine using any of three widely available visualization programs: a Virtual Reality Modeling Language (VRML) viewer, Chime, or GRASP 
+Input (parameters & Data Types): PDB file 
+Output Data (parameters & Data Types): molecular properties 
+Implementation Language: cgi 
+Version, Date, Stage: Stable public release. 
+Authors: Nayal, M., Hitz, B.C., and Honig, B. 
+Platforms Tested: platform independent (web based tool) 
+License: Freely available to academia. 
+Keywords: chime; computational biology; continuum electrostatics; functional genomics; GRASP; molecular graphics; VRML; World-Wide Web. 
+URL: http://trantor.bioc.columbia.edu/cgi-bin/GRASS/surfserv_enter.cgi 
+[edit]Nest
+Description: Modeling protein structure based on a sequence-template alignment. The current server works only for modeling with a single template. Part of jackal, which can be downloaded. 
+Input (parameters & Data Types): pir and PDB files 
+Output Data (parameters & Data Types): 
+Implementation Language: c++ 
+Version, Date, Stage: Stable public release. 
+Authors: Xiang, Z. and Honig, B. 
+Platforms Tested: platform independent (web based tool) 
+License: Freely available to academia. 
+Keywords: modeling, protein structure, sequence-template alignment. 
+URL: http://honiglab.cpmc.columbia.edu/cgi-bin/jackal/nest.cgi 
+[edit]HMAP
+Description: A web based tool for performing profile-to-profile alignments and searches on hybrid multi-dimensional profiles derived from sequence, secondary and tertiary structural information. 
+Input (parameters & Data Types): fasta files 
+Output Data (parameters & Data Types): fasta, pir, hmap files 
+Implementation Language: c++, perl, java 
+Version, Date, Stage: Stable public release. 
+Authors: Tang, C. L., Xie, L., Koh, I. Y. Y., Posy, S., Alexov, E. and Honig, B. 
+Platforms Tested: platform independent (web based tool) 
+License: Freely available to academia. 
+Keywords: multiple structure alignment; profile-profile alignments; hybrid profile; sequence alignment; homolog detection 
+
+URL: http://trantor.bioc.columbia.edu/hmap/

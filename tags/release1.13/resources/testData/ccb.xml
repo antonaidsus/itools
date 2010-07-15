@@ -1,0 +1,1396 @@
+<ncbcresources>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>jViewbox</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>A portable software framework for medical imaging research</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>Jack C. Wei, Scott Neu, and Daniel J. Valentino</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>2.0b1,3/1/2003,Development with public userbase</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Manifold Viewers 2D, 3D, 4D, ND</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>A portable software framework for medical imaging research</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>2D or 3D Image planes or volumes in ANALYZE/IMG or resterized format</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>2D or 3D Graphical Data Display</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://www.loni.ucla.edu/Software/Software_Detail.jsp?software_id=1</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Class Library / Toolkit</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>LONI Pipeline Processing Environment</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>Protocol Execution Environment</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>Arash Payan, Jagadeeswaran Rajendiran, Arthur Toga</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>1,2/28/2006,Beta</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Graphical e.g., HIVE Pipeline</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>Protocol Execution Environment</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>Various 2D/3D Brain Image volume type data</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>Data Analysis Workflows in XML format and analysis results of different graphical and quantititive types</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://pipeline.loni.ucla.edu</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Application</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>Brain Surface Extractor</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>Brain Surface Extraction: Designed to automatically extract the brain from a set of T1 weighted Magnetic Resonance (MR) images of the human head.</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>David Shattuck , Richard Leahy, Stephanie Sandor, Bijan Timsari</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>2.0a,NA,Development with public userbase</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Cortical Modeling</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>Brain Surface Extraction: Designed to automatically extract the brain from a set of T1 weighted Magnetic Resonance (MR) images of the human head.</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>3D Image volumes in ANALYZE/IMG format</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>OBJ, DXF surface formats</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://www.loni.ucla.edu/Software/Software_Detail.jsp?software_id=4</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Application</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>Sub-Volume Thresholding Analysis</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>A tool for Statistical Analysis of Stereotactic Functional Brain Data</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>Ivo D. Dinov</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>5.3,NA,Development with public userbase</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Statistical Package</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>A tool for Statistical Analysis of Stereotactic Functional Brain Data</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>Two populations of 3D PET/MRI Image volumes in ANALYZE/IMG format</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>3D Statistical Analysis volumes in ANALYZE/IMG format</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://www.loni.ucla.edu/~dinov/SVT.html</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Application</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>Wavelet Analysis of Image Registration</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>A tool for quantitative analysis of various n-dimensional (n-D) image registration techniques.</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>Ivo D. Dinov</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>2,NA,Development with public userbase</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Wavelet Transform</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>A tool for quantitative analysis of various n-dimensional (n-D) image registration techniques.</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>3D Brain Image volumes in ANALYZE/IMG format</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>3D Brain Image volumes in ANALYZE/IMG format and quantitative tables of warp classification data</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://www.loni.ucla.edu/~dinov/WAIR.html</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Application</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>LONI Visualization Tool</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>An interactive tool for stereotaxic brain data visualization</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>Ivo D. Dinov, Bae Cheol Shin, Fotios Konstantinidis and Arthur Toga</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>5.3,5/23/2006,Development with public userbase</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Manifold Viewers 2D, 3D, 4D, ND</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>An interactive tool for stereotaxic brain data visualization</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>3D/4D PET/MRI/fMRI Image volumes in ANALYZE/IMG or MNC format</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>2D or 3D Graphical Data Display and stacks of UCF contours</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://www.loni.ucla.edu/~dinov/LONI_Vis.html</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Application</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>Automated Image Registration</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>A tool for automated registration of 3D and 2D images within and across subjects and across imaging modalities.</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>Roger P. Woods</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>5.2.5,NA,Mature</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Registration</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>A tool for automated registration of 3D and 2D images within and across subjects and across imaging modalities.</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>3D Brain Image volumes in ANALYZE/IMG format</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>3D Brain Image volumes in ANALYZE/IMG format or Displacement fiels in AIR/WARP file formats</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://bishopw.loni.ucla.edu/AIR5/</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Application</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>LONI It&apos;s Close Enuf</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>LONI ICE is a Java application that generates seed points for other image processing applications.</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>Scott C. Neu</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>1,11/1/2006,Development with public userbase</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Manifold Viewers 2D, 3D, 4D, ND</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>LONI ICE is a Java application that generates seed points for other image processing applications.</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>2D or 3D Image planes or volumes in ANALYZE/IMG or resterized format</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>2D or 3D Graphical Data Display</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://www.loni.ucla.edu/Software/Software_Detail.jsp?software_id=40</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Application</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>Statistical Online Computational Resource</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>The SOCR resource provides a hierarchy of portable online interactive aids for motivating, modernizing probability and statistics applications.</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>I. Dinov, Juana Sanchez, Nicolas, Christou, Robert Gould, J. Ma, J. Hu, D. Ylvisaker, R. Gould, J. Landerman, H. Wang, P. Efstathopoulos, F. Konstantinidios, Arthur Toga</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>1,8/1/2003,Mature</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Statistical Package</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>The SOCR resource provides a hierarchy of portable online interactive aids for motivating, modernizing probability and statistics applications.</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>Tabular ASCII data (copy/paste) or human interface</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>Tabular ASCII data (copy/paste) or human interface</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://www.SOCR.ucla.edu</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Application</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>MultiTracer</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>Tracer is a Java application that allows images to be displayed in three dimensions. The tool allows anatomic structures to be traced and the tracings to be saved in a format that facilitates review and revision.</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>Roger P. Woods</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>1,NA,Development with public userbase</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Manifold Viewers 2D, 3D, 4D, ND</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>Tracer is a Java application that allows images to be displayed in three dimensions. The tool allows anatomic structures to be traced and the tracings to be saved in a format that facilitates review and revision.</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>3D Brain Image volumes in ANALYZE/IMG format</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>2D or 3D Graphical Data Display or stacks of UCF contours</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://bishopw.loni.ucla.edu/MultiTracer/MultiTracer.html</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Application</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>LONI Debabeler</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>The LONI Debabeler enables researchers to manage the conversion of imaging data from one file format to another using a graphical user interface.</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>Scott C Neu and Daniel J Valentino</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>2.6,11/13/2006,Development with public userbase</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Data Transforms</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>The LONI Debabeler enables researchers to manage the conversion of imaging data from one file format to another using a graphical user interface.</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>Various 2D/3D Brain Image volume type data</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>Various 2D/3D Brain Image volume type data</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://www.loni.ucla.edu/Software/Software_Detail.jsp?software_id=11</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Application</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>MultiPhase-SEG</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>MultiPhase-SEG is a segmentation software that employs the implementation of the active contours without edges level set based segmentation model.</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>Igor Yanovskiy</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>1,3/1/2005,Development with public userbase</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Segmentation</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>MultiPhase-SEG is a segmentation software that employs the implementation of the active contours without edges level set based segmentation model.</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>3D Brain Image volumes in ANALYZE/IMG format</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>3D Brain Image volumes in ANALYZE/IMG format</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://www.loni.ucla.edu/Software/Software_Detail.jsp?software_id=16</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Application</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>Synchronized Histological Image Viewing Architecture</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>The Synchronized Histological Image Viewing Architecture (SHIVA) is a Java-based visualization and analysis application.</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>Heng Yuan, Allan MacKenzie-Graham, Eagle S. Jones, David W. Shattuck, Arthur W. Toga</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>1,10/16/2005,Development with public userbase</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Manifold Viewers 2D, 3D, 4D, ND</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>The Synchronized Histological Image Viewing Architecture (SHIVA) is a Java-based visualization and analysis application.</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>Various 2D/3D Brain Image volume type data</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>2D or 3D Graphical Data Display</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://www.loni.ucla.edu/Software/Software_Detail.jsp?software_id=12</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Application</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>Extract4DUcfAttributes</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>The Extract4DUcfAttributes application extracts data attributes associated with each vertex of a Ucf file.</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>Craig Schwartz</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>1.1.0,5/10/2006,Development with public userbase</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Shape Analysis</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>The Extract4DUcfAttributes application extracts data attributes associated with each vertex of a Ucf file.</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>4D UCF contour File format</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>Column of ASCII 1D float data</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://www.loni.ucla.edu/Software/Software_Detail.jsp?software_id=32</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Application</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>ShapeCurvature</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>The ShapeCurvature application allows researchers to calculate the curvature of a surface mesh that is stored in a shape file.  These curvature values may be written to disk files in a variety of file formats.</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>Bae Cheol Shin and Craig Schwartz</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>1.0.0,5/10/2006,Development with public userbase</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Shape Analysis</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>The ShapeCurvature application allows researchers to calculate the curvature of a surface mesh that is stored in a shape file.  These curvature values may be written to disk files in a variety of file formats.</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>Triangulated Surface Object (in various 3D surface formats)</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>ASCII tables</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://www.loni.ucla.edu/Software/Features_Detail.jsp?software_id=33</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Application</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>ShapeToDX</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>The ShapeToDX application is a Java application that translates data files that can be read by the ShapeTools library into an OpenDX \genreal format\&quot; data file.&quot;</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>Craig Schwartz</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>1.0.0,5/10/2006,Development with public userbase</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Shape Analysis</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>The ShapeToDX application is a Java application that translates data files that can be read by the ShapeTools library into an OpenDX \genreal format\&quot; data file.&quot;</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>OBJ surface or Stacks or UCF contours</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>DXF Surface format</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://www.loni.ucla.edu/Software/Software_Detail.jsp?software_id=34</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Application</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>Virtual File System Browser</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>The Virtual File System Browser is an interoperable replacement for the Java JfileChooser that supports sFTP and ssh protocols.</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>Jeff Ma</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>1.1.0,5/10/2006,Development with public userbase</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Data Transfer</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>The Virtual File System Browser is an interoperable replacement for the Java JfileChooser that supports sFTP and ssh protocols.</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>URL, data server, host</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>FTP or File download tunnel</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://www.loni.ucla.edu/Software/Software_Detail.jsp?software_id=35</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Class Library / Toolkit</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>FFT Library</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>An FFT library in Java</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>Herbert Chang and Daniel Valentino</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>1.1,2/24/2005,Development with public userbase</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Fourier Transform</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>An FFT library in Java</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>2D or 3D Image planes or volumes in ANALYZE/IMG or resterized format</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>2D or 3D Image planes or volumes in ANALYZE/IMG or resterized format</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://www.loni.ucla.edu/Software/Software_Detail.jsp?software_id=36</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Class Library / Toolkit</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>Charged Fluid Model for Vascular Segmentation</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>A computer-aided took for 3D vascular tree segmentation using an electrostatic charged fluid model.</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>Herbert Chang</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>1,5/30/2006,Development with public userbase</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Segmentation</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>A computer-aided took for 3D vascular tree segmentation using an electrostatic charged fluid model.</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>2D or 3D Image planes or volumes in ANALYZE/IMG or resterized format</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>2D or 3D Image planes or volumes in ANALYZE/IMG or resterized format</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://www.loni.ucla.edu/Software/Software_Detail.jsp?software_id=37</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Class Library / Toolkit</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>Charged Fluid Model for Brain Image Segmentation</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>CCFMBIS is a computer-aided tool for 2-D brain image segmentation using an electrostatic charged fluid model.</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>Herbert Chang,Daniel Valentiino, Gary Duckwiler, and Arthur Toga</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>1.1,1/20/2007,Development with public userbase</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Segmentation</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>CCFMBIS is a computer-aided tool for 2-D brain image segmentation using an electrostatic charged fluid model.</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>2D or 3D Image planes or volumes in ANALYZE/IMG or resterized format</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>2D or 3D Image planes or volumes in ANALYZE/IMG or resterized format</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://www.loni.ucla.edu/Software/Software_Detail.jsp?software_id=41</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Class Library / Toolkit</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>BLASTgres</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>NA</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>Stott Parker and Ruey-Lung Hsiao</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>1,Dec-06,Development with public userbase</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Information retrieval, traversal and querying</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>PostgreSQL, data management of biological sequences, sequence analysis, bioinformatics.</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>biological sequences</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>Range, an integer interval, representing a segment in a sequence. Loc, a sequence location defined by a range and a sequence id, representing a specific segment in a specific sequence.</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://blastgres.cs.ucla.edu/</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Class Library / Toolkit</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>LONI Java Image I/O Plugins</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>Decoders and encoders written in Java for the AFNI, ANALYZE, DICOM, ECAT, GE, MINC, NIFTI and other neuroimaging file formats.</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>Scott C. Neu, Bryan Vann, Kejia Ma, and Craig Schwartz</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>1.2,11/13/2006,Development with public userbase</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Manifold Viewers 2D, 3D, 4D, ND</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>Decoders and encoders written in Java for the AFNI, ANALYZE, DICOM, ECAT, GE, MINC, NIFTI and other neuroimaging file formats.</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>Various 2D/3D Brain Image volume type data</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>Various 2D/3D Brain Image volume type data</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://www.loni.ucla.edu/Software/Software_Detail.jsp?software_id=17</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Class Library / Toolkit</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>LONI ShapeViewer</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>The LONI ShapeViewer is a simple, portable geometry viewer that supports the file formats used by CCB researchers and provides their most commonly needed viewing functions.  Since it is written in Java,it can run on a wide variety of computers.</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>Jeff Q. Ma</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>1.1.0,5/10/2006,Development with public userbase</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Manifold Viewers 2D, 3D, 4D, ND</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>The LONI ShapeViewer is a simple, portable geometry viewer that supports the file formats used by CCB researchers and provides their most commonly needed viewing functions.  Since it is written in Java,it can run on a wide variety of computers.</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>Varrious Surface and Contour file formats</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>2D or 3D Graphical Data Display</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://www.loni.ucla.edu/Software/Software_Detail.jsp?software_id=18</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Application</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>BrainSuite2</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>BrainSuite2 is a magnetic resonance (MR) image analysis tool designed for identifying tissue types and surfaces in MR images of the human head.</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>David W. Shattuck</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>2,6/1/2005,Development with public userbase</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Image Processing</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>BrainSuite2 is a magnetic resonance (MR) image analysis tool designed for identifying tissue types and surfaces in MR images of the human head.</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>Various 2D/3D Brain Image volume type data</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>2D or 3D Graphical Data Display</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://www.loni.ucla.edu/Software/Software_Detail.jsp?software_id=19</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Application</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>DualSurfaceMin</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>The dualsurfacemin is a C++ implementation of the fully automatic dual surface minimization (DSM) algorithm for the optimization of deformable surfaces [1]. The method is developed for automatic surface extraction from noisy volumetric images.</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>Jussi Tohka, Mikko It&#228;ranta and Jouni Mykk&#228;nen</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>1.1,5/31/2005,Development with public userbase</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Shape Analysis</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>The dualsurfacemin is a C++ implementation of the fully automatic dual surface minimization (DSM) algorithm for the optimization of deformable surfaces [1]. The method is developed for automatic surface extraction from noisy volumetric images.</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>3D Brain Image volumes in ANALYZE/IMG format</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>3D Brain Image volumes in ANALYZE/IMG format</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://www.loni.ucla.edu/Software/Software_Detail.jsp?software_id=22</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Application</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>LONI De-identification Debablet</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>A simple to use Java application for removing patient-identifying information (e.g., patient name and id) from medical image files.</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>Scott C. Neu and Karen Crawford</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>1,10/13/2005,Development with public userbase</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Data Transforms</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>A simple to use Java application for removing patient-identifying information (e.g., patient name and id) from medical image files.</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>Various 2D/3D Brain Image volume type data</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>Various 2D/3D Brain Image volume type data</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://www.loni.ucla.edu/Software/Software_Detail.jsp?software_id=11</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Application</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>InterpolateUcf</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>InterpolateUcf is a java based tool that interpolates contour vertices and data attributes in a Ucf file.</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>Craig Schwartz</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>1.1.0,10/10/2005,Development with public userbase</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Shape Analysis</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>InterpolateUcf is a java based tool that interpolates contour vertices and data attributes in a Ucf file.</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>Uniform Contour File Format (UCF)</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>Uniform Contour File Format (UCF)</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://www.loni.ucla.edu/Software/Software_Detail.jsp?software_id=24</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Application</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>LONI ShapeTools</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>The ShapeTools library is a collection of Java classes that enable Java programmers to model and manipulate geometric shapes and associated data values.</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>Craig Schwartz</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>1.2.0,5/10/2006,Development with public userbase</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Shape Analysis</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>The ShapeTools library is a collection of Java classes that enable Java programmers to model and manipulate geometric shapes and associated data values.</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>Varrious Surface and Contour file formats</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>Varrious Surface and Contour file formats</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://www.loni.ucla.edu/Software/Software_Detail.jsp?software_id=25</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Class Library / Toolkit</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>LONI ShapeDistance</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>A tool for calculating the distance between vertices of two shape files</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>Craig Schwartz</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>1.0.0,10/31/2005,Development with public userbase</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Shape Analysis</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>A tool for calculating the distance between vertices of two shape files</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>Varrious Surface and Contour file formats</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>Floating point distance values</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://www.loni.ucla.edu/Software/Software_Detail.jsp?software_id=26</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Application</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>DXJava</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>The DXJava is a collection of Java classes that enable Java programmers to read and write OpenDX general format files.</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>Craig Schwartz</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>1.0.0,5/1/2006,Development with public userbase</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Shape Analysis</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>The DXJava is a collection of Java classes that enable Java programmers to read and write OpenDX general format files.</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>Varrious Surface and Contour file formats</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>Varrious Surface and Contour file formats</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://www.loni.ucla.edu/Software/Software_Detail.jsp?software_id=31</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Class Library / Toolkit</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>Pygr</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>Pygr is an open source software project used to develop graph database interfaces.</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>Christopher Lee, Alexander Alekseyenko, Stott Parker, Zach Fierstadt</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>0.3,3/10/2006,Development with public userbase</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>BiologicalConcept</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>Pygr is an open source software project used to develop graph database interfaces.</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>biological sequences</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>Charts</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://www.loni.ucla.edu/Software/Software_Detail.jsp?software_id=27</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Class Library / Toolkit</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>LONI ShapeViewerApplet</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>The ShapeViewerApplet displays three dimensional shapes in a web page</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>Jeff Q. Ma</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>1.1.0,10/28/2005,Development with public userbase</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Shape Analysis</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>The ShapeViewerApplet displays three dimensional shapes in a web page</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>Varrious Surface and Contour file formats</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>2D or 3D Graphical Data Display</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://www.loni.ucla.edu/Software/Software_Detail.jsp?software_id=18</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Application</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>ShapeTransform</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>The ShapeTransform application facilitates the moveof  a shape file from one coordinate system to another.</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>Bae Cheol Shin and Craig Schwartz</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>1.1.0,5/3/2006,Development with public userbase</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Shape Analysis</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>The ShapeTransform application facilitates the moveof  a shape file from one coordinate system to another.</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>Varrious Surface and Contour file formats</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>Varrious Surface and Contour file formats</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://www.loni.ucla.edu/Software/Software_Detail.jsp?software_id=30</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Application</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>ASAP</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>After transcription of a gene, the resulting pre-mRNA is spliced before exiting the nucleus. Alternative splicing of a single pre-mRNA can give rise to different mRNA transcripts. Consequently, alternative splicing is an important mechanism for generating protein diversity from a single gene. It has been suggested that large numbers of human genes are alternatively spliced (1, 2, 3). Alternative splicing is observed all across metazoa, and has been implicated in various biological processes</value>
+        </property>        <property>
+            <name>Authors</name>
+            <value>Christopher Lee, Alexander Alekseyenko, Stott Parker, Zach Fierstadt</value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value>2.1,6/28/1905,Development with public userbase</value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value>Information retrieval, traversal and querying</value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value>alternative splicing, biological process, alternatively spliced isoforms</value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value>biological sequences</value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value>Charts</value>
+        </property>        <property>
+            <name>License</name>
+            <value>CCB License</value>
+        </property>        <property>
+            <name>Organization</name>
+            <value>UCLA Center for Computational Biology</value>
+        </property>        <property>
+            <name>URL</name>
+            <value>http://bioinfo.mbi.ucla.edu/ASAP/</value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value>Web Service</value>
+        </property>        <property>
+            <name>sandbox</name>
+            <value>true</value>
+        </property>    </ncbcresource>
+</ncbcresources>

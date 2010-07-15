@@ -1,0 +1,22 @@
+<properties>
+    <property name="Name" />
+    <property name="Description" singleline="false" />
+    <property name="Authors"/> 
+    <property name="Version, Date, Stage"/> 
+    <property name="NCBC Ontology Classification"/>
+    <property name="Keywords"/>
+    <property name="Implementation Language" />
+    
+    <property name="Data Input" /> 
+    <property name="Data Output"/> 
+    
+    <property name="Platforms tested"/>
+    <property name="License"/>
+     
+    <property name="Organization"/>
+    <property name="Development Stage" />
+    <property name="URL"/>
+    <property name="Resource Type" 
+    availableValues="Locally executable program, software suite, downloadable libraries"/> 
+    
+</properties>

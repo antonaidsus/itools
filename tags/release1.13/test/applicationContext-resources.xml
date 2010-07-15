@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+    "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:/mail.properties</value>
+			</list>
+		</property>
+	</bean>
+ 
+ 	<!-- using Quarts at specific time to search -->
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+	    <property name="triggers">
+	        <list>
+	            <ref bean="cronWeeklyWebSearchTrigger"/>
+	        </list>
+	    </property>
+	</bean>
+	<bean id="cronWeeklyWebSearchTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+	    <property name="jobDetail" ref="webSearchJob"/>
+	    <property name="cronExpression" value="${cronExpression}"/>
+	</bean>
+	<bean id="webSearchJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	    <property name="targetObject" ref="webSearch" />
+	    <property name="targetMethod" value="startParseRegistry"/>
+	</bean>
+	
+	<bean id="webSearch"
+		class="edu.ucla.loni.ccb.itools.biositemap.WebSearch">
+		<property name="yahooApplicationID" value="${yahooApplicationID}" />
+		<property name="request" ref="searchRequest" />
+		<property name="returnValue" value="${search.returnvalue}" />
+		<property name="htmlCrawler" ref="htmlCrawler" />		
+	</bean>
+	<bean id="searchRequest"
+		class="com.yahoo.search.WebSearchRequest">
+		<constructor-arg><value>${search.query}</value></constructor-arg>
+		<!-- property name="format" value="${search.format}" /-->
+	</bean>
+
+ 	<bean id="accountAdminister"
+		class="edu.ucla.loni.ccb.itools.servlet.AccountAdminister"
+		factory-method="getInstance">
+		<property name="mailService" ref="mailService" />
+	</bean>
+	<bean id="mailService"
+		class="edu.ucla.loni.ccb.itools.servlet.MailService">
+		<property name="mailSender" ref="mailSender" />
+		<property name="newUserMailMessage"
+			ref="newUserRegisterMailMessage" />
+		<property name="centerUpdateMailMessage"
+			ref="centerUpdateMailMessage" />
+			<property name="generalMailMessage" ref="mailMessage" />
+	</bean>
+	<bean id="mailSender"
+		class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="${mail.host}" />
+	</bean>
+	<bean id="mailMessage" 
+	    class="org.springframework.mail.SimpleMailMessage">
+	    <property name="to" value="${mail.receiver}" />
+		<property name="from" value="${mail.sender}" />
+	</bean>
+	<bean id="newUserRegisterMailMessage" parent="mailMessage">
+		<property name="subject" value="${newuser.subject}" />
+		<property name="text" value="${newuser.text}" />
+	</bean>
+
+	<bean id="centerUpdateMailMessage" parent="mailMessage">
+		<property name="subject" value="${centerupdate.subject}" />
+		<property name="text" value="${centerupdate.text}" />
+	</bean>
+</beans>

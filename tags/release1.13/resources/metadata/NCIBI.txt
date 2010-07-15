@@ -1,0 +1,11 @@
+##Example from NCIBI
+[edit]Edgewarp
+NCBC Ontology Classification: Modeling --> Algorithms --> Image Processing --> Registration 
+Description: Edgewarp 3D is a sophisticated workstation package for manipulation of 2D and 3D biomedical images and related data structures by a combination of landmark location, thin-plate spline, and image unwarping and averaging. 
+Data Input: TBD 
+Data Output: TBD 
+Implementation Language: C and C++ code and makes extensive use of SGI's OpenGL graphics interface. Communication with the user is by textual and graphical interfaces managed using TCL/TK. 
+Platforms tested: SGI/IRIX 
+Version, Date, Stage: 3.2.7 
+Authors: Fred Bookstein 
+URL: http://vhp.med.umich.edu/edgewarpss.htm

@@ -1,0 +1,825 @@
+<ncbcresources>
+    <ncbcresource>
+        <property>
+            <name>Name</name>
+            <value>ShapeViewer</value>
+        </property>        <property>
+            <name>Description</name>
+            <value> Provides 3D interactive user interface for viewing parametric shapes commonly used in the Laboratory of Neuroimaging. </value>
+        </property>        <property>
+            <name>Authors</name>
+            <value> Jeff Ma, Craig Schwartz </value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value> 1.0, May 24, 2006, released </value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value> Visualization --&gt; Imaging --&gt; Manifold Viewers 2D, 3D, 4D, ND </value>
+        </property>        <property>
+            <name>Implementation Language</name>
+            <value> Java 1.4 or higher, requires Java3D runs as application or as Applet. </value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value> Current version requires LONI UCF format. </value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value> Scenes composed of multiples shape objects can be saved along with an associated view for subsequent reloading and display. </value>
+        </property>        <property>
+            <name>Platforms tested</name>
+            <value> Macintosh, PC, Sun </value>
+        </property>        <property>
+            <name>License</name>
+            <value> GPL </value>
+        </property>        <property>
+            <name>Organization</name>
+            <value> CCB </value>
+        </property>        <property>
+            <name>Development Stage</name>
+            <value> Beta </value>
+        </property>        <property>
+            <name>URL</name>
+            <value> http://www.loni.ucla.edu/Software/Software_Detail.jsp?software_id=18 </value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value> Locally executable program, software suite, downloadable libraries </value>
+        </property>        <property>
+            <name>Key Words</name>
+            <value> shape viewer, shape libraries, visualization, surface, brain, mesh </value>
+        </property>    </ncbcresource>
+    <ncbcresource>
+        <property>
+            <name>Name</name>
+            <value>TranscriptionDetector</value>
+        </property>        <property>
+            <name>Description</name>
+            <value> A tool for finding probes measuring significantly expressed loci in a genomic array experiment. Given expression data from some tiling array experiment, TranscriptionDetector decides the likelihood that a probe is detecting transcription from the locus in which it resides. Probabilities are assigned by making use of a background signal intensity distribution from a set of negative control probes. This tool is useful for the functional annotation of genomes as it allows for the discovery of novel transcriptional units independently of any genomic annotation. </value>
+        </property>        <property>
+            <name>Authors</name>
+            <value> Xiang-Jun Lu, Gabor Halasz, Marinus F. van Batenburg </value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value> </value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value> tiling arrays, expression, transcriptome </value>
+        </property>        <property>
+            <name>Implementation Language</name>
+            <value> ANSI C, making use of GSL. </value>
+        </property>        <property>
+            <name>URL</name>
+            <value> http://www.bussemakerlab.org/software/TranscriptionDetector/ </value>
+        </property>        <property>
+            <name>Output Data (parameters &amp; Data Types)</name>
+            <value> A text file with a list of probes corresponding to significantly expressed loci. </value>
+        </property>        <property>
+            <name>Input (parameters &amp; Data Types)</name>
+            <value> Expression data (GEO or other platforms) and designation of which probes represent negative controls and which are &quot;data&quot; probes. </value>
+        </property>        <property>
+            <name>Platforms Tested</name>
+            <value> Linux, Cygwin (Windows), Mac OS X </value>
+        </property>    </ncbcresource>
+    <ncbcresource>
+        <property>
+            <name>Name</name>
+            <value>PROMPT</value>
+        </property>        <property>
+            <name>Description</name>
+            <value> PROMPT allows management of multiple ontologies in Prot&#233;g&#233;: compare versions of the same ontology, move frames between included and including project, merge two ontologies into one &amp; extract a part of an ontology. Protege facilitates reuse and development of ontologies through the project-inclusion mechanism: One project can include one or several other projects and reuse all frames from the included projects. For example, you can develop a general ontology and then include it in the more specific one to provide structure for the latter. You can also include the same project in several others, ensuring that they all get the same copy. The &quot;moving frames&quot; mode of the PROMPT tab allows you to move frames between projects, thus altering both. When moving a frame to the including project, you can choose everything that must be moved in order for the projects to remain consistent: An included project should always stand on its own, therefore, no frame in the included project should reference a frame in the including project. You can also choose to perform the process frame-by-frame. There is a running list of conflicts to help you sever all the links from included to including project in the latter mode. </value>
+        </property>        <property>
+            <name>Authors</name>
+            <value> Natasha Noy, with contributions from Michel Klein and Sandhya Kunnatur </value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value> Prompt 2.4.8 (January 2005) for Prot&#233;g&#233; 3.1 </value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value> Integration --&gt; Mappers </value>
+        </property>        <property>
+            <name>Implementation Language</name>
+            <value> Java </value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value> UPML ontology and MDLang ontology </value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value> UPML ontology and MDLang ontology </value>
+        </property>        <property>
+            <name>Platforms tested</name>
+            <value> Platform Independent </value>
+        </property>        <property>
+            <name>URL</name>
+            <value> http://protege.stanford.edu/plugins/prompt/prompt.html</value>
+        </property>    </ncbcresource>
+    <ncbcresource>
+        <property>
+            <name>Name</name>
+            <value>GRASS</value>
+        </property>        <property>
+            <name>Description</name>
+            <value> GRASS aims at providing sophisticated molecular graphics capabilities to scientists without requiring extensive training in complicated molecular graphics software or access to expensive graphics equipment. This tool is designed to facilitate the study of macromolecular function by mapping a number of structural, chemical, and biological properties onto various representations of molecular structure. These properties and graphics are calculated on our server (primarly using the GRASP molecular modeling program) and are then sent to be viewed on the user&apos;s machine using any of three widely available visualization programs: a Virtual Reality Modeling Language (VRML) viewer, Chime, or GRASP </value>
+        </property>        <property>
+            <name>Authors</name>
+            <value> Nayal, M., Hitz, B.C., and Honig, B. </value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value> Stable public release. </value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value> chime; computational biology; continuum electrostatics; functional genomics; GRASP; molecular graphics; VRML; World-Wide Web. </value>
+        </property>        <property>
+            <name>Implementation Language</name>
+            <value> cgi </value>
+        </property>        <property>
+            <name>License</name>
+            <value> Freely available to academia. </value>
+        </property>        <property>
+            <name>URL</name>
+            <value> http://trantor.bioc.columbia.edu/cgi-bin/GRASS/surfserv_enter.cgi </value>
+        </property>        <property>
+            <name>Output Data (parameters &amp; Data Types)</name>
+            <value> molecular properties </value>
+        </property>        <property>
+            <name>Input (parameters &amp; Data Types)</name>
+            <value> PDB file </value>
+        </property>        <property>
+            <name>Platforms Tested</name>
+            <value> platform independent (web based tool) </value>
+        </property>    </ncbcresource>
+    <ncbcresource>
+        <property>
+            <name>Name</name>
+            <value>HMAP</value>
+        </property>        <property>
+            <name>Description</name>
+            <value> A web based tool for performing profile-to-profile alignments and searches on hybrid multi-dimensional profiles derived from sequence, secondary and tertiary structural information. </value>
+        </property>        <property>
+            <name>Authors</name>
+            <value> Tang, C. L., Xie, L., Koh, I. Y. Y., Posy, S., Alexov, E. and Honig, B. </value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value> Stable public release. </value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value> multiple structure alignment; profile-profile alignments; hybrid profile; sequence alignment; homolog detection </value>
+        </property>        <property>
+            <name>Implementation Language</name>
+            <value> c++, perl, java </value>
+        </property>        <property>
+            <name>License</name>
+            <value> Freely available to academia. </value>
+        </property>        <property>
+            <name>URL</name>
+            <value> http://trantor.bioc.columbia.edu/hmap/</value>
+        </property>        <property>
+            <name>Output Data (parameters &amp; Data Types)</name>
+            <value> fasta, pir, hmap files </value>
+        </property>        <property>
+            <name>Input (parameters &amp; Data Types)</name>
+            <value> fasta files </value>
+        </property>        <property>
+            <name>Platforms Tested</name>
+            <value> platform independent (web based tool) </value>
+        </property>    </ncbcresource>
+    <ncbcresource>
+        <property>
+            <name>Name</name>
+            <value>MatrixREDUCE</value>
+        </property>        <property>
+            <name>Description</name>
+            <value> Regulation of gene expression by a transcription factor requires physical interaction between the factor and the DNA, which can be described by a statistical mechanical model. Based on this model, the MatrixREDUCE algorithm uses genome-wide occupancy data for a transcription factor (e.g. ChIP-chip or mRNA expression data) and associated nucleotide sequences to discover the sequence-specific binding affinity of the transcription factor. The sequence specificity of the transcription factor&apos;s DNA-binding domain is modeled using a position-specific affinity matrix (PSAM), representing the change in the binding affinity (Kd) whenever a specific position within a reference binding sequence is mutated. The PSAM can be transformed into affinity logo for visualization sing the utility program AffinityLogo, and a MatrixREDUCE run can be summarized in an easy-to-navigate webpage using HTMLSummary. </value>
+        </property>        <property>
+            <name>Authors</name>
+            <value> Barrett Foat, Xiang-Jun Lu, Harmen J. Bussemaker </value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value> Version 1.0, July 10, 2006, extensively tested in lab. </value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value> position-specific affinity matrix, binding affinity, cis-regulatory element, expression data, ChIP-chip, transcription factor </value>
+        </property>        <property>
+            <name>Implementation Language</name>
+            <value> ANSI C, making use of Numerical Recipes routines. </value>
+        </property>        <property>
+            <name>URL</name>
+            <value> http://www.bussemakerlab.org/software/MatrixREDUCE </value>
+        </property>        <property>
+            <name>Output Data (parameters &amp; Data Types)</name>
+            <value> PSAMs in numeric and graphical format, parameters of the fitted model, and an HTML summary page. </value>
+        </property>        <property>
+            <name>Input (parameters &amp; Data Types)</name>
+            <value> sequence file in FASTA format; and expression data file in tab-delimited text format. </value>
+        </property>        <property>
+            <name>Platforms Tested</name>
+            <value> Linux, Cygwin (Windows), Mac OS X </value>
+        </property>    </ncbcresource>
+    <ncbcresource>
+        <property>
+            <name>Name</name>
+            <value>PhenoGO</value>
+        </property>        <property>
+            <name>Description</name>
+            <value> PhenoGO adds phenotypic contextual information to existing associations between gene products and Gene Ontology (GO) terms as specified in GO Annotations (GOA). PhenoGO utilizes an existing Natural Language Processing (NLP) system, called BioMedLEE, an existing knowledge-based phenotype organizer system (PhenOS) in conjunction with MeSH indexing and established biomedical ontologies. The system also encodes the context to identifiers that are associated in different biomedical ontologies, including the UMLS, Cell Ontology, Mouse Anatomy, NCBI taxonomy, GO, and Mammalian Phenotype Ontology. In addition, PhenoGO was evaluated for coding of anatomical and cellular information and assigning the coded phenotypes to the correct GOA; results obtained show that PhenoGO has a precision of 91% and recall of 92%, demonstrating that the PhenoGO NLP system can accurately encode a large number of anatomical and cellular ontologies to GO annotations. The PhenoGO Database may be accessed at www.phenogo.org </value>
+        </property>        <property>
+            <name>Authors</name>
+            <value> Yves Lussier and Carol Friedman are the principal investigators. The programmers are Jianrong Li, Lee Sam, and Tara Borlawsky </value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value> Version 2, Feb 2006 </value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value> Phenotypic integration, computational phenotypes </value>
+        </property>        <property>
+            <name>Implementation Language</name>
+            <value> A variety of modules, the web portal is in Java and MySQL, the computational terminology component (phenOS) is written in Perl scripts that queries tables in IBM DB2, the natural language processing component is written in PROLOG. </value>
+        </property>        <property>
+            <name>URL</name>
+            <value> http://www.phenogo.org </value>
+        </property>        <property>
+            <name>Output Data (parameters &amp; Data Types)</name>
+            <value> XML file and www.phenogo.org Web Portal </value>
+        </property>        <property>
+            <name>Input (parameters &amp; Data Types)</name>
+            <value> Gene Ontology Annotations Files and Medline Abstracts </value>
+        </property>        <property>
+            <name>Platforms Tested</name>
+            <value> </value>
+        </property>    </ncbcresource>
+    <ncbcresource>
+        <property>
+            <name>Name</name>
+            <value>String Kernels</value>
+        </property>        <property>
+            <name>Description</name>
+            <value> The string kernel package contains implementations for the mismatch and profile string kernels for use with support vector machine (SVM) classifiers for protein sequence classification. Both kernels compute similarity between protein sequences based on common occurrences of k-length subsequences (&quot;k-mers&quot;) counted with substitutions. Kernel functions for protein sequence data enable the training of SVMs for a range of prediction problems, in particular protein structural class prediction and remote homology detection. A version of the Spider MATLAB machine learning package is also bundled with the code, which allows users to train SVMs and evaluate performance on test sets with the packaged software. </value>
+        </property>        <property>
+            <name>Authors</name>
+            <value> Eleazar Eskin, Rui Kuang, Eugene Ie, Ke Wang, Jason Weston, Bill Noble, Christina Leslie </value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value> Version 1.2, September 2004, stable public release </value>
+        </property>        <property>
+            <name>Implementation Language</name>
+            <value> String kernel code is implemented in C. Spider is a set of object-oriented MATLAB routines. </value>
+        </property>        <property>
+            <name>License</name>
+            <value> Open source </value>
+        </property>        <property>
+            <name>URL</name>
+            <value> http://www.cs.columbia.edu/compbio/string-kernels </value>
+        </property>        <property>
+            <name>Output Data (parameters &amp; Data Types)</name>
+            <value> The kernel code produces a kernel matrix for the input data in tab-delimited text format. The Spider package trains SVMs and stores the learns classifier and results from applying the classifier on test data as MATLAB objects. </value>
+        </property>        <property>
+            <name>Input (parameters &amp; Data Types)</name>
+            <value> The mismatch kernel requires sequence data in FASTA format. The profile string kernel uses probabilistic profiles, such as those produced by PSI-BLAST, in place of the original sequences. The Spider SVM implementation requires both the kernel matrix and a label file of binary or multi-class labels for the training data; this data must be loaded into MATLAB variables before using Spider routing. </value>
+        </property>        <property>
+            <name>Platforms Tested</name>
+            <value> Windows, Linux </value>
+        </property>    </ncbcresource>
+    <ncbcresource>
+        <property>
+            <name>Name</name>
+            <value>FEATURE</value>
+        </property>        <property>
+            <name>Description</name>
+            <value> A suite of automated tools that examine biological structures and produce useful representations of the key biophysical and biochemical features of these structures that are critical for understanding function. The utility of this system extends from medical/pharmaceutical applications (model-based drug design, comparing pharmacological activities) to industrial applications (understanding structural stability, protein engineering). FEATURE is a suite of automated tools that examines biological structures. Using these structures, it produces useful representations of the key biophysical and biochemical features that are critical for understanding function. </value>
+        </property>        <property>
+            <name>Authors</name>
+            <value> Russ Altman, Randy Radmer, Alain Laederach, Jessica Ebert, Mike Liang, Shirley Wu </value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value> TBD </value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value> Analysis --&gt; Imaging --&gt; Molecular Structure </value>
+        </property>        <property>
+            <name>Implementation Language</name>
+            <value> Java/C++ </value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value> PDB (Protein Data Bank) identification number of the molecule or a molecule name </value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value> Visualization and meta-data </value>
+        </property>        <property>
+            <name>Platforms tested</name>
+            <value> TBD </value>
+        </property>        <property>
+            <name>URL</name>
+            <value> https://simtk.org/project/xml/overview.xml?group_id=16 Retrieved from &quot;http://na-mic.org/Wiki/index.php/SDIWG:NCBC_Software_Classification_Simbios_Examples&quot;</value>
+        </property>    </ncbcresource>
+    <ncbcresource>
+        <property>
+            <name>Name</name>
+            <value>MEDUSA/Gorgon</value>
+        </property>        <property>
+            <name>Description</name>
+            <value> MEDUSA is an algorithm for learning predictive models of transcriptional gene regulation from gene expression and promoter sequence data. By using a statistical learning approach based on boosing, MEDUSA learns cis regulatory motifs, condition-specific regulators, and regulatory programs that predict the differential expression of target genes. The regulatory program is specified as an alternating decision tree (ADT). The Java implementation of MEDUSA will allow a number of visualizations of the regulatory program and other inferred regulatory information, implemented in the accompanying Gorgon tool, including hits of significant and condition-specific motifs along the promoter sequences of target genes and regulatory network figures viewable in Cytoscape. </value>
+        </property>        <property>
+            <name>Authors</name>
+            <value> David Quigley, Manuel Middendorf, Steve Lianoglou, Anshul Kundaje, Yoav Freund, Chris Wiggins, Christina Leslie </value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value> Version 2.0, July 2006, pre-release beta version; Version 1.0 (MATLAB), April 2005, stable public release </value>
+        </property>        <property>
+            <name>Implementation Language</name>
+            <value> Java (prototyped in MATLAB) </value>
+        </property>        <property>
+            <name>License</name>
+            <value> Open source </value>
+        </property>        <property>
+            <name>URL</name>
+            <value> http://www.cs.columbia.edu/compbio/medusa (MATLAB), http://compbio.sytes.net:8090/medusa (Java beta version) </value>
+        </property>        <property>
+            <name>Output Data (parameters &amp; Data Types)</name>
+            <value> Regulatory program represented as a Java serialized object file readable by Gorgon and as a human readable XML file. Gorgon currently generates views of learned PSSMs, positional hits along promoter sequences, and views of the ADT as HTML files, and generates network figures as Cytoscape format files. </value>
+        </property>        <property>
+            <name>NCBC</name>
+            <value> MAGNet </value>
+        </property>        <property>
+            <name>Input (parameters &amp; Data Types)</name>
+            <value> Discretized (up/down/baseline) gene expression data in plain text format, promoter sequences in FASTA format, list of candidate transcriptional regulators and signal transducers in plain text format. </value>
+        </property>        <property>
+            <name>Platforms Tested</name>
+            <value> Windows, Linux, Mac OS X </value>
+        </property>    </ncbcresource>
+    <ncbcresource>
+        <property>
+            <name>Name</name>
+            <value>GRASP</value>
+        </property>        <property>
+            <name>Description</name>
+            <value> A molecular visualization and analysis program. It is particularly useful for the display and manipulation of the surfaces of molecules and their electrostatic properties. </value>
+        </property>        <property>
+            <name>Authors</name>
+            <value> Anthony Nicholls and Barry Honig. </value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value> v1.3.6 .Stable public release. </value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value> molecular visualization </value>
+        </property>        <property>
+            <name>Implementation Language</name>
+            <value> Fortran </value>
+        </property>        <property>
+            <name>License</name>
+            <value> Freely available to academia. </value>
+        </property>        <property>
+            <name>URL</name>
+            <value> http://trantor.bioc.columbia.edu/grasp </value>
+        </property>        <property>
+            <name>Output Data (parameters &amp; Data Types)</name>
+            <value> molecular graphics. </value>
+        </property>        <property>
+            <name>Input (parameters &amp; Data Types)</name>
+            <value> PDB files, potential maps from DelPhi </value>
+        </property>        <property>
+            <name>Platforms Tested</name>
+            <value> SGI machines: irix 5.x and 6.x (INDYs, INDIGOs including Impact, Octane and O2) systems. </value>
+        </property>    </ncbcresource>
+    <ncbcresource>
+        <property>
+            <name>Name</name>
+            <value>CRC Navigator</value>
+        </property>        <property>
+            <name>Description</name>
+            <value> An application that allows the clinical research chart (CRC) that is constructed from the clinical record combined with research study data to be queried and browsed. Desktop analysis will generally be launched from this platform, which connects the desktop with the server-based record. </value>
+        </property>        <property>
+            <name>Authors</name>
+            <value> S. Murphy, H. Chueh </value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value> 1.21 alpha </value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value> Software --&gt; Visualization --&gt; Clinical Charts </value>
+        </property>        <property>
+            <name>Implementation Language</name>
+            <value> Java 1.5 </value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value> XML from the CRC server applications. </value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value> Data to be consumed by desktop applications </value>
+        </property>        <property>
+            <name>URL</name>
+            <value>Retrieved from &quot;http://na-mic.org/Wiki/index.php/SDIWG:NCBC_Software_Classification_I2B2_Examples&quot;</value>
+        </property>    </ncbcresource>
+    <ncbcresource>
+        <property>
+            <name>Name</name>
+            <value>T-Profiler</value>
+        </property>        <property>
+            <name>Description</name>
+            <value> T-profiler is a web-based tool that uses the t-test to score changes in the average activity of pre-defined groups of genes. The gene groups are defined based on Gene Ontology categorization, ChIP-chip experiments, upstream matches to a consensus transcription factor binding motif, and location on the same chromosome, respectively. If desired, an iterative procedure can be used to select a single, optimal representative from sets of overlapping gene groups. A jack-knife procedure is used to make calculations more robust against outliers. T-profiler makes it possible to interpret microarray data in a way that is both intuitive and statistically rigorous, without the need to combine experiments or choose parameters. </value>
+        </property>        <property>
+            <name>Authors</name>
+            <value> Andr&#233; Boorsma, Barrett C. Foat, Daniel Vis, Frans Klis, Harmen J. Bussemaker </value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value> </value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value> gene expression, transcriptome, ChIP-chip, Gene Ontology </value>
+        </property>        <property>
+            <name>Implementation Language</name>
+            <value> T-profiler is written in PHP, data is managed by a MYSQL database server </value>
+        </property>        <property>
+            <name>URL</name>
+            <value> http://www.t-profiler.org </value>
+        </property>        <property>
+            <name>Output Data (parameters &amp; Data Types)</name>
+            <value> </value>
+        </property>        <property>
+            <name>Input (parameters &amp; Data Types)</name>
+            <value> Currently, gene expression data from Saccharomyces cerevisiae and Candida albicans are supported. </value>
+        </property>        <property>
+            <name>Platforms Tested</name>
+            <value> Web-based application </value>
+        </property>    </ncbcresource>
+    <ncbcresource>
+        <property>
+            <name>Name</name>
+            <value>SNPper</value>
+        </property>        <property>
+            <name>Description</name>
+            <value> A web-based application to look for known Single Nucleotide Polymorphisms (SNPs) in public databases. You can search for SNPs by name (using the official dbSNP &apos;rs&apos; name or the SNP Consortium&apos;s &apos;TSC&apos; name), or by position on the chromosome (specifying the chromosome, start and end positions, and an optional spacing). Alternatively, you can first find one or more genes you are interested in, and find all the SNPs that belong to them. The program will then display the SNP&apos;s position and alleles, links to the corresponding pages in the public databases, and the genomic sequence surrounding the SNP. Automatic primer design is provided through Primer3 (courtesy of Whitehead Institute). New: database update, online help, improved SNPset filtering. </value>
+        </property>        <property>
+            <name>Authors</name>
+            <value> A. Riva, I. S. Kohane </value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value> TBD </value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value> Analysis --&gt; Imaging --&gt; Molecular Structure </value>
+        </property>        <property>
+            <name>Implementation Language</name>
+            <value> SNPper was entirely written in Common Lisp, using a platform for the development of interactive web applications developed by the author. The data is stored in a mySQL database, that is accessed through a Lisp/mySQL interface. </value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value> local mySQL database that contains information on more than 20,000 genes and almost 5 million SNPs. The SNP database is the result of merging SNP information from dbSNP (http://www.ncbi.nih.gov/SNP/) and goldenPath, the draft human genome browser (http://genome.ucsc.edu/). Not all dbSNP SNPs are found in goldenPath, therefore you will not always be able to find a SNP that appears in dbSNP. </value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value> </value>
+        </property>        <property>
+            <name>Platforms tested</name>
+            <value> The whole system is installed on a GNU/Linux machine running RedHat Linux. </value>
+        </property>        <property>
+            <name>URL</name>
+            <value> http://snpper.chip.org/, http://snpper.chip.org/bio/snpper-explain </value>
+        </property>    </ncbcresource>
+    <ncbcresource>
+        <property>
+            <name>Name</name>
+            <value>Debabeler</value>
+        </property>        <property>
+            <name>Description</name>
+            <value> Neuroimaging studies often involve multiple data processing and analysis packages, each of which often use different file formats and conventions. Although &quot;standard&quot; file formats have been developed, no one format exists that satisfies the needs of contemporary neuroimage analyses. The LONI Debabeler acts as a data mediator between neuroimaging software packages by automatically translating data files from one format into another format. The data files are decoded and encoded using an image data plugin architecture, and the translations from one format into another are performed using an XML-based data translation automaton. The translations are visually defined and edited using the Debabeler&apos;s graphical user interface. The Debabeler provides a flexible application and configurable automaton that can be used to develop solutions to translation problems. </value>
+        </property>        <property>
+            <name>Authors</name>
+            <value> Scott Neu and Daniel J. Valentino </value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value> Version 2.4, May 12, 2005, Stable public release </value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value> Integration --&gt; Resource Integration Components </value>
+        </property>        <property>
+            <name>Implementation Language</name>
+            <value> Java (requires Java 1.4+) </value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value> Plugins to read (decode) common imaging formats, XML, and plain text files (including almost all medical image files). </value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value> Plugins to write (encode) common imaging formats, XML, and plain text files. </value>
+        </property>        <property>
+            <name>Platforms tested</name>
+            <value> Sun Solaris, Mac OSX 1.3+, SGI IRIX, Windows NT/2000, RedHat LINUX </value>
+        </property>        <property>
+            <name>License</name>
+            <value> GPL </value>
+        </property>        <property>
+            <name>Organization</name>
+            <value> CCB </value>
+        </property>        <property>
+            <name>Development Stage</name>
+            <value> Production/Stable </value>
+        </property>        <property>
+            <name>URL</name>
+            <value> http://www.loni.ucla.edu/Software/Software_Detail.jsp?software_id=11 </value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value> Locally executable program, Web-service </value>
+        </property>        <property>
+            <name>Key Words</name>
+            <value> image type conversion, data format converter, automated meta-data header parsing </value>
+        </property>    </ncbcresource>
+    <ncbcresource>
+        <property>
+            <name>Name</name>
+            <value>Pipeline Processing Environment</value>
+        </property>        <property>
+            <name>Description</name>
+            <value> A dataflow processing environment for coordinating complex and large-scale scientific analyses. </value>
+        </property>        <property>
+            <name>Authors</name>
+            <value> Current contributors: Arthur Toga (PI), Arash Payan (Lead), Jagadeeswaran Rajendiran (Programmer), Jia Wei Tam (Programmer); Previous Contributors: Michael Pan, David Rex , Jeff Ma </value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value> v3.0.0 alpha3, May 24, 2005 </value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value> Integration --&gt; Graphical </value>
+        </property>        <property>
+            <name>Implementation Language</name>
+            <value> Java </value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value> Pipeline module </value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value> Output of the programs that the Pipeline runs </value>
+        </property>        <property>
+            <name>Platforms tested</name>
+            <value> Linux, Windows, MacOSX </value>
+        </property>        <property>
+            <name>License</name>
+            <value> GPL </value>
+        </property>        <property>
+            <name>Organization</name>
+            <value> CCB </value>
+        </property>        <property>
+            <name>Development Stage</name>
+            <value> Alpha </value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value> software suite, software environment, graphical workflow environment, image processing libraries </value>
+        </property>        <property>
+            <name>Key Words</name>
+            <value> graphical workflow environment, pipeline, interactive data analysis framework </value>
+        </property>        <property>
+            <name>URLs</name>
+            <value> http://pipeline.loni.ucla.edu &amp; www.loni.ucla.edu/twiki/bin/view/Pipeline/ </value>
+        </property>    </ncbcresource>
+    <ncbcresource>
+        <property>
+            <name>Name</name>
+            <value>Edgewarp</value>
+        </property>        <property>
+            <name>Description</name>
+            <value> Edgewarp 3D is a sophisticated workstation package for manipulation of 2D and 3D biomedical images and related data structures by a combination of landmark location, thin-plate spline, and image unwarping and averaging. </value>
+        </property>        <property>
+            <name>Authors</name>
+            <value> Fred Bookstein </value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value> 3.2.7 </value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value> Modeling --&gt; Algorithms --&gt; Image Processing --&gt; Registration </value>
+        </property>        <property>
+            <name>Implementation Language</name>
+            <value> C and C++ code and makes extensive use of SGI&apos;s OpenGL graphics interface. Communication with the user is by textual and graphical interfaces managed using TCL/TK. </value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value> TBD </value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value> TBD </value>
+        </property>        <property>
+            <name>Platforms tested</name>
+            <value> SGI/IRIX </value>
+        </property>        <property>
+            <name>URL</name>
+            <value> http://vhp.med.umich.edu/edgewarpss.htm</value>
+        </property>    </ncbcresource>
+    <ncbcresource>
+        <property>
+            <name>Name</name>
+            <value>Nest</value>
+        </property>        <property>
+            <name>Description</name>
+            <value> Modeling protein structure based on a sequence-template alignment. The current server works only for modeling with a single template. Part of jackal, which can be downloaded. </value>
+        </property>        <property>
+            <name>Authors</name>
+            <value> Xiang, Z. and Honig, B. </value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value> Stable public release. </value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value> modeling, protein structure, sequence-template alignment. </value>
+        </property>        <property>
+            <name>Implementation Language</name>
+            <value> c++ </value>
+        </property>        <property>
+            <name>License</name>
+            <value> Freely available to academia. </value>
+        </property>        <property>
+            <name>URL</name>
+            <value> http://honiglab.cpmc.columbia.edu/cgi-bin/jackal/nest.cgi </value>
+        </property>        <property>
+            <name>Output Data (parameters &amp; Data Types)</name>
+            <value> </value>
+        </property>        <property>
+            <name>Input (parameters &amp; Data Types)</name>
+            <value> pir and PDB files </value>
+        </property>        <property>
+            <name>Platforms Tested</name>
+            <value> platform independent (web based tool) </value>
+        </property>    </ncbcresource>
+    <ncbcresource>
+        <property>
+            <name>Name</name>
+            <value>Automated Image Registration (AIR)</value>
+        </property>        <property>
+            <name>Description</name>
+            <value> A tool for automated registration of 3D and 2D images within and across subjects and across imaging modalities. </value>
+        </property>        <property>
+            <name>Authors</name>
+            <value> Roger Woods </value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value> Version 5.2.5, 2006, Mature, tested and widely distributed </value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value> Modeling --&gt; Algorithms --&gt; Image Processing --&gt; Registration </value>
+        </property>        <property>
+            <name>Implementation Language</name>
+            <value> C/C++ </value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value> Analyze Image Data and user controlled parameters (see URL for details) </value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value> .AIR or .WARP polynomial displacement fields </value>
+        </property>        <property>
+            <name>Platforms tested</name>
+            <value> Sun Solaris, Mac OSX 1.3+, SGI IRIX, Windows NT/2000+ </value>
+        </property>        <property>
+            <name>License</name>
+            <value> Modified GPL </value>
+        </property>        <property>
+            <name>Organization</name>
+            <value> CCB </value>
+        </property>        <property>
+            <name>Development Stage</name>
+            <value> Production/Stable </value>
+        </property>        <property>
+            <name>URL</name>
+            <value> http://bishopw.loni.ucla.edu/AIR5/ </value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value> Software suite, downloadable libraries </value>
+        </property>        <property>
+            <name>Key Words</name>
+            <value> Analyze image registration, spatial image normalization, brain registration, automated polynomial warping </value>
+        </property>    </ncbcresource>
+    <ncbcresource>
+        <property>
+            <name>Name</name>
+            <value>ARACNE</value>
+        </property>        <property>
+            <name>Description</name>
+            <value> ARACNE (Algorithm for the Reconstruction of Accurate Cellular Networks), a novel algorithm, using microarray expression profiles, specifically designed to scale up to the complexity of regulatory networks in mammalian cells, yet general enough to address a wider range of network deconvolution problems. This method uses an information theoretic approach to eliminate the vast majority of indirect interactions typically inferred by pairwise analysis. </value>
+        </property>        <property>
+            <name>Authors</name>
+            <value> Andrea Califano, et al. </value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value> TBD </value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value> Analysis --&gt; Genomic &amp; Phenotypic Data Analysis </value>
+        </property>        <property>
+            <name>Implementation Language</name>
+            <value> TBD </value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value> .exp, http://amdec-bioinfo.cu-genome.org/html/aracne-2005-04-26/Readme.txt </value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value> .adj, http://amdec-bioinfo.cu-genome.org/html/aracne-2005-04-26/Readme.txt </value>
+        </property>        <property>
+            <name>Platforms tested</name>
+            <value> Linux and Windows </value>
+        </property>        <property>
+            <name>URL</name>
+            <value> Use caWorkbench2.0 framework to run ARACNE online, or you download the standalone ARACNE applications at http://amdec-bioinfo.cu-genome.org/html/ARACNE.htm. </value>
+        </property>    </ncbcresource>
+    <ncbcresource>
+        <property>
+            <name>Name</name>
+            <value>SVPASEG (Sub-Volume Probabilistic Atlas Segmentation)</value>
+        </property>        <property>
+            <name>Description</name>
+            <value> Software for sub volume probabilistic atlas (SVPA) based segmentation MR brain images using inhomogeneous MRFs (Markov Random Fields). This algorithm is meant for the sub-volume-based tissue classification of the MR images. The regions (e.g. Frontal lobe, temporal lobe, etc.) are specified by a sub volume probabilistic atlas. </value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value> The Beta version for the internal distribution was ready in Nov. 2005. The first alpha release probably during (Summer) 2006. </value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value> Modeling --&gt; Algorithms --&gt; Image Processing --&gt; Segmentation </value>
+        </property>        <property>
+            <name>Implementation Language</name>
+            <value> C/C++ </value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value> Image to be segmented (in Analyze format). The atlas specification (a new text file based format, specifying the atlas (e.g. image files of SVPA) and the fixed part of the inhomogeneous MRFs (e.g. allowed voxel labels for each atlas region). The atlas image files are in Analyze 7.5 format. The support for MINC files to be added in future. </value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value> Segmented image (in Analyze 7.5 format). Support for MINC to be added in future. </value>
+        </property>        <property>
+            <name>License</name>
+            <value> GPL </value>
+        </property>        <property>
+            <name>Organization</name>
+            <value> CCB </value>
+        </property>        <property>
+            <name>Development Stage</name>
+            <value> Alpha </value>
+        </property>        <property>
+            <name>Resource Type</name>
+            <value> Locally executable program </value>
+        </property>        <property>
+            <name>Key Words</name>
+            <value> brain, segmentation, tissue, classification </value>
+        </property>        <property>
+            <name>Author</name>
+            <value> Jussi Tohka </value>
+        </property>        <property>
+            <name>Platform tested</name>
+            <value> The development has been carried out in Linux. </value>
+        </property>    </ncbcresource>
+    <ncbcresource>
+        <property>
+            <name>Name</name>
+            <value>Slicer</value>
+        </property>        <property>
+            <name>Description</name>
+            <value> Slicer 3 is a software platform for image visualization &amp; data analysis that is both easy to use for researchers and easy to extend for programmers, while maintaining the high level of functionality needed to support sophisticated science. </value>
+        </property>        <property>
+            <name>Authors</name>
+            <value> Various NAMIC People </value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value> 3.0, July, 2006, pending </value>
+        </property>        <property>
+            <name>NCBC Ontology Classification</name>
+            <value> Visualization --&gt; Imaging --&gt; Manifold Viewers 2D, 3D, 4D, ND </value>
+        </property>        <property>
+            <name>Implementation Language</name>
+            <value> C++/VTK/ITK </value>
+        </property>        <property>
+            <name>Data Input</name>
+            <value> Volumes, Models, Scenes </value>
+        </property>        <property>
+            <name>Data Output</name>
+            <value> Volumes, Models, Scenes </value>
+        </property>        <property>
+            <name>Platforms tested</name>
+            <value> Macintosh, PC, Sun, Linux </value>
+        </property>        <property>
+            <name>URL</name>
+            <value> http://wiki.na-mic.org/Wiki/index.php/Slicer:Workshops:User_Training_101</value>
+        </property>    </ncbcresource>
+    <ncbcresource>
+        <property>
+            <name>Name</name>
+            <value>DelPhi</value>
+        </property>        <property>
+            <name>Description</name>
+            <value> DelPhi provides numerical solutions to the Poisson-Boltzmann equation (both linear and nonlinear form) for molecules of arbitrary shape and charge distribution. The current version is fast (the best relaxation parameter is estimated at run time), accurate (calculation of the electrostatic free energy is less dependent on the resolution of the lattice) and can handle extremely high lattice dimensions. It also includes flexible features for assigning different dielectric constants to different regions of space and treating systems containing mixed salt solutions. </value>
+        </property>        <property>
+            <name>Authors</name>
+            <value> E.Alexov, R.Fine, M.K.Gilson, A.Nicholls, W.Rocchia, K.Sharp, and B. Honig. </value>
+        </property>        <property>
+            <name>Version, Date, Stage</name>
+            <value> Stable public release </value>
+        </property>        <property>
+            <name>Keywords</name>
+            <value> Finite Difference Poisson-Boltzman Solver </value>
+        </property>        <property>
+            <name>Implementation Language</name>
+            <value> Fortran and C </value>
+        </property>        <property>
+            <name>License</name>
+            <value> Freely available to academia; pay model for commercial users. </value>
+        </property>        <property>
+            <name>URL</name>
+            <value> http://trantor.bioc.columbia.edu/delphi </value>
+        </property>        <property>
+            <name>Output Data (parameters &amp; Data Types)</name>
+            <value> electrostatic potential in and around the system </value>
+        </property>        <property>
+            <name>Input (parameters &amp; Data Types)</name>
+            <value> DelPhi takes as input a coordinate file format of a molecule or equivalent data for geometrical objects and/or charge distributions </value>
+        </property>        <property>
+            <name>Platforms Tested</name>
+            <value> Unix-SGI IRIX, linux, PC (requires Fortran and C compilers), AIX IBM version and Mac. </value>
+        </property>    </ncbcresource>
+</ncbcresources>

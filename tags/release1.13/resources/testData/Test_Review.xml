@@ -1,0 +1,10 @@
+<reviews>
+    <review resourceName="TEST" id ="0">
+        <Author>admin</Author>
+        <createdDate>Apr 27, 2007</createdDate>
+        <rate>6</rate>
+        <title>This is a TEST comment!</title>
+        <vote total="0" yes="0"/>
+        <comment>Just a TEST comment on TEST tool</comment>
+    </review>
+</reviews>

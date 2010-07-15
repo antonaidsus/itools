@@ -1,0 +1,1 @@
+viewers=edu.ucla.loni.ccb.itools.view.htviewer.HtPanel,edu.ucla.loni.ccb.itools.view.htviewer.HwPanel

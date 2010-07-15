@@ -1,0 +1,20 @@
+2/13/2009
+information shows when sandbox/regular viewer chosen and don't contact the server for each viewer/center instead of using local cache.
+prefer using Jdom to use its escape ability and more safe when yahoo search failed and the data have strange character
+Cetners
+    <bioSiteMap name="Simbios Center" >
+        <history url="http://simbios.stanford.edu/biositemap.rdf" 
+        lastModified="1256108400" numberOfResource ="23" 
+        updateTime="Sat Feb 13 15:26:17 MST 2010"/>
+    </bioSiteMap>
+    
+    <bioSiteMap name="Simbios" >
+        <history url="https://simtk.org/biositemap_NCBC_Simbios.rdf" 
+        lastModified="null" numberOfResource ="117" 
+        updateTime="Sat Feb 13 15:26:22 MST 2010"/>
+    </bioSiteMap>
+    
+ Some center has
+   space 
+   &
+   non-ascii such as 

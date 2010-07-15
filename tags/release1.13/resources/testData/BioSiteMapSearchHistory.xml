@@ -1,0 +1,16 @@
+<SearchHistory>
+    <Search searchDate="Sat Oct 13 17:38:21 MDT 2007" updated="1" named="null" actualUrl="5" totalFound="2"/>
+    <Search searchDate="Wed Oct 24 19:34:20 MDT 2007" updated="1" named="1" actualUrl="1" totalFound="2"/>
+    <Search searchDate="Wed Oct 24 19:34:25 MDT 2007" updated="1" named="1" actualUrl="1" totalFound="2"/>
+    <Search searchDate="Wed Oct 24 19:34:37 MDT 2007" updated="1" named="1" actualUrl="1" totalFound="2"/>
+    <bioSiteMap name="ccb" >
+        <history url="http://loni.ucla.edu/biositemap.xml" lastModified="1200" updateTime="Sat Oct 13 15:38:36 MDT 2007"/>
+        <history url="http://loni.ucla.edu/biositemap.xml" lastModified="1300" updateTime="Sat Oct 13 17:38:21 MDT 2007"/>
+        <history url="http://www.loni.ucla.edu/BioSiteMap.xml" lastModified="null" updateTime="Wed Oct 24 19:34:20 MDT 2007"/>
+        <history url="http://www.loni.ucla.edu/BioSiteMap.xml" lastModified="null" updateTime="Wed Oct 24 19:34:25 MDT 2007"/>
+        <history url="http://www.loni.ucla.edu/BioSiteMap.xml" lastModified="null" updateTime="Wed Oct 24 19:34:37 MDT 2007"/>
+    </bioSiteMap>
+    <bioSiteMap name="nibo" >
+        <history url="http://nibo.ucla.edu/biositemap.xml" lastModified="1400" updateTime="Sat Oct 13 17:38:21 MDT 2007"/>
+    </bioSiteMap>
+</SearchHistory>
