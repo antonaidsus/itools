@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp codebase="@SERVER.URL@/@webapp.name@">
+   <information>
+    <title>NCBC iTools</title>
+    <vendor>LONI UCLA</vendor>
+   </information>
+  <resources>
+    <j2se version="1.6+" max-heap-size="256m"/>
+    <jar href="itools4applet.jar"/>
+  </resources>
+  <application-desc main-class="edu.ucla.loni.ccb.itools.view.MainFrame">
+      <argument>@SERVER.URL@</argument>
+      <argument>@SECURE_SERVER.URL@</argument>
+  </application-desc>  
+</jnlp>
+
+

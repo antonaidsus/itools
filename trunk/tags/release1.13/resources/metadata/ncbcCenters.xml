@@ -1,0 +1,20 @@
+<centers>
+  <center name="NCBC" />
+  <center name="IATR" external="true" 
+      url="http://www.loni.ucla.edu/download/iTools/IATR_biositemap.rdf" />
+  <center name="NAMIC" home="http://www.na-mic.org/" 
+      url="http://www.ncbcs.org/biositemaps/NAMIC_biositemap.rdf" />
+  <center name="Simbios" home="http://simbios.stanford.edu/" 
+      url="http://simbios.stanford.edu/biositemap.rdf" />
+  <center name="I2B2" home="http://www.i2b2.org/" 
+      url="http://www.ncbcs.org/biositemaps/I2B2_biositemap.rdf" />
+  <center name="NCIBI" home="http://www.ncibi.org" 
+      url="http://portal.ncibi.org/biositemap.rdf" />
+  <center name="MAGNet" home="http://magnet.c2b2.columbia.edu/" 
+      url="http://magnet.c2b2.columbia.edu/biositemap_NCBC_MAGnet.rdf" />
+  <center name="NCBO" home="http://bioontology.org/"
+      fullName="National Center for Biomedical Ontology"  
+      url="http://purl.bioontology.org/biositemaps/biositemap_NCBC_NCBO.rdf" />
+  <center name="CCB" home="http://www.ccb.ucla.edu/"    
+      url="http://www.loni.ucla.edu/download/iTools/biositemap_NCBC_CCB.rdf" />
+ </centers>

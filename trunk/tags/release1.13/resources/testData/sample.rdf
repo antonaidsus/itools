@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:BRO="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns="http://www.bioontologies.org/biositemaps/NCBO.rdf#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:desc="http://bioontology.org/ontologies/biositemap.owl#"
+   xml:base="http://www.bioontologies.org/biositemaps/NCBO.rdf">
+  <owl:Ontology rdf:about="">
+       <owl:imports rdf:resource="http://bioontology.org/ontologies/BiomedicalResources.owl"/>
+  </owl:Ontology>
+
+	<!-- A description of a resource -->
+	<!-- All the fields in the description are optional; the fields can appear in any order within the resource description -->
+	<!-- The fields are defined in the BRO ontology -->
+	<desc:Resource_Description rdf:about="BioPortal">
+
+		<desc:resource_name>BioPortal</desc:resource_name>
+		<desc:contact_person>Benjamin Dai, Misha Dorf, Nick Griffith</desc:contact_person>
+		<desc:description>A Web portal to a virtual library of ontologies and ontology tools</desc:description>
+		<desc:URL>http://www.bioontology.org/ncbo/faces/index.xhtml</desc:URL>
+		<desc:organization>NCBO</desc:organization>
+		
+		<!-- The reference to resource types defined in the BRO ontology -->
+
+		<!-- Each resource can have more than one of these -->
+		<!-- The value must be one of the classes defined in the BRO ontology -->
+		<desc:resource_type>
+			<BRO:Ontology_Development_and_Management/>
+		</desc:resource_type>
+		<!-- End of the reference to the resource type -->
+		
+		<desc:license>Mozilla</desc:license>
+		<desc:keywords>Web portal, ontologies</desc:keywords>
+
+		<!-- Version information is a nested object -->
+		<desc:version_information>
+			<desc:Version_Information>
+				<desc:development_stage>production</desc:development_stage>
+				<desc:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2/1/2007</desc:release_date>
+				<desc:version>1</desc:version>
+			</desc:Version_Information>
+
+		</desc:version_information>
+		<!-- End of the version information object -->
+
+	</desc:Resource_Description>
+
+	<!-- Description of another resource. A biositemap can contain the description of any number of resources -->
+	<desc:Resource_Description rdf:about="Protege">
+		<desc:resource_name>Protégé</desc:resource_name>
+		<desc:description>An ontology authoring tool</desc:description>
+
+		<desc:contact_person>Tim Redmond, Tania Tudorache, Jennifer Vendetti</desc:contact_person>
+		<desc:version_information>
+			<desc:Version_Information>
+				<desc:release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2/6/2007</desc:release_date>
+				<desc:development_stage>production</desc:development_stage>
+				<desc:version>3.2.2</desc:version>
+			</desc:Version_Information>
+
+		</desc:version_information>
+		<desc:URL>http://protege.stanford.edu/</desc:URL>
+		<desc:license>Mozilla</desc:license>
+		<desc:keywords>Ontologies, Protégé</desc:keywords>
+		<desc:organization>NCBO</desc:organization>
+		<desc:resource_type>
+			<BRO:Ontology_Development_and_Management/>
+
+		</desc:resource_type>
+	</desc:Resource_Description >
+	
+</rdf:RDF>
+<!-- Created with Protege (with OWL Plugin 3.4, Build 500)  http://protege.stanford.edu -->

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" 
+    "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<bean id="exceptionResolver"
+		class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		<property name="exceptionMappings">
+			<props>
+				<prop
+					key="org.springframework.dao.DataAccessException">
+					dataAccessFailure
+				</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="urlMapping"
+		class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<props>
+				<prop key="/account.htm">accountController</prop>
+				<prop key="/myAccount.htm">adminController</prop>
+				<prop key="/admin.htm">adminController</prop>
+				<prop key="/forgetPassword.htm">
+					forgetPasswordController
+				</prop>
+				<prop key="/displayUser.htm">
+					displayUserController
+				</prop>
+				<prop key="displayCenter.htm">
+					displayCenterController
+				</prop>
+				<prop key="/changeUser.htm">changeUserController</prop>
+				<prop key="/changeCenter.htm">changeCenterController</prop>
+				<prop key="/resource.htm">resourceController</prop>
+				<prop key="/restrictedResource.htm">restrictedResourceController</prop>
+				<prop key="/review.htm">reviewController</prop>
+				<prop key="/restrictedReview.htm">
+					restrictedReviewController
+				</prop>
+				<prop key="/websearch.htm">webSearchController</prop>
+				<!-- Add additional URL mappings here -->
+			</props>
+		</property>
+	</bean>
+
+	<!-- View Resolver for JSPs -->
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="requestContextAttribute" value="rc" />
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	<bean id="accountController"
+		class="edu.ucla.loni.ccb.itools.servlet.AccountController">
+		<property name="authProcessor"
+			ref="authenticationProcessingFilter" />
+	</bean>
+	<bean id="adminController"
+		class="edu.ucla.loni.ccb.itools.servlet.AdminController">
+	</bean>
+	<bean id="forgetPasswordController"
+		class="edu.ucla.loni.ccb.itools.servlet.ForgetPasswordController">
+	</bean>
+	<bean id="displayUserController"
+		class="edu.ucla.loni.ccb.itools.servlet.DisplayUserController">
+		<property name="commandClass"
+			value="edu.ucla.loni.ccb.itools.model.RUser" />
+	</bean>	
+		<bean id="displayCenterController"
+		class="edu.ucla.loni.ccb.itools.servlet.DisplayCenterController">
+		<property name="commandClass"
+			value="edu.ucla.loni.ccb.itools.model.NcbcCenter" />
+	</bean>
+	
+	<bean id="changeUserController"
+		class="edu.ucla.loni.ccb.itools.servlet.ChangeUserController">
+		<property name="commandClass"
+			value="edu.ucla.loni.ccb.itools.model.RUser" />
+	</bean>
+	
+    <bean id="changeCenterController"
+		class="edu.ucla.loni.ccb.itools.servlet.ChangeCenterController">
+		<property name="commandClass"
+			value="edu.ucla.loni.ccb.itools.model.NcbcCenter" />
+	</bean>
+	
+
+	<bean id="resourceController"
+		class="edu.ucla.loni.ccb.itools.servlet.ResourceController">
+	</bean>
+	<bean id="restrictedResourceController"
+		class="edu.ucla.loni.ccb.itools.servlet.RestrictedResourceController">
+	</bean>
+
+	<bean id="reviewController"
+		class="edu.ucla.loni.ccb.itools.servlet.ReviewController">
+	</bean>
+	<bean id="restrictedReviewController"
+		class="edu.ucla.loni.ccb.itools.servlet.RestrictedReviewController">
+	</bean>
+
+	<bean id="webSearchController" 
+	    class="edu.ucla.loni.ccb.itools.servlet.WebSearchController" >
+	    <property name="webSearch" ref="webSearch" />
+	</bean>
+
+</beans>

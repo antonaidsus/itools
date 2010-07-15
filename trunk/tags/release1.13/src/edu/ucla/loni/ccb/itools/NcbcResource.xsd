@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://ccb.loni.ucla.edu/NcbcResources" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ccb.loni.ucla.edu/NcbcResources">
+
+    <element name="ncbcresources" type="tns:NcbcResourcesType"></element>
+
+    <complexType name="NcbcResourcesType">
+    	<sequence>
+    		<element name="ncbcresource" type="tns:NcbcResourceType" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="NcbcResourceType">
+    	<sequence>
+    		<element name="property" type="tns:PropertyType" minOccurs="1" maxOccurs="unbounded"></element>
+    	</sequence>
+    	<attribute name="center" type="string" use="optional"></attribute>
+    	<attribute name="id" type="string" use="optional"></attribute>
+    </complexType>
+
+    <complexType name="PropertyType">
+    	<sequence>
+    		<element name="name" type="tns:NameType"></element>
+    		<element name="value" type="tns:ValueType"></element>
+    	</sequence>
+    </complexType>
+    
+    <simpleType name="NameType">
+    	<restriction base="string"></restriction>
+    </simpleType>
+
+    <simpleType name="ValueType">
+    	<restriction base="string"></restriction>
+    </simpleType>
+</schema>

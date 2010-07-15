@@ -1,0 +1,75 @@
+##Example from CCB
+[edit]ShapeViewer
+NCBC Ontology Classification: Visualization --> Imaging --> Manifold Viewers 2D, 3D, 4D, ND 
+Description: Provides 3D interactive user interface for viewing parametric shapes commonly used in the Laboratory of Neuroimaging. 
+Data Input: Current version requires LONI UCF format. 
+Data Output: Scenes composed of multiples shape objects can be saved along with an associated view for subsequent reloading and display. 
+Implementation Language: Java 1.4 or higher, requires Java3D runs as application or as Applet. 
+Platforms tested: Macintosh, PC, Sun 
+Version, Date, Stage: 1.0, May 24, 2006, released 
+Authors: Jeff Ma, Craig Schwartz 
+URL: http://www.loni.ucla.edu/Software/Software_Detail.jsp?software_id=18 
+Resource Type: Locally executable program, software suite, downloadable libraries 
+Development Stage: Beta 
+Organization: CCB 
+Key Words: shape viewer, shape libraries, visualization, surface, brain, mesh 
+License: GPL 
+[edit]SVPASEG (Sub-Volume Probabilistic Atlas Segmentation)
+NCBC Ontology Classification: Modeling --> Algorithms --> Image Processing --> Segmentation 
+Description: Software for sub volume probabilistic atlas (SVPA) based segmentation MR brain images using inhomogeneous MRFs (Markov Random Fields). This algorithm is meant for the sub-volume-based tissue classification of the MR images. The regions (e.g. Frontal lobe, temporal lobe, etc.) are specified by a sub volume probabilistic atlas. 
+Data Input: Image to be segmented (in Analyze format). The atlas specification (a new text file based format, specifying the atlas (e.g. image files of SVPA) and the fixed part of the inhomogeneous MRFs (e.g. allowed voxel labels for each atlas region). The atlas image files are in Analyze 7.5 format. The support for MINC files to be added in future. 
+Data Output: Segmented image (in Analyze 7.5 format). Support for MINC to be added in future. 
+Implementation Language: C/C++ 
+Platform tested: The development has been carried out in Linux. 
+Version, Date, Stage: The Beta version for the internal distribution was ready in Nov. 2005. The first alpha release probably during (Summer) 2006. 
+Author: Jussi Tohka 
+Resource Type: Locally executable program 
+Development Stage: Alpha 
+Organization: CCB 
+Key Words: brain, segmentation, tissue, classification 
+License: GPL 
+[edit]Pipeline Processing Environment
+NCBC Ontology Classification: Integration --> Graphical 
+Description: A dataflow processing environment for coordinating complex and large-scale scientific analyses. 
+Data Input: Pipeline module 
+Data Output: Output of the programs that the Pipeline runs 
+Implementation Language: Java 
+Platforms tested: Linux, Windows, MacOSX 
+Version, Date, Stage: v3.0.0 alpha3, May 24, 2005 
+Authors: Current contributors: Arthur Toga (PI), Arash Payan (Lead), Jagadeeswaran Rajendiran (Programmer), Jia Wei Tam (Programmer); Previous Contributors: Michael Pan, David Rex , Jeff Ma 
+URLs: http://pipeline.loni.ucla.edu & www.loni.ucla.edu/twiki/bin/view/Pipeline/ 
+Resource Type: software suite, software environment, graphical workflow environment, image processing libraries 
+Development Stage: Alpha 
+Organization: CCB 
+Key Words: graphical workflow environment, pipeline, interactive data analysis framework 
+License: GPL 
+[edit]Debabeler
+NCBC Ontology Classification: Integration --> Resource Integration Components 
+Description: Neuroimaging studies often involve multiple data processing and analysis packages, each of which often use different file formats and conventions. Although "standard" file formats have been developed, no one format exists that satisfies the needs of contemporary neuroimage analyses. The LONI Debabeler acts as a data mediator between neuroimaging software packages by automatically translating data files from one format into another format. The data files are decoded and encoded using an image data plugin architecture, and the translations from one format into another are performed using an XML-based data translation automaton. The translations are visually defined and edited using the Debabeler's graphical user interface. The Debabeler provides a flexible application and configurable automaton that can be used to develop solutions to translation problems. 
+Data Input: Plugins to read (decode) common imaging formats, XML, and plain text files (including almost all medical image files). 
+Data Output: Plugins to write (encode) common imaging formats, XML, and plain text files. 
+Implementation Language: Java (requires Java 1.4+) 
+Platforms tested: Sun Solaris, Mac OSX 1.3+, SGI IRIX, Windows NT/2000, RedHat LINUX 
+Version, Date, Stage: Version 2.4, May 12, 2005, Stable public release 
+Authors: Scott Neu and Daniel J. Valentino 
+URL: http://www.loni.ucla.edu/Software/Software_Detail.jsp?software_id=11 
+Resource Type: Locally executable program, Web-service 
+Development Stage: Production/Stable 
+Organization: CCB 
+Key Words: image type conversion, data format converter, automated meta-data header parsing 
+License: GPL 
+[edit]Automated Image Registration (AIR)
+NCBC Ontology Classification: Modeling --> Algorithms --> Image Processing --> Registration 
+Description: A tool for automated registration of 3D and 2D images within and across subjects and across imaging modalities. 
+Data Input: Analyze Image Data and user controlled parameters (see URL for details) 
+Data Output: .AIR or .WARP polynomial displacement fields 
+Implementation Language: C/C++ 
+Platforms tested: Sun Solaris, Mac OSX 1.3+, SGI IRIX, Windows NT/2000+ 
+Version, Date, Stage: Version 5.2.5, 2006, Mature, tested and widely distributed 
+Authors: Roger Woods 
+URL: http://bishopw.loni.ucla.edu/AIR5/ 
+Resource Type: Software suite, downloadable libraries 
+Development Stage: Production/Stable 
+Organization: CCB 
+Key Words: Analyze image registration, spatial image normalization, brain registration, automated polynomial warping 
+License: Modified GPL 

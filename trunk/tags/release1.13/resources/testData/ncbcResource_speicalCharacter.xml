@@ -1,0 +1,11 @@
+<ncbcresources>
+    <ncbcresource center="ccb" id="0" >
+        <property>
+            <name>Name</name>
+            <value>jViewbox &amp; xViewFlut</value>
+        </property>        <property>
+            <name>Description</name>
+            <value>medical imaging research &amp; study</value>
+        </property>
+    </ncbcresource>
+</ncbcresources>

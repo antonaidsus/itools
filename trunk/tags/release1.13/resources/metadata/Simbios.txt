@@ -1,0 +1,11 @@
+##Example from Simbios
+[edit]FEATURE
+NCBC Ontology Classification: Analysis --> Imaging --> Molecular Structure 
+Description: A suite of automated tools that examine biological structures and produce useful representations of the key biophysical and biochemical features of these structures that are critical for understanding function. The utility of this system extends from medical/pharmaceutical applications (model-based drug design, comparing pharmacological activities) to industrial applications (understanding structural stability, protein engineering). FEATURE is a suite of automated tools that examines biological structures. Using these structures, it produces useful representations of the key biophysical and biochemical features that are critical for understanding function. 
+Data Input: PDB (Protein Data Bank) identification number of the molecule or a molecule name 
+Data Output: Visualization and meta-data 
+Implementation Language: Java/C++ 
+Platforms tested: TBD 
+Version, Date, Stage: TBD 
+Authors: Russ Altman, Randy Radmer, Alain Laederach, Jessica Ebert, Mike Liang, Shirley Wu 
+URL: https://simtk.org/project/xml/overview.xml?group_id=16 Retrieved from "http://na-mic.org/Wiki/index.php/SDIWG:NCBC_Software_Classification_Simbios_Examples"

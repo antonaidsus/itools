@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dataset>
+  <table name='ncbc_resource'>
+    <column>id</column>
+    <column>name</column>
+    <column>description</column>
+    <column>status</column>
+    <column>url</column>
+    <row>
+      <value>1</value>
+      <value>ShapeViewer</value>
+      <value>3D Shape Viewer using Java3D</value>
+      <value>stable</value>
+      <value>url://shapeviewer</value>
+    </row>
+    <row>
+      <value>2</value>
+      <value>Pipeline</value>
+      <value>dataflow environment</value>
+      <value>stable</value>
+      <value>url://pipeline</value>
+    </row>
+  </table>
+
+</dataset>

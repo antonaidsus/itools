@@ -1,0 +1,14 @@
+<!-- Use this file to deploy some handlers/chains and services  -->
+<!-- Two ways to do this:                                       -->
+<!--   java org.apache.axis.utils.Admin deploy.wsdd              -->
+<!--      from the same dir that the Axis engine runs           -->
+<!-- or -->
+<!-- java -cp %AXISCLASSPATH% org.apache.axis.client.AdminClient -lhttp://localhost:8080/itools/webservices/AdminService deploy.wsdd-->
+<!--      after the axis server is running then copy and paste the server-config.wsdd                    -->
+ <deployment xmlns="http://xml.apache.org/axis/wsdd/"
+			xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+  <service name="resourcesFinder"  provider="java:RPC" >
+    <parameter name="className" value="edu.ucla.loni.ccb.itools.webservice.ResourcesFinder" />
+    <parameter name="allowedMethods" value="*" />
+  </service>
+</deployment>

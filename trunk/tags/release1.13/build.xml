@@ -1,0 +1,584 @@
+<project name="ccb-iTools" basedir=".">
+	<!-- import properties (app settings, classpath, jar file locations) -->
+	<import file="properties.xml" />
+	<target name="init" description="defines custom tasks">
+		<tstamp>
+			<format property="timestr" unit="minute" pattern="MM/dd/yy-HHmm" />
+			<format property="copyright.year" pattern="yyyy" />
+		</tstamp>
+		<echo>${timestr} ${copyright.year} </echo>
+        <property name="reports.tests" value="/tmp/iToolsTest"/>
+		<property name="src.tests" value="test" />
+		<property name="build.number.file" value="src/edu/ucla/loni/ccb/itools/build.number" />
+
+		<property name="main-class" value="edu.ucla.loni.ccb.itools.view.MainFrame" />
+		<!-- Taskdefs -->
+		<taskdef resource="net/sf/antcontrib/antcontrib.properties" classpath="${ant-contrib.jar}" />
+
+		<!-- Ensure that Ant 1.6.2+ is being used -->
+		<available classname="org.apache.tools.ant.DynamicAttribute" property="ant-1.6.2" />
+		<!-- Make sure hibernatedoclet is necessary, here is the problem eclipse will automaticallyy compile-->
+		<uptodate property="hibernatedoclet.unnecessary">
+			<srcfiles dir="src" includes="**/model/*.java" />
+			<mapper type="glob" from="*.java" to="${build.dir}/*.class" />
+		</uptodate>
+
+		<echo> ${hibernatedoclet.unnecessary} </echo>
+	</target>
+	<target name="pre-build" depends="init" description="copy some build files, it used private by build">
+		<mkdir dir="${build.dir}" />
+		<mkdir dir="${dist.dir}" />
+		<copy todir="${build.dir}">
+			<fileset dir="${src.dir}">
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+		<copy todir="${build.dir}">
+			<fileset file="resources/*" />
+			<fileset file="resources/images/*" />
+			<fileset file="resources/metadata/*" />
+		</copy>
+		<copy overwrite="true" todir="${build.dir}" file="resources/log4j.properties">
+			<filterset>
+				<filter token="logfile" value="stdout, logfile" />
+				<filter token="itools.log.file" value="${local.itools.log.file}" />
+				<filter token="itools.log.level" value="${local.itools.log.level}" />
+			</filterset>
+		</copy>
+		<copy overwrite="true" todir="${build.dir}" file="resources/mail.properties">
+			<filterset>
+				<filter token="mail.sender" value="${mail.sender}" />
+				<filter token="mail.host" value="${mail.host}" />
+				<filter token="mail.receiver" value="${mail.receiver}" />
+				<filter token="newuser.subject" value="${newuser.subject}" />
+				<filter token="newuser.text" value="${newuser.text}" />
+				<filter token="centerupdate.text" value="${centerupdate.text}" />
+				<filter token="centerupdate.subject" value="${centerupdate.subject}" />
+				<filter token="fakeSearch" value="${fakeSearch}" />
+				<filter token="yahooApplicationID" value="${yahooApplicationID}" />
+				<filter token="period" value="${period}" />
+				<filter token="delay" value="${delay}" />
+				<filter token="cronExpression" value="${cronExpression}" />
+				<filter token="search.query" value="${search.query}" />
+				<filter token="search.returnvalue" value="${search.returnvalue}" />
+				<filter token="search.format" value="${search.format}" />
+			</filterset>
+		</copy>
+		<copy overwrite="true" todir="${build.dir}" file="resources/itools.properties">
+			<filterset>
+				<filter token="local.resource.save.dir" value="${local.resource.save.dir}" />
+				<filter token="dao.type" value="${dao.type}" />
+				<filter token="itools_home" value="${itools_home}" />
+				<filter token="itools_usage" value="${itools_usage}" />
+				<filter token="webapp.name" value="${webapp.name}" />
+			</filterset>
+		</copy>
+
+		<copy overwrite="true" todir="${build.dir}" file="resources/itools.server.properties">
+			<filterset>
+				<filter token="server.resource.save.dir" value="${server.resource.save.dir}" />
+				<filter token="server.password.file" value="${server.resource.save.dir}/itools.password.txt" />
+				<filter token="account.security" value="${account.security}" />
+				<filter token="dao.type" value="${dao.type}" />
+				<filter token="derby.system.home" value="${derby.system.home}" />
+			</filterset>
+		</copy>
+		<copy file="${database.type}.properties" tofile="${build.dir}/database.properties" />
+	</target>	
+	
+	<target name="build" depends="pre-build" description="Compile main source tree java files">
+		<javac destdir="${build.dir}" source="1.5" target="1.5" debug="true" deprecation="true" optimize="false" failonerror="true">
+			<src path="${src.dir}" />
+			<classpath>
+				<path refid="master.classpath" />
+				<path refid="axis.classpath" />
+				<path refid="hibernate.classpath" />
+			</classpath>
+		</javac>
+		<update_version_text />
+	</target>
+
+	<!-- it will create 3 jars, jar4applet, jarwithHibernate, jarwithoutHibernate -->
+	<target name="jars" depends="clean,build,hibernatedoclet">
+		<!-- jar4applet -->
+		<copy overwrite="true" todir="${build.dir}" file="resources/log4j.properties">
+			<filterset>
+				<filter token="logfile" value="stdout" />
+				<filter token="itools.log.level" value="${server.itools.log.level}" />
+			</filterset>
+		</copy>
+		<jar jarfile="${dist.dir}/itools4applet.jar" basedir="${build.dir}" duplicate="preserve" excludes="**/*Test*.class, resources/**, *.jar, *.tar, *.zip">
+			<zipfileset src="${log4j.jar}" />
+			<zipfileset src="lib/csv.jar" />
+			<zipfileset src="lib/htmlparser.jar" />
+			<zipfileset src="lib/commons-lang.jar" />
+			<zipfileset src="lib/htviewer.jar" />
+			<zipfileset src="lib/jdom.jar" />
+			<zipfileset src="lib/jexcelapi/jxl.jar" />
+			<manifest>
+				<attribute name="Main-Class" value="${main-class}" />
+			</manifest>
+		</jar>
+		<if>
+			<equals arg1="${signJar4Applet}" arg2="yes" />
+			<then>
+				<echo message="singing jar" />
+				<signjar jar="${dist.dir}/itools4applet.jar" alias="${alias}" storepass="${storepass}" />
+			</then>
+			<else>
+				<echo message="jar was NOT signed" />
+			</else>
+		</if>
+
+		<!--jarwithoutHibernate -->
+		<copy overwrite="true" todir="${build.dir}" file="resources/log4j.properties">
+			<filterset>
+				<filter token="logfile" value="logfile" />
+				<filter token="itools.log.file" value="${local.itools.log.file}" />
+				<filter token="itools.log.level" value="${local.itools.log.level}" />
+			</filterset>
+		</copy>
+		<jar jarfile="${dist.dir}/itoolsWithoutHibernate.jar" basedir="${build.dir}" duplicate="preserve" excludes="**/*Test*.class, resources/**, *.jar, *.tar, *.zip">
+			<zipfileset src="${log4j.jar}" />
+			<zipfileset src="lib/csv.jar" />
+			<zipfileset src="lib/htmlparser.jar" />
+			<zipfileset src="lib/commons-lang.jar" />
+			<zipfileset src="lib/htviewer.jar" />
+			<zipfileset src="lib/jdom.jar" />
+			<zipfileset src="lib/jexcelapi/jxl.jar" />
+			<manifest>
+				<attribute name="Main-Class" value="${main-class}" />
+			</manifest>
+		</jar>
+
+		<jar jarfile="${dist.dir}/itoolsWithHibernate.jar" basedir="${build.dir}" duplicate="preserve" excludes="**/*Test*.class, resources/**, *.jar, *.tar, *.zip">
+			<zipfileset src="${log4j.jar}" />
+			<zipfileset src="lib/csv.jar" />
+			<zipfileset src="lib/htmlparser.jar" />
+			<zipfileset src="lib/commons-lang.jar" />
+			<zipfileset src="lib/commons-logging-1.1.jar" />
+			<zipfileset src="lib/mysql-connector-java-5.0.4-bin.jar" />
+			<zipfileset src="lib/hsqldb.jar" />
+			<zipfileset src="lib/derby.jar" />
+			<zipfileset src="lib/htviewer.jar" />
+			<zipfileset src="lib/jdom.jar" />
+			<zipgroupfileset dir="lib/hibernate" includes="*.jar" />
+			<zipfileset src="lib/jexcelapi/jxl.jar" />
+
+			<manifest>
+				<attribute name="Main-Class" value="${main-class}" />
+			</manifest>
+		</jar>
+	</target>
+	<target name="search" depends="build">
+		<java classname="test.WebSearchTest" fork="yes">
+			<classpath>
+				<pathelement location="${build.dir}" />
+				<path refid="master.classpath" />
+				<pathelement location="axis/WEB-INF" />
+				<path refid="axis.classpath" />
+			</classpath>
+		</java>
+	</target>
+	<target name="test0" depends="build">
+		<java classname="junit4.AllTests" fork="yes">
+			<classpath>
+				<pathelement location="${build.dir}" />
+				<path refid="master.classpath" />
+			</classpath>
+
+		</java>
+	</target>
+
+	<target name="test1" depends="build">
+		<junit fork="yes" failureproperty="junit.failure" printsummary="true">
+			<classpath>
+				<pathelement location="${build.dir}" />
+				<path refid="master.classpath" />
+			</classpath>
+			  <batchtest  >
+			    <fileset dir="${src.tests}">
+			      <!--include name="**/*Test*.java"/-->
+			      <exclude name="**/AllTests.java"/>
+			    </fileset>
+			  </batchtest>
+		</junit>
+	</target>
+
+	<target name="run" depends="build,hibernatedoclet">
+		<java classname="${main-class}" fork="yes">
+			<classpath>
+				<pathelement location="${build.dir}" />
+				<path refid="master.classpath" />
+				<path refid="hibernate.classpath" />
+			</classpath>
+			<jvmarg value="-Dserver.url=http://localhost:8080/" />
+			<jvmarg value="-Djavax.net.ssl.trustStore=trustedcerts" />
+		</java>
+	</target>
+
+	<target name="localrun" depends="build,hibernatedoclet">
+		<java classname="${main-class}" fork="yes">
+			<classpath>
+				<pathelement location="${build.dir}" />
+				<path refid="master.classpath" />
+				<path refid="hibernate.classpath" />
+			</classpath>
+		</java>
+	</target>
+
+	<target name="runparser" depends="build">
+		<java classname="edu.ucla.loni.ccb.itools.CcbSoftwareOntologyparser" fork="yes">
+			<classpath>
+				<path refid="master.classpath" />
+				<pathelement location="${build.dir}" />
+			</classpath>
+		</java>
+	</target>
+
+	<!-- =================================================================== -->
+	<!-- The "hibernatedoclet" target generates Hibernate mapping files      -->
+	<!-- based on XDoclet marked-up Plain Old Java Object (POJO)             -->
+	<!-- =================================================================== -->
+	<!--unless="hibernatedoclet.unnecessary"-->
+	<target name="hibernatedoclet" depends="build" unless="hibernatedoclet.unnecessary" description="Generate Hibernate mapping files">
+		<if>
+			<equals arg1="${dao.type}" arg2="hibernate" />
+			<then>
+				<doHibernateDoclet />
+			</then>
+			<else>
+				<echo message="dao.type is not hibernate, so don't need to invoke hibernatedoclet" />
+			</else>
+		</if>
+	</target>
+
+
+	<!-- =================================================================== -->
+	<!-- The "db-create" target creates a database based on properties       -->
+	<!-- from the database.properties file                                   -->
+	<!-- =================================================================== -->
+	<target name="db-create" depends="init" if="create-database" description="create database for ${database.type}">
+		<if>
+			<equals arg1="${database.type}" arg2="mysql" />
+			<then>
+				<echo message="Detected MySQL, creating database..." />
+				<echo>Creating database with: ${database.type}-create.sql</echo>
+				<echo>URL: ${database.url}</echo>
+				<copy tofile="${build.dir}/sql/${database.type}-create.sql" overwrite="true" filtering="true" file="resources/metadata/sql/${database.type}-create.sql">
+					<filterset>
+						<filter token="DB-NAME" value="${database.name}" />
+						<filter token="DB-USERNAME" value="${database.username}" />
+						<filter token="DB-PASSWORD" value="${database.password}" />
+					</filterset>
+				</copy>
+				<sql driver="${database.driverClassName}" url="${database.admin.url}" userid="${database.admin.username}" password="${database.admin.password}">
+
+					<classpath>
+						<path refid="master.classpath" />
+					</classpath>
+
+					<fileset dir="${build.dir}/sql">
+						<include name="${database.type}-create.sql" />
+					</fileset>
+				</sql>
+			</then>
+			<else>
+				<if>
+					<equals arg1="${database.type}" arg2="hsql" />
+					<then>
+						<echo message="Detected HSQL, skiping creating database..." />
+					</then>
+					<else>
+						<echo level="warning">WARNING:</echo>
+						<echo>You selected a '${database.type}' database which </echo>
+						<echo>does NOT support creating a database via JDBC.  </echo>
+						<echo>Please create a '${database.name}' database manually</echo>
+						<echo>and then run "ant db-prepare" to create the </echo>
+						<echo>database tables.  You might want to check the </echo>
+						<echo>metadata/sql directory to see if the file</echo>
+						<echo>'${database.type}-create.sql' exists.</echo>
+					</else>
+				</if>
+			</else>
+		</if>
+	</target>
+
+	<!-- =================================================================== -->
+	<!--            Setup Database                                           -->
+	<!-- =================================================================== -->
+	<target name="setup-db" depends="db-create,create-tables,db-load" description="creates database and populates by calling other tasks" />
+
+	<target name="create-tables"  description="creates database tables">
+		<taskdef name="schemaexport" classname="org.hibernate.tool.hbm2ddl.SchemaExportTask">
+			<classpath>
+				<path refid="hibernate.classpath" />
+				<path refid="master.classpath" />
+			</classpath>
+		</taskdef>
+		<schemaexport quiet="no" text="noant" drop="no" delimiter=";" config="${build.dir}/hibernate.cfg.xml" output="create-tables.sql">
+		</schemaexport>
+	</target>
+
+	<target name="create-tables-sql" depends="build" description="creates database tables">
+		<taskdef name="schemaexport" classname="org.hibernate.tool.hbm2ddl.SchemaExportTask">
+			<classpath>
+				<path refid="hibernate.classpath" />
+				<path refid="master.classpath" />
+			</classpath>
+		</taskdef>
+		<schemaexport quiet="no" text="yes" drop="no" delimiter=";" config="${build.dir}/hibernate.cfg.xml" output="create-tables.sql">
+		</schemaexport>
+	</target>
+
+
+	<target name="db-load" depends="file2db" />
+	<target name="check-rsc.dir" depends="with-rsc.dir,no-rsc.dir" />
+	<target name="with-rsc.dir" if="resource.dir">
+		<property name="r_dir" value="${resource.dir}" />
+	</target>
+
+	<target name="no-rsc.dir" unless="resource.dir">
+		<property name="r_dir" value="" />
+	</target>
+
+	<target name="file2db" depends="check-rsc.dir">
+		<java classname="edu.ucla.loni.ccb.itools.dao.db.DatabasePopulator" fork="yes">
+			<jvmarg value="-Dresource.dir=${r_dir}" />
+			<classpath>
+				<path refid="master.classpath" />
+				<path refid="hibernate.classpath" />
+				<pathelement location="${build.dir}" />
+			</classpath>
+			<arg value="file2database" />
+		</java>
+	</target>
+
+	<target name="db2file" depends="check-rsc.dir">
+		<java classname="edu.ucla.loni.ccb.itools.dao.db.DatabasePopulator" fork="yes">
+			<jvmarg value="-Dresource.dir=${r_dir}" />
+			<classpath>
+				<path refid="master.classpath" />
+				<path refid="hibernate.classpath" />
+				<pathelement location="${build.dir}" />
+			</classpath>
+			<arg value="database2file" />
+		</java>
+	</target>
+
+	<!-- Remove classes directory for clean build -->
+	<target name="clean" description="Removes build artifacts">
+		<echo level="info">Cleaning build and distribution directories</echo>
+		<delete dir="${build.dir}" />
+		<delete dir="${dist.dir}/axis" />
+	</target>
+
+	<!-- =================================================================== -->
+	<!--            Internal targets to enable running in debug mode         -->
+	<!-- =================================================================== -->
+	<target name="check-debug" depends="with-debug,no-debug" />
+
+	<target name="with-debug" if="debug">
+		<property name="debugargline" value="-Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,address=4000,server=y,suspend=y" />
+		<echo>Running in debug mode : Listening on port 4000 ...</echo>
+	</target>
+
+	<target name="no-debug" unless="debug">
+		<property name="debugargline" value="" />
+	</target>
+
+	<!-- =================================================================== -->
+	<!--            Start Tomcat                                             -->
+	<!-- =================================================================== -->
+	<target name="start.tomcat" description="starts tomcat in the current console window" depends="check-debug">
+		<java classname="org.apache.catalina.startup.Bootstrap" fork="yes">
+			<jvmarg value="-Dcatalina.home=${tomcat.home}" />
+			<jvmarg line="${debugargline}" />
+			<arg value="start" />
+			<classpath>
+				<pathelement path="${java.home}/../lib/tools.jar" />
+				<fileset dir="${tomcat.home}">
+					<include name="bin/bootstrap.jar" />
+				</fileset>
+			</classpath>
+		</java>
+	</target>
+
+	<!-- =================================================================== -->
+	<!--            Stop Tomcat                                             -->
+	<!-- =================================================================== -->
+	<target name="stop.tomcat" description="starts tomcat in the current console window">
+		<java classname="org.apache.catalina.startup.Bootstrap" fork="yes">
+			<jvmarg value="-Dcatalina.home=${tomcat.home}" />
+			<arg value="stop" />
+			<classpath>
+				<pathelement path="${java.home}/../lib/tools.jar" />
+				<fileset dir="${tomcat.home}">
+					<include name="bin/bootstrap.jar" />
+				</fileset>
+			</classpath>
+		</java>
+	</target>
+
+
+	<!-- ============================================================== -->
+	<!-- Axis tasks - remove these if you don't have Tomcat installed -->
+	<!-- ============================================================== -->
+	<taskdef resource="axis-tasks.properties" classpathref="axis.classpath" />
+
+	<target name="deploy.ws">
+		<java classname="org.apache.axis.client.AdminClient" fork="yes">
+			<arg value="-l${server.url}/${webapp.name}/webservices/AdminService" />
+			<arg value="resources/deploy.wsdd" />
+			<classpath refid="axis.classpath" />
+		</java>
+	</target>
+
+	<target name="deploy.testws">
+		<java classname="org.apache.axis.client.AdminClient" fork="yes">
+			<arg value="-l${server.url}/axis/webservices/AdminService" />
+			<arg value="C:/qma/axis-1_4/samples/userguide/example3/deploy.wsdd" />
+			<classpath refid="axis.classpath" />
+		</java>
+	</target>
+
+	<!-- ============================================================== -->
+	<!-- Tomcat tasks - remove these if you don't have Tomcat installed -->
+	<!-- ============================================================== -->
+	<taskdef file="tomcatTasks.properties">
+		<classpath>
+			<fileset dir="lib" includes="catalina-ant*.jar" />
+		</classpath>
+	</taskdef>
+
+	<target name="deploy" depends="package-web" if="tomcat.home" description="unwar into the servlet container's deployment directory">
+
+		<unwar src="${dist.dir}/${webservice.war}" dest="${tomcat.home}/webapps/${webapp.name}" />
+	</target>
+
+	<target name="install" description="Install application in Tomcat" depends="package-web">
+		<deploy url="${tomcat.manager.url}" username="${tomcat.username}" password="${tomcat.password}" path="/${webapp.name}" war="file:${dist.dir}/${webservice.war}" />
+	</target>
+
+	<target name="package-web" depends="jars">
+		<copy toDir="${dist.dir}/axis">
+			<fileset dir="axis" />
+		</copy>
+		<copy verbose="true" overwrite="true" todir="${dist.dir}/axis" file="resources/ncbc_iTools.html">
+			<filterset>
+				<filter token="SERVER.URL" value="${server.url}" />
+				<filter token="SECURE_SERVER.URL" value="${secure_server.url}" />
+				<filter token="RELEASE_DATE" value="${timestr}" />
+				<filter token="VERSION" value="${build.number}.${build.minor}" />
+			</filterset>
+		</copy>
+		<copy verbose="true" overwrite="true" todir="${dist.dir}/axis" file="resources/ncbc_iTools.jnlp">
+			<filterset>
+				<filter token="SERVER.URL" value="${server.url}" />
+				<filter token="webapp.name" value="${webapp.name}" />
+				<filter token="SECURE_SERVER.URL" value="${secure_server.url}" />
+			</filterset>
+		</copy>
+
+		<copy overwrite="true" tofile="${dist.dir}/axis/WEB-INF/classes/log4j.properties" file="resources/log4j.properties">
+			<filterset>
+				<filter token="logfile" value="logfile" />
+				<filter token="itools.log.file" value="${server.itools.log.file}" />
+				<filter token="itools.log.level" value="${server.itools.log.level}" />
+			</filterset>
+		</copy>
+		<copy file="axis/WEB-INF/jsp/displayUser.jsp" todir="${dist.dir}/axis" />
+
+		<war destfile="${dist.dir}/${webservice.war}" duplicate="preserve" webxml="axis/WEB-INF/web.xml" compress="true">
+			<fileset dir="${dist.dir}/axis" excludes="**/web.xml" />
+			<!--for applet use-->
+			<fileset file="${dist.dir}/itools4applet.jar" />
+			<lib file="${dist.dir}/itoolsWithHibernate.jar" />
+			<lib file="lib/spring.jar" />
+			<lib file="lib/itsucks-core-0.3.1.jar" />
+			<lib file="lib/itsucks-base-0.3.1.jar" />
+			<lib file="lib/commons-httpclient-3.1.jar" />
+		</war>
+	</target>
+
+	<target name="undeploy" depends="remove" />
+
+	<target name="remove" description="Remove application in Tomcat">
+		<undeploy url="${tomcat.manager.url}" username="${tomcat.username}" password="${tomcat.password}" path="/${webapp.name}" />
+	</target>
+
+	<target name="reload" description="Reload application in Tomcat">
+		<reload url="${tomcat.manager.url}" username="${tomcat.username}" password="${tomcat.password}" path="/${webapp.name}" />
+	</target>
+
+	<target name="start" description="Start Tomcat application">
+		<start url="${tomcat.manager.url}" username="${tomcat.username}" password="${tomcat.password}" path="/${webapp.name}" />
+	</target>
+
+	<target name="stop" description="Stop Tomcat application">
+		<stop url="${tomcat.manager.url}" username="${tomcat.username}" password="${tomcat.password}" path="/${webapp.name}" />
+	</target>
+
+	<target name="list" description="List Tomcat applications">
+		<list url="${tomcat.manager.url}" username="${tomcat.username}" password="${tomcat.password}" />
+	</target>
+
+	<!-- start hsqldb server-->
+	<target name="start.hsql">
+		<java fork="true" classname="org.hsqldb.Server" classpath="./lib/hsqldb.jar">
+			<arg line="-database.0 db/${database.name} -dbname.0 ${database.name} -port ${database.port}" />
+		</java>
+	</target>
+
+	<target name="hsqldm">
+		<java fork="true" classpath="./lib/hsqldb.jar" classname="org.hsqldb.util.DatabaseManagerSwing" />
+	</target>
+	<target name="sqltool">
+		<java fork="true" classpath="./lib/hsqldb.jar" classname="org.hsqldb.util.SqlTool" args="localhost-sa" />
+	</target>
+	<target name="shutdown.hsql">
+		<databaseaction name="Shut down hsql" sql.file="resources/metadata/sql/shutdownhsql.sql" />
+	</target>
+	<macrodef name="databaseaction">
+		<attribute name="name" />
+		<attribute name="sql.file" />
+		<sequential>
+			<echo>action on database using file "@{sql.file}"</echo>
+			<echo>"@{name}" Using ${database.driverClassName} ${database.url} </echo>
+			<sql driver="${database.driverClassName}" url="${database.url}" userid="${database.username}" password="${database.password}" onerror="continue" classpathref="master.classpath" src="@{sql.file}" print="true">
+				<!--classpath refid="master-classpath"/-->
+			</sql>
+		</sequential>
+	</macrodef>
+
+	<target name="update_build_number" depends="init" if="change_version">
+		<propertyfile comment="Auto updated version information, don't edit" file="${build.number.file}">
+			<entry key="build.number" type="int" value="1" operation="+" />
+			<entry key="build.minor" type="int" operation="=" value="0" />
+		</propertyfile>
+	</target>
+
+	<target name="update_build_minor" depends="init">
+		<propertyfile comment="Auto updated version information, don't edit" file="${build.number.file}">
+			<entry key="build.minor" type="int" value="1" operation="+" />
+		</propertyfile>
+	</target>
+
+
+	<macrodef name="update_version_text">
+		<sequential>
+			<property file="${build.number.file}" />
+			<property name="cache_version" value="0.0.${build.number}.${build.minor}" />
+			<property name="version" value="Version: ${build.number}.${build.minor} Build Id: (${timestr})" />
+			<echo message="${cache_version}" />
+			<echo message="${version}" />
+			<propertyfile comment="Auto updated version information, don't edit" file="${build.dir}/build.number">
+				<entry key="version" value="${version}" />
+			</propertyfile>
+		</sequential>
+	</macrodef>
+
+	<target name="ttt">
+		<mail from="qma@ucla.edu" tolist="qma66@hotmail.com" subject="Results of nightly build" files="build.xml" />
+	</target>
+</project>

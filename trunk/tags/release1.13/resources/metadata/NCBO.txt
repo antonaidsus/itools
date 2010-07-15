@@ -1,0 +1,11 @@
+##Example from NCBO
+[edit]PROMPT
+NCBC Ontology Classification: Integration --> Mappers 
+Description: PROMPT allows management of multiple ontologies in Protégé: compare versions of the same ontology, move frames between included and including project, merge two ontologies into one & extract a part of an ontology. Protege facilitates reuse and development of ontologies through the project-inclusion mechanism: One project can include one or several other projects and reuse all frames from the included projects. For example, you can develop a general ontology and then include it in the more specific one to provide structure for the latter. You can also include the same project in several others, ensuring that they all get the same copy. The "moving frames" mode of the PROMPT tab allows you to move frames between projects, thus altering both. When moving a frame to the including project, you can choose everything that must be moved in order for the projects to remain consistent: An included project should always stand on its own, therefore, no frame in the included project should reference a frame in the including project. You can also choose to perform the process frame-by-frame. There is a running list of conflicts to help you sever all the links from included to including project in the latter mode. 
+Data Input: UPML ontology and MDLang ontology 
+Data Output: UPML ontology and MDLang ontology 
+Implementation Language: Java 
+Platforms tested: Platform Independent 
+Version, Date, Stage: Prompt 2.4.8 (January 2005) for Protégé 3.1 
+Authors: Natasha Noy, with contributions from Michel Klein and Sandhya Kunnatur 
+URL: http://protege.stanford.edu/plugins/prompt/prompt.html

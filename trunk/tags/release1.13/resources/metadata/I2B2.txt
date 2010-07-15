@@ -1,0 +1,20 @@
+##Example from I2B2
+[edit]SNPper
+NCBC Ontology Classification: Analysis --> Imaging --> Molecular Structure 
+Description: A web-based application to look for known Single Nucleotide Polymorphisms (SNPs) in public databases. You can search for SNPs by name (using the official dbSNP 'rs' name or the SNP Consortium's 'TSC' name), or by position on the chromosome (specifying the chromosome, start and end positions, and an optional spacing). Alternatively, you can first find one or more genes you are interested in, and find all the SNPs that belong to them. The program will then display the SNP's position and alleles, links to the corresponding pages in the public databases, and the genomic sequence surrounding the SNP. Automatic primer design is provided through Primer3 (courtesy of Whitehead Institute). New: database update, online help, improved SNPset filtering. 
+Data Input: local mySQL database that contains information on more than 20,000 genes and almost 5 million SNPs. The SNP database is the result of merging SNP information from dbSNP (http://www.ncbi.nih.gov/SNP/) and goldenPath, the draft human genome browser (http://genome.ucsc.edu/). Not all dbSNP SNPs are found in goldenPath, therefore you will not always be able to find a SNP that appears in dbSNP. 
+Data Output: 
+Implementation Language: SNPper was entirely written in Common Lisp, using a platform for the development of interactive web applications developed by the author. The data is stored in a mySQL database, that is accessed through a Lisp/mySQL interface. 
+Platforms tested: The whole system is installed on a GNU/Linux machine running RedHat Linux. 
+Version, Date, Stage: TBD 
+Authors: A. Riva, I. S. Kohane 
+URL: http://snpper.chip.org/, http://snpper.chip.org/bio/snpper-explain 
+[edit]CRC Navigator
+NCBC Ontology Classification: Software --> Visualization --> Clinical Charts 
+Description: An application that allows the clinical research chart (CRC) that is constructed from the clinical record combined with research study data to be queried and browsed. Desktop analysis will generally be launched from this platform, which connects the desktop with the server-based record. 
+Data Input: XML from the CRC server applications. 
+Data Output: Data to be consumed by desktop applications 
+Implementation Language: Java 1.5 
+Version, Date, Stage: 1.21 alpha 
+Authors: S. Murphy, H. Chueh 
+URL:Retrieved from "http://na-mic.org/Wiki/index.php/SDIWG:NCBC_Software_Classification_I2B2_Examples"

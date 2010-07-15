@@ -1,0 +1,50 @@
+<resources name ="ccb-ncbo" xmlns="http://www.ncbcs.org">    
+    <resource>
+        <name>BioPortal</name>
+        <description>A Web portal to a virtual library of ontologies and ontology tools</description>
+        <authors>Lynn Murphy and Archana Vembakam</authors>
+        <keywords>Web portal, ontologies</keywords>
+        <ontologyLabel>Ontology Development and Management</ontologyLabel>
+        <url>http://www.bioontology.org/images/bioportal_ss.jpg</url>
+        <license>Mozilla</license>
+        <resourceType>Class Library / Toolkit</resourceType>
+        <organization>NCBO</organization>
+        <rlsVersion>
+            <version>1</version>
+            <releaseDate>2/1/2007</releaseDate>
+            <stage>http://informatics.mayo.edu/LexGrid/</stage>
+        </rlsVersion>
+    </resource>
+    <resource>
+        <name>Phenote</name>
+        <description>A tool to use ontologies for annotating biomedical knowledge</description>
+        <authors>Mark Gibson</authors>
+        <keywords>Annotation, Ontologies</keywords>
+        <ontologyLabel>Ontology Development and Management</ontologyLabel>
+        <url>http://www.bioontology.org/tools/phenote/phenote.html</url>
+        <license>Mozilla</license>
+        <resourceType>Class Library / Toolkit</resourceType>
+        <organization>NCBO</organization>
+        <rlsVersion>
+            <version>1.0.3</version>
+            <releaseDate>2/2/2007</releaseDate>
+            <stage>1.0.3</stage>
+        </rlsVersion>
+    </resource>
+    <resource>
+        <name>OBO Converter</name>
+        <description>Converts OBO-EDIT to OWL and vice versa</description>
+        <authors>Dilvan Monera</authors>
+        <keywords>Ontologies, OWL, OBO-EDIT</keywords>
+        <ontologyLabel>Ontology Development and Management</ontologyLabel>
+        <url>http://www.bioontology.org/tools/oboinowl/obo_converter.html</url>
+        <license>Mozilla</license>
+        <resourceType>Class Library / Toolkit</resourceType>
+        <organization>NCBO</organization>
+        <rlsVersion>
+            <version>1</version>
+            <releaseDate>2/3/2007</releaseDate>
+            <stage>Release V1</stage>
+        </rlsVersion>
+    </resource>
+</resources>
